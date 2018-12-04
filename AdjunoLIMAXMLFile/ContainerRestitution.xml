@@ -1,0 +1,43 @@
+<Container_Restitution>
+	<SearchParams>
+		<Catalog_Locode>LOCODE</Catalog_Locode>
+		<Catalog_RestitutionPoint>RestitutionPoint</Catalog_RestitutionPoint>
+		<Invalid_Container>1233</Invalid_Container>
+		<Status_Awaiting>Awaiting</Status_Awaiting>
+		<Status_Restituted>Restituted</Status_Restituted>
+		<Destination_port>DC1</Destination_port>
+		<ForwarderRef>testRef</ForwarderRef>
+	</SearchParams>
+	<Restitution_Grid_Caption>
+		<Caption>Container</Caption>
+		<Caption>Destination</Caption>
+		<Caption>Delivery Booking Date</Caption>
+		<Caption>Carrier</Caption>
+		<Caption>Haulier</Caption>
+		<Caption>Collection Date</Caption>
+		<Caption>Restitution Date</Caption>	
+		<Caption>Restitution Point</Caption>
+		<Caption>Reason</Caption>
+		<Caption>Comments</Caption>
+	</Restitution_Grid_Caption>
+	<TrackRestitutionGrid>
+		<Caption>Container</Caption>
+		<Caption>Seal</Caption>
+		<Caption>CollectionDate</Caption>
+		<Caption>RestitutionDate</Caption>
+		<Caption>RestitutionPoint</Caption>
+		<Caption>Reason</Caption>
+		<Caption>Comments</Caption>
+	</TrackRestitutionGrid>
+	<Status>
+		<Status_Value>{ANY}</Status_Value>
+		<Status_Value>Awaiting</Status_Value>
+		<Status_Value>Restituted</Status_Value>
+	</Status>
+	<InputParams>
+		<Comment>testcomment</Comment>
+		<restitutionpointval>Restitution Point 1</restitutionpointval>
+		<restitutionpointval2>Restitution Point 2</restitutionpointval2>
+		<restitutionreason>Reason 1</restitutionreason>
+	</InputParams>
+</Container_Restitution>

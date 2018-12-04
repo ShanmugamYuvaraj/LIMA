@@ -1,0 +1,15 @@
+<Confirm_Arrival>
+	<SearchParams>
+		<Invalid_ContainerNumber>1233</Invalid_ContainerNumber>
+		<Status_Awaiting>Awaiting</Status_Awaiting>
+	</SearchParams>
+	<Arrive_Grid>
+		<Caption>Vessel</Caption>
+		<Caption>Container</Caption>
+		<Caption>Destination Port</Caption>
+		<Caption>ETD</Caption>
+		<Caption>ETA</Caption>
+		<Caption>Current ETA</Caption>
+		<Caption>Arrival Date</Caption>	
+	</Arrive_Grid>
+</Confirm_Arrival>

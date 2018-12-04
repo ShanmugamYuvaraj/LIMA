@@ -1,0 +1,63 @@
+<Catalog>
+    <SearchParams>
+        <Type_Supplier>Supplier</Type_Supplier>
+        <Type_Customer>Customer</Type_Customer>
+		<Type_Consignee>Consignee</Type_Consignee>
+		<Type_Destination>Destination</Type_Destination>
+		<Type_LoCode>LOCODE</Type_LoCode>
+    </SearchParams>
+    <DeliveryPlanning>
+        <SearchParams>
+            <Destination_Port>Abu Dhabi</Destination_Port>
+			<Supplier>South African Fruit Vendor</Supplier>
+			<Consignee>DUnbia Preston</Consignee>
+			<Next_Stage>Shipment Booking</Next_Stage>
+			<Next_Stage_VendorBooking>Vendor Booking</Next_Stage_VendorBooking>
+			<Next_Stage_CargoReceipt>Cargo Receipt</Next_Stage_CargoReceipt>
+			<Next_Stage_ConfirmArrival>Confirm Arrival</Next_Stage_ConfirmArrival>
+			<Split_Delivery_Y>Y</Split_Delivery_Y>
+			<Split_Delivery_N>N</Split_Delivery_N>
+			<BookingRef_value>BR-1293</BookingRef_value>
+			<Delivery_Date_Past>22 Oct 2017</Delivery_Date_Past>
+			<Delivery_Date_Future>29 Nov 2017</Delivery_Date_Future>
+			<DeliveryTime>08:30</DeliveryTime>
+			<RevisedQuantity_GreaterValue>12000</RevisedQuantity_GreaterValue>
+			<RevisedQuantity_LesserValue>8000</RevisedQuantity_LesserValue>
+			<Delivery_Date_ETA>20 Apr 2017</Delivery_Date_ETA>
+			<Split_Delivery_WFLRef>WF-0001441</Split_Delivery_WFLRef>
+			<Vendor_Booking_WFLRef>WF-0001510</Vendor_Booking_WFLRef>
+			<ConformArrival_WFLRef>WF-0001661</ConformArrival_WFLRef>
+			<WFL_Ref>WF-0001661</WFL_Ref>
+			<Product>Baked Beans</Product>
+			<Product_SKU>SK-737</Product_SKU>
+			<Destination_WFLRef>WF-0001460</Destination_WFLRef>
+			<LineTypeDrop_WFLRef>WF-0001529</LineTypeDrop_WFLRef>
+			<ProductDrop>SK-988</ProductDrop>
+			<LineType_WFLRef>WF-0001747</LineType_WFLRef>
+			<SetLine_Type_Value>Cross Dock Order</SetLine_Type_Value>
+			<SetLine_Type_Value_StockOrder>Stock Order</SetLine_Type_Value_StockOrder>
+			<SetLine_Type_Value_DirectOrder>Direct Order</SetLine_Type_Value_DirectOrder>
+			<SetConsignee_Value>Europa Co-Op</SetConsignee_Value>
+			<Column_Caption_WFLRef>WFL Reference</Column_Caption_WFLRef>
+			<Column_Caption_Vendor>Vendor</Column_Caption_Vendor>
+		    <Customer>International Fruit Traders (MVPCust02)</Customer>
+            <Vendor>Australian Fruit Vendor</Vendor>
+			<CompleteStage_Product_SKU>SK-249</CompleteStage_Product_SKU>
+			<ConformArrival_SKU>14000</ConformArrival_SKU>
+			<CompleteStage_WFLRef>WF-0001525</CompleteStage_WFLRef>
+			<CompleteStage_Consignee>Consignee Name Goes Here</CompleteStage_Consignee>
+			<CompleteStage_Destination>BCP</CompleteStage_Destination>
+			<ConformArrival_Consignee>2 Sisters</ConformArrival_Consignee>
+		    <WFL_Disposal_Certificate_Number_Value>CT-2914</WFL_Disposal_Certificate_Number_Value>
+			<No_Inspection_Required>XCGFNHFZ</No_Inspection_Required>
+			<WFL_ValidationMsg>No items were found.</WFL_ValidationMsg>
+			<WFL_Grid_ValidationMsg>You must correct all validation failures before progressing.</WFL_Grid_ValidationMsg>
+			<WFL_Grid_CompleteValidationMsg>1 Delivery has been Planned. </WFL_Grid_CompleteValidationMsg>
+        </SearchParams>
+    </DeliveryPlanning>
+	<GridDropDown_DeliveryPlanning>
+		<Caption>Direct Order</Caption>
+		<Caption>Cross Dock Order</Caption>
+		<Caption>Stock Order</Caption>
+	</GridDropDown_DeliveryPlanning>
+</Catalog>

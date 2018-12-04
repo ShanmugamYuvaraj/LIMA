@@ -1,0 +1,43 @@
+<Off_Dock_Location>
+	<Search_Param> 
+		<Catalog_Locode>LOCODE</Catalog_Locode>
+		<Catalog_Vessel>Vessel</Catalog_Vessel>
+		<Catalog_OffDockLocation>OffDockLocation</Catalog_OffDockLocation>
+		<Status_Awaiting>Awaiting</Status_Awaiting>
+		<Off_Dock_Departed>Off Dock Departed</Off_Dock_Departed>
+		<Invalid_Container>ee219jgsd</Invalid_Container>
+		<OffDockLocation>Test Desc 1</OffDockLocation>
+		<ForwarderRef>testRef</ForwarderRef>
+		<Vessel_value>Angela</Vessel_value>
+		<OffDockLocation2>Pentalvers</OffDockLocation2>
+		<Destination_port>Felixstowe</Destination_port>
+		<Reason>Reason test 1</Reason>
+		<Comments>test comment</Comments>
+	</Search_Param>
+	<Status>
+		<Status_Value>Awaiting</Status_Value>
+		<Status_Value>Off Dock Received</Status_Value>
+		<Status_Value>Off Dock Departed</Status_Value>
+	</Status>
+	<Grid_Caption>
+		<caption>Container</caption>
+		<caption>Seal</caption>
+		<caption>Arrival Date</caption>
+		<caption>Off Dock Arrived Date</caption>
+		<caption>Off Dock Departed Date</caption>
+		<caption>Off Dock Location</caption>
+		<caption>Reason</caption>
+		<caption>Comments</caption>
+	</Grid_Caption>
+	<Grid_Caption2>
+		<caption>Vessel</caption>
+		<caption>Container</caption>
+		<caption>Destination Port</caption>
+		<caption>Arrived Date</caption>
+		<caption>Off Dock Arrived Date</caption>
+		<caption>Off Dock Departed Date</caption>
+		<caption>Off Dock Location</caption>
+		<caption>Reason</caption>
+		<caption>Comments</caption>
+	</Grid_Caption2>
+</Off_Dock_Location>

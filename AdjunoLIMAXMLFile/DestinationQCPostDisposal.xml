@@ -1,0 +1,38 @@
+<Catalog>
+    <SearchParams>
+        <Type_Supplier>Supplier</Type_Supplier>
+        <Type_Customer>Customer</Type_Customer>
+		<Type_Country>Country</Type_Country>
+		<Type_LoCode>LOCODE</Type_LoCode>
+		<Type_Mode>Mode</Type_Mode>
+		<Type_Vessel>Vessel</Type_Vessel>
+		<Type_DisposalAgent>DisposalAgent </Type_DisposalAgent>
+    </SearchParams>
+    <Destination_QC_PostDisposal>
+        <SearchParams>
+            <Origin_Port>Melbourne</Origin_Port>
+            <Vessel>Aniara</Vessel>
+            <Mode>Sea</Mode>
+			<Mode_Air>Air</Mode_Air>
+            <ETD_From>05 Oct 2017 00:00</ETD_From>
+            <ETD_To>24 Nov 2016 00:00</ETD_To>
+            <Status_Awaiting>Awaiting</Status_Awaiting>
+			<Status_Complete>Complete</Status_Complete>
+            <Status_InComplete>Incomplete</Status_InComplete>
+            <Status_Any>{Any}</Status_Any>
+            <Order_Number>OR-124</Order_Number>
+			<Container>FSCU5119809</Container>
+			<House_Bill>HBL1233</House_Bill>
+            <Customer>International Fruit Traders (MVPCust02)</Customer>
+            <Vendor>Australian Fruit Vendor</Vendor>
+            <Product>OR-124</Product>
+            <WFL_Ref>WF-0001731</WFL_Ref>
+			<WFL_Ref_Disposal_Certificate_No>WF-0001442</WFL_Ref_Disposal_Certificate_No>
+			<WFL_Ref_Mandatory_Field>WF-0001733</WFL_Ref_Mandatory_Field>
+			<No_Inspection_Required>XCGFNHFZ</No_Inspection_Required>
+			<WFL_ValidationMsg>No items were found.</WFL_ValidationMsg>
+			<WFL_Grid_ValidationMsg>You must correct all validation failures before progressing.</WFL_Grid_ValidationMsg>
+			<WFL_Grid_CompleteValidationMsg>1 Disposal has been updated as Completed. </WFL_Grid_CompleteValidationMsg>
+        </SearchParams>
+    </Destination_QC_PostDisposal>
+</Catalog>

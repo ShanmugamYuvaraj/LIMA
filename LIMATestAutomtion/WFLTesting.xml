@@ -1,0 +1,50 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="WFLTestAutomtion" thread-count="1" verbose="1" annotations="JDK">
+
+	<test name="PO Manager WFL">
+		<classes>
+				<class name="com.lima.test.AdjunoWFLPoManagerTest"/>
+		</classes>
+	</test>
+	
+	<test name="Manifest WFL">
+		<classes>
+				<class name="com.lima.test.AdjunoWFLManifestTest"/>
+		</classes>
+	</test>
+	
+	<test name="Certificate Conformation">
+		<classes>
+				<class name="com.lima.test.AdjunoWFLCertificateConformationTest"/>
+		</classes>
+	</test>
+
+	<test name="Destination QC PreInspection">
+		<classes>
+				<class name="com.lima.test.AdjunoWFLDestinationQCPreInspectionTest"/>
+		</classes>
+	</test>
+	
+		
+	<test name="Destination QC Post Inspection">
+		<classes>
+				<class name="com.lima.test.AdjunoWFLDestinationQCPostInspectionTest"/>
+		</classes>
+	</test>
+		
+	<test name="Destination QC Post Disposal">
+		<classes>
+				<class name="com.lima.test.AdjunoWFLDestinationQCPostDisposalTest"/>
+		</classes>
+	</test>
+	
+	
+	<test name="Delivery planning">
+		<classes>
+				<class name="com.lima.test.AdjunoWFLDeliveryPlanningTest"/>
+		</classes>
+	</test>
+	
+
+</suite>

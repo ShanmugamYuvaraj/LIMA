@@ -1,0 +1,40 @@
+<Catalog>
+    <SearchParams>
+        <Type_Supplier>Supplier</Type_Supplier>
+        <Type_Customer>Customer</Type_Customer>
+		<Type_Country>Country</Type_Country>
+		<Type_LoCode>LOCODE</Type_LoCode>
+		<Type_Mode>Mode</Type_Mode>
+		<Type_Vessel>Vessel</Type_Vessel>
+    </SearchParams>
+    <Destination_QC_PreInspection>
+        <SearchParams>
+            <Origin_Port>Sydney</Origin_Port>
+            <Vessel>Aila</Vessel>
+            <Mode>Sea</Mode>
+			<Mode_Air>Air</Mode_Air>
+			<ETD_From>05 Oct 2017 00:00</ETD_From>
+            <ETD_To>24 Nov 2016 00:00</ETD_To>
+			<Status_InspectionRequired>Inspection Required</Status_InspectionRequired>
+            <Status_Awaiting>Awaiting</Status_Awaiting>
+			<Status_Complete>Complete</Status_Complete>
+            <Status_PartComplete>Part-Complete</Status_PartComplete>
+            <Status_Any>{Any}</Status_Any>
+            <Status_Certified>Certified</Status_Certified>
+            <Order_Number>OR-986</Order_Number>
+			<Container>APHU6384234</Container>
+			<House_Bill>HBLR102</House_Bill>
+            <Customer>International Fruit Traders (MVPCust02)</Customer>
+            <Vendor>Tunisian Fruit Vendor</Vendor>
+            <Product>PO-986</Product>
+			<Despatched_container>HLXU4691920</Despatched_container>
+            <WFL_Ref>WF-0001744</WFL_Ref>
+			<WFL_RefGrid_S>WF-0001745</WFL_RefGrid_S>	
+			<WFL_RefGrid_A>WF-0001442</WFL_RefGrid_A>
+			<WFL_Field_Value_Y>Y</WFL_Field_Value_Y>
+			<WFL_Field_Value_N>N</WFL_Field_Value_N>
+			<WFL_Product_Despatched>WF-0001732</WFL_Product_Despatched>
+			<WFL_ValidationMsg>No items were found.</WFL_ValidationMsg>
+        </SearchParams>
+    </Destination_QC_PreInspection>
+</Catalog>

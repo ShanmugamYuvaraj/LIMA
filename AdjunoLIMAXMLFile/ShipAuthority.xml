@@ -1,0 +1,71 @@
+<ShipAuthority>
+	<SearchParams>
+		<Origin></Origin>
+		<Origin_Port></Origin_Port>
+		<Mode></Mode>
+		<Carrier></Carrier>
+		<Vessel></Vessel>
+		<Load_Type></Load_Type>
+		<ETD_From></ETD_From>
+		<Status_Awaiting>Awaiting</Status_Awaiting>
+		<Status_Query>Query</Status_Query>
+		<Status_Declined>Declined</Status_Declined>
+		<Status_Authorised>Authorised</Status_Authorised>
+		<Status_Any>{Any}</Status_Any>
+		<Group></Group>
+		<Department></Department>
+		<Vendor_Ref></Vendor_Ref>
+		<Vendor></Vendor>
+		<Invalid_PONumber>bve</Invalid_PONumber>
+		<PONumber>ME20</PONumber>
+		<Declined_PONumber>XP034</Declined_PONumber>
+		<Product></Product>	
+		<Authorised_Query>Query</Authorised_Query>
+		<Authorised_NO>N</Authorised_NO>
+		<Authorised_Yes>Y</Authorised_Yes>
+		<Comments>Under Query</Comments>
+		<Declined_Comments>Quality Problem</Declined_Comments>
+		<Authorised_Comments>Good</Authorised_Comments>
+		<Email>meghana.jayanna@xperforce.com</Email>
+		<Message>Authorised PONumber</Message>
+		<Vendor_Booking_Status>Booked</Vendor_Booking_Status>
+		<ShipmentBooking_Status>Bookings Made</ShipmentBooking_Status>
+	</SearchParams>
+	<Authorise_Grid>
+		<Caption>Booking Detail</Caption>
+		<Caption>Vendor</Caption>
+		<Caption>PO Number</Caption>
+		<Caption>Product</Caption>
+		<Caption>SKU</Caption>
+		<Caption>Mode</Caption>
+		<Caption>PO Qty</Caption>
+		<Caption>Bkd Qty</Caption>
+		<Caption>Load Type</Caption>
+		<Caption>ETD</Caption>
+		<Caption>ETA</Caption>
+		<Caption>QC</Caption>
+		<Caption>Authorised</Caption>
+		<Caption>Comments</Caption>
+	</Authorise_Grid>
+	<Details_Grid>
+		<Caption>Leg</Caption>
+		<Caption>Origin Port</Caption>
+		<Caption>Destination Port</Caption>
+		<Caption>Voyage</Caption>
+		<Caption>Carrier</Caption>
+		<Caption>Freight Terms</Caption>
+		<Caption>Load Type</Caption>
+		<Caption>PO Ship Date</Caption>
+		<Caption>DC Date</Caption>
+		<Caption>PO Qty</Caption>
+		<Caption>Open Qty</Caption>
+		<Caption>Bkd Ctns</Caption>
+		<Caption>Bkd CBM</Caption>
+		<Caption>Pack Type</Caption>
+		<Caption>DC</Caption>
+		<Caption>Due Into CFS</Caption>
+		<Caption>Booking KPI</Caption>
+		<Caption>Authority Status</Caption>
+		<Caption>Status</Caption>		
+	</Details_Grid>
+</ShipAuthority>

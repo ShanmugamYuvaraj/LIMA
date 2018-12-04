@@ -1,0 +1,19 @@
+<Delivery_Booking>
+	<Search_Param>
+		<Catalog_Locode>LOCODE</Catalog_Locode>
+		<Catalog_Vessel>Vessel</Catalog_Vessel>		
+		<Catalog_Destination>Destination</Catalog_Destination>
+		<Catalog_Haulier>Haulier</Catalog_Haulier>
+		<Catalog_Loading>Loading</Catalog_Loading>		
+		<Status_Pending>Pending</Status_Pending>
+		<Invalid_Container>ee219jgsd</Invalid_Container>
+		<Valid_Container>PONU7319206</Valid_Container>
+		<Any_Status>{Any}</Any_Status>
+		<Level_Of_Detail>Container</Level_Of_Detail>
+		<Destination_Port>Felixstowe</Destination_Port>
+		<Destination>DC1</Destination>
+		<Haulier_value>Allport</Haulier_value>
+		<Loading>AIR</Loading>
+		<Mode>Sea</Mode>
+	</Search_Param>
+</Delivery_Booking>

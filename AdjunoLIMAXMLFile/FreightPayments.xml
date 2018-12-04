@@ -1,0 +1,71 @@
+<Freight_Payments>
+	<Search_Params>
+	<Invalid_Container>xyz</Invalid_Container>
+	<Invoice_Type>Freight</Invoice_Type>
+	<Status_Pending>Pending</Status_Pending>
+	<Status_Authorised>Authorised</Status_Authorised>
+	<Status_Query>Query</Status_Query>
+	<Carrier>APL</Carrier>
+	<Carrier_Type>Direct</Carrier_Type>
+	<Invoice_Currency>INR</Invoice_Currency>
+	<ROE>2.00</ROE>
+	<Comments>Good</Comments>
+	<Charge_Type>Agency Charges</Charge_Type>
+	<Invoice_Rate>15.00</Invoice_Rate>
+	<Payment_Status_Authorised>Authorised</Payment_Status_Authorised>
+	<Payment_Status_Query>Query</Payment_Status_Query>
+	<Query_Status_Comment>Quality Issues</Query_Status_Comment>
+	<Invoice_Number_CYCY>234</Invoice_Number_CYCY>
+	<Invoice_Number_CFSCY>3466</Invoice_Number_CFSCY>
+	<Invoice_Number_CFSCFS>123435</Invoice_Number_CFSCFS>
+	<Loading_CYCY>CY/CY</Loading_CYCY>
+	<Loading_CFSCY>CFS/CY</Loading_CFSCY>
+	<Loading_CFSCFS>CFS/CFS</Loading_CFSCFS>
+	</Search_Params>
+	<Catalog_Params>
+		<Charge_Description>Haulage Cost</Charge_Description>
+		<Invoice_Type>Freight</Invoice_Type>
+		<Carrier>APL</Carrier>
+		<Carrier_Type>Direct</Carrier_Type>
+		<Field_Value>*</Field_Value>
+		<Days_From_ETD>5</Days_From_ETD>
+		<Days_From_ETA>3</Days_From_ETA>
+		<Days_From_Delivery>1</Days_From_Delivery>
+		<Value_Any>any</Value_Any>
+		<No_Days>8</No_Days>
+		<Catalog_Type>Configuration (1 item)</Catalog_Type>
+	</Catalog_Params>
+	<Invoice_Grid>
+		<Caption>Invoice Type</Caption>
+		<Caption>Invoice Number</Caption>
+		<Caption>Invoice Currency</Caption>
+		<Caption>ROE</Caption>
+		<Caption>Projected Value</Caption>
+		<Caption>Invoice Value</Caption>
+		<Caption>Payment Status</Caption>
+		<Caption>Tariff</Caption>
+		<Caption>Comments</Caption>
+	</Invoice_Grid>
+	<Container_Charges_Grid>
+		<Caption>Container</Caption>
+		<Caption>Equipment</Caption>
+		<Caption>Loading</Caption>
+		<Caption>HBL</Caption>
+		<Caption>Projected Value</Caption>
+		<Caption>Invoice Value</Caption>
+		<Caption>Rate Card</Caption>
+		<Caption>Origin Port</Caption>
+		<Caption>Destination Port</Caption>
+		<Caption>ETD</Caption>
+		<Caption>ETA</Caption>
+		<Caption>Payment Status</Caption>
+		<Caption>Comments</Caption>
+	</Container_Charges_Grid>
+	<Rate_Card_PopUp>
+		<Caption>Charge Type</Caption>
+		<Caption>No</Caption>
+		<Caption>Tariff Rate</Caption>
+		<Caption>Tariff Currency</Caption>
+		<Caption>Invoice Rate</Caption>
+	</Rate_Card_PopUp>
+</Freight_Payments>

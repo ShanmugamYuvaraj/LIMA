@@ -1,0 +1,11 @@
+<DocumentsReceived>
+    <SearchParams>
+        <HBL></HBL>
+        <Status_Pending>Pending</Status_Pending>
+        <Status>Shipped</Status>
+        <Courier>Aramex</Courier>
+        <CourierAWB>1234</CourierAWB>
+        <Recepient>Client</Recepient>
+		<Status_Received>Received</Status_Received>
+	</SearchParams>
+</DocumentsReceived>

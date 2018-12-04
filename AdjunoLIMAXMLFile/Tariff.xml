@@ -1,0 +1,494 @@
+<Tariff>
+	<Search_Param>
+		<SeaFreight_Type>Seafreight</SeaFreight_Type>
+		<AirFreight_Type>Airfreight</AirFreight_Type>
+		<RoadFreight_Type>Roadfreight</RoadFreight_Type>
+	</Search_Param>
+	<SeaFreight_Grid_Data>
+		<Origin_Port>Bangalore</Origin_Port>
+		<Destination_Country>United Kingdom</Destination_Country>
+		<Currency>USD</Currency>
+		<Hanging_Type>Bars</Hanging_Type>
+		<Charge>Demurrage</Charge>
+		<Cost>150</Cost>
+		<Unit_of_Measure>Container</Unit_of_Measure>
+		<Destination>DC3</Destination>
+		<FSC>15</FSC>
+		<UnitOfMeasure>Day</UnitOfMeasure>
+        <Change_Type>Chennai Congestion</Change_Type>
+        <Currency_GBP>GBP</Currency_GBP>
+        <Charge_Per_Pallet>65</Charge_Per_Pallet>
+        <Minimum_Charge>80</Minimum_Charge>
+		<FCL_Destination_Landside_Costs_Charge>ENF</FCL_Destination_Landside_Costs_Charge>
+		<Demurrage_and_Storage_Costs_Charge>GOH Costs</Demurrage_and_Storage_Costs_Charge>
+		<Additional_Freight_Costs_Charge>Demurrage</Additional_Freight_Costs_Charge>
+		<Additional_Freight_Costs_Currency>AUD</Additional_Freight_Costs_Currency>
+	</SeaFreight_Grid_Data>
+	<Airfreight_Grid_Data>
+		<Origin_Port>Aheitubieke</Origin_Port>
+		<Service_Type>Sea/Air</Service_Type>
+		<Cost>125</Cost>
+		<Unit_Of_Measure>CBM Per Day</Unit_Of_Measure>
+		<Currency>GBP</Currency>
+		<Destination>DC1</Destination>
+		<Minimum_Charge>10</Minimum_Charge>
+		<From_Day>10</From_Day>
+		<From_To>30</From_To>
+		<Change_Type>Test</Change_Type>
+		<Section>Test</Section>
+		<Change_Description>Test Product</Change_Description>
+		<Logged_By>Test</Logged_By>
+		<Comments>Tested</Comments>
+	</Airfreight_Grid_Data>
+	<RoadFreight_Grid_Data>
+		<Origin>Australia</Origin>
+		<Destination_Country>Belgium</Destination_Country>
+		<Carrier>Air China</Carrier>
+		<Currency>CHF</Currency>
+		<Cost>56.00</Cost>
+		<Unit_Of_Measure>Day</Unit_Of_Measure>
+		<Hanging_Type>Double Bars</Hanging_Type>
+		<Charge_Type>ENS Declaration</Charge_Type>
+		<Delivery_Type>Drop and Swap</Delivery_Type>
+		<Min_Bars>22.00</Min_Bars>
+		<Max_Bars>34.00</Max_Bars>
+	</RoadFreight_Grid_Data>
+	<Seafreight_Tariff_History_Grid>
+		<Caption>Tariff Version</Caption>
+		<Caption>Valid From</Caption>
+		<Caption>Valid To</Caption>
+		<Caption>Date Created</Caption>
+		<Caption>Time Created</Caption>
+		<Caption>View Tariff</Caption>
+		<Caption>Open Report</Caption>
+	</Seafreight_Tariff_History_Grid>
+	<FCL_Freight_Cost_Grid>
+		<Caption>Origin</Caption>
+		<Caption>Origin Port</Caption>
+		<Caption>Destination Country</Caption>
+		<Caption>Destination Port</Caption>
+		<Caption>Carrier</Caption>
+		<Caption>Contract Number</Caption>
+		<Caption>Container Type</Caption>
+		<Caption>Currency</Caption>
+		<Caption>20FT</Caption>
+		<Caption>40FT</Caption>
+		<Caption>40HC</Caption>
+		<Caption>45FT</Caption>
+		<Caption>BAF</Caption>
+		<Caption>CAF</Caption>
+		<Caption>Valid From</Caption>
+		<Caption>Valid To</Caption>
+		<Caption>Transit Time</Caption>
+		<Caption>Spot Rate</Caption>
+		<Caption>Vessel</Caption>
+		<Caption>Comments</Caption>
+	</FCL_Freight_Cost_Grid>
+	<Sea_FreightTariff_GOH_Grid>
+		<Caption>Origin</Caption>
+		<Caption>Origin Port</Caption>
+		<Caption>Destination Country</Caption>
+		<Caption>Destination Port</Caption>
+		<Caption>Carrier</Caption>
+		<Caption>Include Origin / Region</Caption>
+		<Caption>Exclude Origin / Region</Caption>
+		<Caption>20FT</Caption>
+		<Caption>40FT</Caption>
+		<Caption>40HC</Caption>
+		<Caption>45FT</Caption>
+		<Caption>Hanging Type</Caption>
+		<Caption>Currency</Caption>
+		<Caption>Bars per TEU</Caption>
+		<Caption>Comments</Caption>
+	</Sea_FreightTariff_GOH_Grid>
+	<Sea_Freight_Additional_Freight_Cost>
+		<Caption>Charge</Caption>
+		<Caption>Origin</Caption>
+		<Caption>Origin Port</Caption>
+		<Caption>Destination Country</Caption>
+		<Caption>Destination Port</Caption>
+		<Caption>Carrier</Caption>
+		<Caption>Include Origin / Region</Caption>
+		<Caption>Exclude Origin / Region</Caption>
+		<Caption>Currency</Caption>
+		<Caption>Cost</Caption>
+		<Caption>Unit of Measure</Caption>
+		<Caption>Comments</Caption>
+	</Sea_Freight_Additional_Freight_Cost>
+	<FCL_Destination_Landside_Costs_Grid>
+		<Caption>Charge</Caption>
+		<Caption>Destination Country</Caption>
+		<Caption>Destination Port</Caption>
+		<Caption>Carrier</Caption>
+		<Caption>Include Origin / Region</Caption>
+		<Caption>Exclude Origin / Region</Caption>
+		<Caption>Currency</Caption>
+		<Caption>Cost</Caption>
+		<Caption>Unit of Measure</Caption>
+		<Caption>Comments</Caption>
+	</FCL_Destination_Landside_Costs_Grid>
+	<FCL_Origin_Landside_Costs>
+		<Caption>Charge</Caption>
+		<Caption>Origin</Caption>
+		<Caption>Origin Port</Caption>
+		<Caption>Include Origin / Region</Caption>
+		<Caption>Exclude Origin / Region</Caption>
+		<Caption>Destination Country</Caption>
+		<Caption>Destination Port</Caption>
+		<Caption>Carrier</Caption>
+		<Caption>Currency</Caption>
+		<Caption>Cost</Caption>
+		<Caption>Comments</Caption>
+	</FCL_Origin_Landside_Costs>
+	<FCL_Haulage_Cost_Grid>
+		<Caption>Destination</Caption>
+		<Caption>Carrier</Caption>
+		<Caption>Contract Number</Caption>
+		<Caption>Haulier</Caption>
+		<Caption>Delivery Type</Caption>
+		<Caption>Ex Port</Caption>
+		<Caption>Container Type</Caption>
+		<Caption>Currency</Caption>
+		<Caption>20FT</Caption>
+		<Caption>40FT</Caption>
+		<Caption>40HC</Caption>
+		<Caption>45FT</Caption>
+		<Caption>FSC %</Caption>
+		<Caption>Comments</Caption>
+	</FCL_Haulage_Cost_Grid>
+	<FCl_Additional_Haulage_Cost_Grid>
+		<Caption>Charge Type</Caption>
+		<Caption>Carrier</Caption>
+		<Caption>Contract Number</Caption>
+		<Caption>Haulier</Caption>
+		<Caption>Container Type</Caption>
+		<Caption>Destination</Caption>
+		<Caption>Delivery Type</Caption>
+		<Caption>Include Origin / Region</Caption>
+		<Caption>Exclude Origin / Region</Caption>
+		<Caption>Ex Port</Caption>
+		<Caption>Currency</Caption>
+		<Caption>20FT</Caption>
+		<Caption>40FT</Caption>
+		<Caption>40HC</Caption>
+		<Caption>45FT</Caption>
+		<Caption>Comments</Caption>	
+	</FCl_Additional_Haulage_Cost_Grid>
+	<FCL_Demurrage_and_Storage_Costs_Grid>
+		<Caption>Charge Type</Caption>
+		<Caption>Off Dock Location</Caption>
+		<Caption>Destination Port</Caption>
+		<Caption>Carrier</Caption>
+		<Caption>Contract Number</Caption>
+		<Caption>Container Type</Caption>
+		<Caption>Charge Effect From</Caption>
+		<Caption>Charge Effect To</Caption>
+		<Caption>Free Time</Caption>
+		<Caption>From Day</Caption>
+		<Caption>To Day</Caption>
+		<Caption>Currency</Caption>
+		<Caption>20FT</Caption>
+		<Caption>40FT</Caption>
+		<Caption>40HC</Caption>
+		<Caption>45FT</Caption>
+		<Caption>Comments</Caption>
+	</FCL_Demurrage_and_Storage_Costs_Grid>
+	<LCL_Freight_Costs>
+		<Caption>Origin</Caption>
+		<Caption>Origin CFS</Caption>
+		<Caption>Destination Country</Caption>
+		<Caption>Destination Port</Caption>
+		<Caption>Carrier</Caption>
+		<Caption>Currency</Caption>
+		<Caption>Charge Per W/M</Caption>
+		<Caption>Minimum Charge</Caption>
+		<Caption>BAF W/M</Caption>
+		<Caption>CAF %</Caption>
+		<Caption>PSS W/M</Caption>
+		<Caption>Comments</Caption>
+	</LCL_Freight_Costs>
+	<LCL_Additional_LCL_Freight_Costs>
+		<Caption>Charge Type</Caption>
+		<Caption>Origin</Caption>
+		<Caption>Origin CFS</Caption>
+		<Caption>Destination Country</Caption>
+		<Caption>Destination Port</Caption>
+		<Caption>Carrier</Caption>
+		<Caption>Include Region Origin</Caption>
+		<Caption>Exclude Region Origin</Caption>
+		<Caption>Currency</Caption>
+		<Caption>Cost</Caption>
+		<Caption>Minimum Charge</Caption>
+		<Caption>Unit of Measure</Caption>
+		<Caption>Comments</Caption>
+	</LCL_Additional_LCL_Freight_Costs>
+	<LCL_Landside_Costs>
+		<Caption>Charge Type</Caption>
+		<Caption>Destination Country</Caption>
+		<Caption>Destination Port</Caption>
+		<Caption>Carrier</Caption>
+		<Caption>Include Origin/Region</Caption>
+		<Caption>Exclude Origin/Region</Caption>
+		<Caption>Currency</Caption>
+		<Caption>Cost</Caption>
+		<Caption>Minimum Charge</Caption>
+		<Caption>Unit of Measure</Caption>
+		<Caption>Comments</Caption>
+	</LCL_Landside_Costs>
+	<LCL_Haulage_Costs>
+		<Caption>Destination</Caption>
+		<Caption>Ex Port</Caption>
+		<Caption>Currency</Caption>
+		<Caption>Number of Pallets</Caption>
+		<Caption>Charge Per Pallet</Caption>
+		<Caption>Minimum Charge</Caption>
+		<Caption>FSC %</Caption>
+		<Caption>CBM Per Pallet</Caption>
+		<Caption>Comments</Caption>
+	</LCL_Haulage_Costs>
+	<LCL_Storage_Costs>
+		<Caption>Charge Type</Caption>
+		<Caption>CFS</Caption>
+		<Caption>From Day</Caption>
+		<Caption>To Day</Caption>
+		<Caption>Free Time</Caption>
+		<Caption>Currency</Caption>
+		<Caption>Rate</Caption>
+		<Caption>Minimum Charge</Caption>
+		<Caption>Unit of Measure</Caption>
+		<Caption>Comments</Caption>
+	</LCL_Storage_Costs>
+	<Amendment_Log_Grid>
+		<Caption>Date</Caption>
+		<Caption>Section</Caption>
+		<Caption>Change Type</Caption>
+		<Caption>Change Description</Caption>
+		<Caption>Logged By</Caption>
+		<Caption>Comments</Caption>
+	</Amendment_Log_Grid>
+	<AirFreight_Tariff_History>
+		<Caption>Tariff Version</Caption>
+		<Caption>Valid From</Caption>
+		<Caption>Valid To</Caption>
+		<Caption>Date Created</Caption>
+		<Caption>Time Created</Caption>
+		<Caption>View Tariff</Caption>
+		<Caption>Open Report</Caption>
+	</AirFreight_Tariff_History>
+	<Air_Eco_Air_Rates_grid>
+		<Caption>Origin</Caption>
+		<Caption>Origin Port</Caption>
+		<Caption>Destination Country</Caption>
+		<Caption>Destination Port</Caption>
+		<Caption>Service Type</Caption>
+		<Caption>ULD</Caption>
+		<Caption>Pack Type</Caption>
+		<Caption>Fabrication</Caption>
+		<Caption>Service</Caption>
+		<Caption>Airline</Caption>
+		<Caption>Flight Prefix</Caption>
+		<Caption>MAWB Prefix</Caption>
+		<Caption>Currency</Caption>
+		<Caption>Unit Of Measure</Caption>
+		<Caption>Rate</Caption>
+		<Caption>Minimum</Caption>
+		<Caption>FSC per Kg</Caption>
+		<Caption>SSC Per Kg</Caption>
+		<Caption>X-Ray per Kg</Caption>
+		<Caption>ENS</Caption>
+		<Caption>Fabrication Charge</Caption>
+		<Caption>Valid From</Caption>
+		<Caption>Valid To</Caption>
+		<Caption>Transit Time</Caption>
+		<Caption>Comments</Caption>
+	</Air_Eco_Air_Rates_grid>
+	<Express_Service_Grid>
+		<Caption>Origin</Caption>
+		<Caption>Origin Port</Caption>
+		<Caption>Destination Port</Caption>
+		<Caption>Service Type</Caption>
+		<Caption>ULD</Caption>
+		<Caption>Pack Type</Caption>
+		<Caption>Fabrication</Caption>
+		<Caption>Airline</Caption>
+		<Caption>Minimum</Caption>
+		<Caption>-45kg</Caption>
+		<Caption>45kg</Caption>
+		<Caption>100kg</Caption>
+		<Caption>300kg</Caption>
+		<Caption>500kg</Caption>
+		<Caption>1000kg</Caption>
+		<Caption>FSC per Kg</Caption>
+		<Caption>SSC per Kg</Caption>
+		<Caption>X-Ray per Kg</Caption>
+		<Caption>ENS</Caption>
+		<Caption>Routing</Caption>
+		<Caption>Frequency</Caption>
+		<Caption>Transit Time</Caption>
+		<Caption>Comments</Caption>
+	</Express_Service_Grid>
+	<Air_Landside_Costs_Grid>
+		<Caption>Charge Type</Caption>
+		<Caption>Include Origin / Region</Caption>
+		<Caption>Exclude Region</Caption>
+		<Caption>Destination Country</Caption>
+		<Caption>Destination Port</Caption>
+		<Caption>Airline</Caption>
+		<Caption>Currency</Caption>
+		<Caption>Cost</Caption>
+		<Caption>Unit Of Measure</Caption>
+		<Caption>Minimum</Caption>
+		<Caption>Comments</Caption>
+	</Air_Landside_Costs_Grid>
+	<Air_Haulage_Costs_Grid>
+		<Caption>Destination</Caption>
+		<Caption>ExPort</Caption>
+		<Caption>Currency</Caption>
+		<Caption>Cost</Caption>
+		<Caption>Unit of Measure</Caption>
+		<Caption>Minimum Charge</Caption>
+		<Caption>FSC</Caption>
+		<Caption>CBM per pallet</Caption>
+		<Caption>Comments</Caption>
+	</Air_Haulage_Costs_Grid>
+	<Air_Storage_Costs_Grid>
+		<Caption>Charge Type</Caption>
+		<Caption>CFS</Caption>
+		<Caption>From Day</Caption>
+		<Caption>To Day</Caption>
+		<Caption>Free Time</Caption>
+		<Caption>Currency</Caption>
+		<Caption>Rate</Caption>
+		<Caption>Minimum</Caption>
+		<Caption>Unit of Measure</Caption>
+		<Caption>Comments</Caption>
+	</Air_Storage_Costs_Grid>
+	<Air_Amendment_Log_Grid>
+		<Caption>Change Type</Caption>
+		<Caption>Section</Caption>
+		<Caption>Date</Caption>
+		<Caption>Change Description</Caption>
+		<Caption>Logged By</Caption>
+		<Caption>Comments</Caption>
+	</Air_Amendment_Log_Grid>
+	<RoadFreight_Tariff_History>
+		<Caption>Tariff Version</Caption>
+		<Caption>Valid From</Caption>
+		<Caption>Valid To</Caption>
+		<Caption>Date Created</Caption>
+		<Caption>Time Created</Caption>
+		<Caption>View Tariff</Caption>
+		<Caption>Open Report</Caption>
+	</RoadFreight_Tariff_History>
+	<FullTrailer_Cost_Grid>
+		<Caption>Origin</Caption>
+		<Caption>Origin Port</Caption>
+		<Caption>Destination Country</Caption>
+		<Caption>Destination Port</Caption>
+		<Caption>Carrier</Caption>
+		<Caption>Pack Type</Caption>
+		<Caption>Equipment</Caption>
+		<Caption>Currency</Caption>
+		<Caption>Cost</Caption>
+		<Caption>Unit Of Measure</Caption>
+		<Caption>Valid From</Caption>
+		<Caption>Valid To</Caption>
+		<Caption>Transit Time</Caption>
+	</FullTrailer_Cost_Grid>
+	<FullTrailer_GOH_Costs_Grid>
+		<Caption>Origin</Caption>
+		<Caption>Origin CFS</Caption>
+		<Caption>Destination Country</Caption>
+		<Caption>Destination Port</Caption>
+		<Caption>Carrier</Caption>
+		<Caption>Hanging Type</Caption>
+		<Caption>Equipment</Caption>
+		<Caption>Min Bars</Caption>
+		<Caption>Max Bars</Caption>
+		<Caption>Currency</Caption>
+		<Caption>Cost</Caption>
+	</FullTrailer_GOH_Costs_Grid>
+	<FullTrailer_Landside_Cost_Grid>
+		<Caption>Charge Type</Caption>
+		<Caption>Destination Country</Caption>
+		<Caption>Destination Port</Caption>
+		<Caption>Carrier</Caption>
+		<Caption>Include Origin / Region</Caption>
+		<Caption>Exclude Region</Caption>
+		<Caption>Equipment</Caption>
+		<Caption>Currency</Caption>
+		<Caption>Cost</Caption>
+		<Caption>Unit Of Measure</Caption>
+	</FullTrailer_Landside_Cost_Grid>
+	<FullTrailer_Delivery_Cost_Grid>
+		<Caption>Destination</Caption>
+		<Caption>Delivery Type</Caption>
+		<Caption>Ex Port</Caption>
+		<Caption>Carrier</Caption>
+		<Caption>Haulier</Caption>
+		<Caption>Equipment</Caption>
+		<Caption>Currency</Caption>
+		<Caption>Cost</Caption>
+		<Caption>Unit Of Measure</Caption>
+	</FullTrailer_Delivery_Cost_Grid>
+	<Groupage_Trailer_Costs>
+		<Caption>Origin</Caption>
+		<Caption>Origin CFS</Caption>
+		<Caption>Destination Country</Caption>
+		<Caption>Destination Port</Caption>
+		<Caption>Min CBM</Caption>
+		<Caption>Max CBM</Caption>
+		<Caption>Currency</Caption>
+		<Caption>Cost</Caption>
+		<Caption>Unit Of Measure</Caption>
+		<Caption>Minimum Charge</Caption>
+		<Caption>Min Charge Measure</Caption>
+		<Caption>Valid From</Caption>
+		<Caption>Valid To</Caption>
+	</Groupage_Trailer_Costs>
+	<Groupage_GOH_Cost_Grid>
+		<Caption>Origin</Caption>
+		<Caption>Origin CFS</Caption>
+		<Caption>Destination Country</Caption>
+		<Caption>Destination Port</Caption>
+		<Caption>Carrier</Caption>
+		<Caption>Hanging Type</Caption>
+		<Caption>Min Bars</Caption>
+		<Caption>Max Bars</Caption>
+		<Caption>Currency</Caption>
+		<Caption>Cost</Caption>
+	</Groupage_GOH_Cost_Grid>
+	<Groupage_Landside_Cost_Grid>
+		<Caption>Charge</Caption>
+		<Caption>Destination Country</Caption>
+		<Caption>Destination Port</Caption>
+		<Caption>Carrier</Caption>
+		<Caption>Include Origin / Region</Caption>
+		<Caption>Exclude Region</Caption>
+		<Caption>Currency</Caption>
+		<Caption>Cost</Caption>
+		<Caption>Exclude Region</Caption>
+		<Caption>Currency</Caption>
+		<Caption>Cost</Caption>
+		<Caption>Unit Of Measure</Caption>
+	</Groupage_Landside_Cost_Grid>
+	<Groupage_Haulage_Cost_Grid>
+		<Caption>Destination</Caption>
+		<Caption>Delivery Type</Caption>
+		<Caption>Ex Port</Caption>
+		<Caption>Carrier</Caption>
+		<Caption>Min CBM</Caption>
+		<Caption>Max CBM</Caption>
+		<Caption>Currency</Caption>
+		<Caption>Cost</Caption>
+		<Caption>Unit Of Measure</Caption>
+	</Groupage_Haulage_Cost_Grid>
+	<RoadFreight_AmendmentLog_grid>
+		<Caption>Change Type</Caption>
+		<Caption>Section</Caption>
+		<Caption>Date</Caption>
+		<Caption>Change Description</Caption>
+		<Caption>Logged By</Caption>
+		<Caption>Comments</Caption>
+	</RoadFreight_AmendmentLog_grid>
+</Tariff>

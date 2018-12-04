@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<config>	
+	<Generic>
+		<Page_Timeout>10</Page_Timeout>
+		<Search_Form_Name_PO_Manager>LH_Order_SUTPOManagerTool_Search_Param</Search_Form_Name_PO_Manager>
+		<Edit_Form_Name_PO_Manager>LH_Order_SUTPOManagerTool_Edit</Edit_Form_Name_PO_Manager>
+		<Search_Form_Name_PO_ConfirmationForm>LIMA_Order_POConfirmation_SUT_PARAM</Search_Form_Name_PO_ConfirmationForm>
+		<Priority_Form_Name>LIMA_Order_Priority_PARAM</Priority_Form_Name>
+		<PO_ConfirmationForm>LIMA_Order_POConfirmation_SUT_INPUT</PO_ConfirmationForm>		
+		<PO_Confirmation_POStatusForm>ArenaQueryParams</PO_Confirmation_POStatusForm>
+		<Search_Form_Name_Manifest>LIMA_Shipment_SUT_Manifest_Param</Search_Form_Name_Manifest>	
+		<Form_Name_Manifest>LIMA_Shipment_SUT_Manifest_INPUT</Form_Name_Manifest>	
+		<Form_Name_Manifest_Review>LIMA_Shipment_SUT_Manifest_REVIEW</Form_Name_Manifest_Review>
+		<Form_Name_Manifest_Cancel>LIMA_Shipment_SUT_Manifest_CANCEL</Form_Name_Manifest_Cancel>
+		<Shipment_BookingForm>LH_Shipment_SUTShipmentBookingTool_Booking</Shipment_BookingForm>
+		<Shipment_BookingForm_Routing>LH_Shipment_SUTShipmentBookingTool_Routing</Shipment_BookingForm_Routing>
+		<Shipment_BookingForm_KPI>LH_Shipment_SUTShipmentBookingTool_KPI</Shipment_BookingForm_KPI>
+		<Shipment_BookingForm_Dialog>LH_Shipment_SUTShipmentBookingTool_Dialog</Shipment_BookingForm_Dialog>
+		<Shipment_BookingForm_Review>LH_Shipment_SUTShipmentBookingTool_Cancel</Shipment_BookingForm_Review>
+		<Search_Form_Name_Vendor_BookingForm>LIMA_Order_SUTVendorBooking_PARAM</Search_Form_Name_Vendor_BookingForm>
+		<Search_Form_Name_Ship_AuthorityForm>LIMA_Shipment_SUTShipAuthority_PARAM</Search_Form_Name_Ship_AuthorityForm>
+		<Search_Form_Name_Documents_SentForm>LIMA_DocumentsDespatch_SUT_PARAM</Search_Form_Name_Documents_SentForm>
+		<Documents_SentForm_Update>LIMA_DocumentsDespatch_SUT_INPUT</Documents_SentForm_Update>
+		<Documents_DashBoard_Update>Dashboard_Workflow_3</Documents_DashBoard_Update>
+		
+
+	</Generic>	
+	
+	<LIMA>
+		<LIMA_TestURL>https://uat-lima46.adjuno.com</LIMA_TestURL>
+		<LIMA_UserName>Saurabh.tandon</LIMA_UserName>
+		<LIMA_UserName_Anand>anand.mumbai</LIMA_UserName_Anand>
+		<LIMA_Password>adjuno123</LIMA_Password>
+		<Page_Title_HomePage>Adjuno LIMA UAT.Home</Page_Title_HomePage>
+		<Page_Title_PO_Manager>LIMA UAT 4.6.PO Manager</Page_Title_PO_Manager>
+		<Page_Title_PO_Confirmation>LIMA UAT 4.6.PO Confirmation (Search)</Page_Title_PO_Confirmation>		
+		<Page_Title_Production_Check>LIMA UAT 4.6.Production Check</Page_Title_Production_Check>		
+		<Page_Title_Despatch>LIMA UAT 4.6.Despatch</Page_Title_Despatch>
+		<Page_Title_Ship_Authority>LIMA UAT 4.6.Ship Authority</Page_Title_Ship_Authority>
+		<Search_Form_Name_Production_Check>LH_ProductionCheck_SUT_PARAM</Search_Form_Name_Production_Check>
+		<Production_Check_Form_Name>LH_ProductionCheck_SUT_INPUT</Production_Check_Form_Name>	
+		<View_Form_Name_PO>LH_PurchaseOrder</View_Form_Name_PO>		
+		<Page_Title_Priority>LIMA UAT 4.6.Priority</Page_Title_Priority>
+		<Search_Form_Name_Despatch>LIMA_Shipment_SUT_Despatch_Param</Search_Form_Name_Despatch>
+		<Despatch_Form_Name>LIMA_Shipment_SUT_Despatch_INPUT</Despatch_Form_Name>
+		<PO_Status_Form_Name>ArenaQueryParams</PO_Status_Form_Name>
+		<Page_Title_Cargo_Receipt>LIMA UAT 4.6.Cargo Receipt</Page_Title_Cargo_Receipt>
+		<Search_Form_Name_Cargo_Receipt>LIMA_Shipment_SUTCargoReceipt_PARAM</Search_Form_Name_Cargo_Receipt>
+		<Search_Form_Name_Shipment_BookingForm>LH_Shipment_SUTShipmentBookingTool_Search_Param</Search_Form_Name_Shipment_BookingForm>
+		<Receipt_Form_Name>LIMA_Shipment_SUTCargoReceipt_INPUT</Receipt_Form_Name>
+		<Search_Form_Name_Ship_Authority>LIMA_Shipment_SUTShipAuthority_PARAM</Search_Form_Name_Ship_Authority>
+		<Authorise_Form_Name>LIMA_Shipment_SUTShipAuthority_INPUT</Authorise_Form_Name>
+		<Manifest_Page_Titile>LIMA UAT 4.6.Manifest</Manifest_Page_Titile>
+		<Page_Title_DocumentsReceived>LIMA UAT 4.6.Documents Received (Documents Received)</Page_Title_DocumentsReceived>
+		<Page_Title_TrackAWR>track-trace</Page_Title_TrackAWR>
+		<Search_Documents_Received_Form_Name>LIMA_DocumentsReceived_SUT_PARAM</Search_Documents_Received_Form_Name>
+		<Update_Documents_Received_Form_Name>LIMA_DocumentsReceived_SUT_INPUT</Update_Documents_Received_Form_Name>
+		<Page_Title_ShipmentBooking>LIMA UAT 4.6.Shipment Booking</Page_Title_ShipmentBooking>
+		<Page_Title_DocumentsSent>LIMA UAT 4.6.Documents Sent (Documents Sent)</Page_Title_DocumentsSent>
+		<Dailog_Form_Name>LIMA_SUT_Dialog_INPUT</Dailog_Form_Name>
+		<Complete_Form_Name>ProgressForm</Complete_Form_Name>
+		<Dailog_Popup_Form_Name>DialogPopupPanel</Dailog_Popup_Form_Name>
+		<Search_Form_Name_Forwarder_Reference>LIMA_Shipment_SUT_ForwarderRef_PARAM</Search_Form_Name_Forwarder_Reference>
+		<Form_Name_Forwarder_Reference>LIMA_Shipment_SUT_ForwarderRef_INPUT</Form_Name_Forwarder_Reference>
+		<Forwarder_Reference_Title>LIMA UAT 4.6.Forwarder Reference</Forwarder_Reference_Title>
+		<Form_Name_BookingDiary>LIMA_Booking_Diary</Form_Name_BookingDiary>
+		<Booking_Diary_Title>Adjuno LIMA UAT.Booking Diary</Booking_Diary_Title>
+		<Search_Form_Name_Customs_Clearence>LIMA_Shipment_SUT_Clearance_PARAM</Search_Form_Name_Customs_Clearence>
+        <Page_Title_Customs_Clearence>LIMA UAT 4.6.Customs Clearance</Page_Title_Customs_Clearence>
+        <Custom_Clearence_Form_Name>LIMA_Shipment_SUT_Clearance_INPUT</Custom_Clearence_Form_Name>
+        <Page_Title_DC_Booking>Adjuno LIMA UAT.DC Booking</Page_Title_DC_Booking>
+		<Search_Form_Name_Confirm_Arrival>LIMA_Shipment_SUTConfirmArrival_PARAM</Search_Form_Name_Confirm_Arrival>
+		<Page_Title_Confirm_Arrival>LIMA UAT 4.6.Confirm Arrival</Page_Title_Confirm_Arrival>
+		<Arrival_Form_Name>LIMA_Shipment_SUTConfirmArrival_INPUT</Arrival_Form_Name>
+		<Confirm_Arrival_Track_Page>LH_ConfirmArrival1600</Confirm_Arrival_Track_Page>
+		<Search_Form_Name_Booking_Confirmation>LH_Delivery_DeliveryBookingConfirm_PARAM_SUT</Search_Form_Name_Booking_Confirmation>
+		<Page_Title_Booking_Confirmation>LIMA UAT 4.6.Booking Confirmation</Page_Title_Booking_Confirmation>
+		<Booking_Confirmation_Form_Name>LH_Delivery_DeliveryBookingConfirm_INPUT_SUT</Booking_Confirmation_Form_Name>
+		<Booking_Confirmation_Dailog_Form_Name>DialogPopupPanel</Booking_Confirmation_Dailog_Form_Name>		
+		<Booking_Confirmation_Track_Page>LH_Delivery_Confirmation300</Booking_Confirmation_Track_Page>
+		<Catalog_Configuration_Form_Name>Catalog_LIMA_Configuration</Catalog_Configuration_Form_Name>
+		<Search_Form_Name_Freight_Payments>LIMA_FreightPayment_PARAM</Search_Form_Name_Freight_Payments>
+		<Freight_Payments_Update_Form_Name>LIMA_FreightPayment_INPUT_UPDATE</Freight_Payments_Update_Form_Name>
+		<Form_Name_Catalog>ArenaQueryParams</Form_Name_Catalog>
+		<Search_Form_Name_Tariff>LIMA_TariffTool</Search_Form_Name_Tariff>
+		<Forwarder_Reference_Track_Page>LH_ForwarderReference800</Forwarder_Reference_Track_Page>
+		<Seafreight_Tariff_Form_Name>LIMA_Tariff_Seafreight</Seafreight_Tariff_Form_Name>
+		<Search_Form_Name_Tariff>LIMA_TariffTool</Search_Form_Name_Tariff>
+		<Airfreight_Tariff_Form_Name>LIMA_Tariff_Airfreight</Airfreight_Tariff_Form_Name>
+		<Roadfreight_Tariff_form_Name>LIMA_Tariff_Roadfreight</Roadfreight_Tariff_form_Name>
+		<Off_Dock_Location_PageTitle>LIMA UAT 4.6.Off Dock Location</Off_Dock_Location_PageTitle>
+		<Off_Dock_Location_FormName>LIMA_Shipment_SUT_Off_Dock_Storage_PARAM</Off_Dock_Location_FormName>
+		<Catalog_Page_Title>LIMA UAT 4.6.Catalog</Catalog_Page_Title>
+		<Off_Dock_Upload_Page_FormName>LH_Off_Dock_Storage_Upload_SUT</Off_Dock_Upload_Page_FormName>
+		<Off_Dock_Location_Chevron_FormName>LIMA_Shipment_SUT_Off_Dock_Storage_SUT</Off_Dock_Location_Chevron_FormName>
+		<Off_Dock_Location_FormName2>LH_OffDockLocation887</Off_Dock_Location_FormName2>
+		<Page_Title_Deleivered_Yard>LIMA UAT 4.6.Delivered Yard</Page_Title_Deleivered_Yard>
+		<Search_Form_Name_Deleivered_Yard>LH_Shipment_DeliveredYard_SUT_PARAMS</Search_Form_Name_Deleivered_Yard>
+		<DeliveredYard_Page_Form_Name>LH_Delivered_Yard__Upload_SUT</DeliveredYard_Page_Form_Name>
+		<DeliveryYardFormName>LH_Delivered_Yard_SUT</DeliveryYardFormName>
+		<DeliveredYardLinkFormName>LH_DeliveredYard893</DeliveredYardLinkFormName>
+		<Page_Title_Container_Restitution>LIMA UAT 4.6.Container Restitution</Page_Title_Container_Restitution>
+        <Search_Form_Name_Container_Restitution>LH_ContainerRestitution_SUT_PARAMS</Search_Form_Name_Container_Restitution>
+        <Restitution_Form_Name>LH_Container_Restitution_SUT</Restitution_Form_Name>
+        <Catalog_Page_Title>LIMA UAT 4.6.Catalog</Catalog_Page_Title>
+        <Search_Form_Name_Container_Restitution_Upload>LH_Container_Restitution_Upload_SUT</Search_Form_Name_Container_Restitution_Upload>
+		<TrackContainerRestitutionFormName>LH_ContainerRestitution1351</TrackContainerRestitutionFormName>
+		<Search_Form_Name_Vendor_Booking>LIMA_Order_SUTVendorBooking_PARAM</Search_Form_Name_Vendor_Booking>
+		<Page_Title_Vendor_Booking>LIMA UAT 4.6.Vendor Booking (Search)</Page_Title_Vendor_Booking>
+		<Vendor_Booking_Form_Name>LIMA_Order_SUTVendorBooking_Booking</Vendor_Booking_Form_Name>
+		<Vendor_Booking_Cancel_Page>LIMA_Order_SUTVendorBooking_Cancel</Vendor_Booking_Cancel_Page>
+		<Shipment_Request_FormName>LH_ShipmentRequest</Shipment_Request_FormName>
+		<Catalog_View_FormName>ViewItem</Catalog_View_FormName>
+		<Form_Name_EstimatedLandedCost>LIMA_Finance_EstimatedLandedCost_Tool</Form_Name_EstimatedLandedCost>
+		<PageTitle_EstimatedLandedCost>LIMA UAT 4.6.Estimated Landed Cost</PageTitle_EstimatedLandedCost>
+		<Catalog_EquipmentFormName>CatalogEquipment</Catalog_EquipmentFormName>
+		<Catalog_PageTitle>LIMA UAT 4.6.Catalog</Catalog_PageTitle>
+		<VendorBooking_DashBoard_Form_Name>Dashboard_Workflow_2</VendorBooking_DashBoard_Form_Name>
+		<Search_Form_Name_Delivery_Booking>Lima_Delivery_SUT_DeliveryBooking_PARAM</Search_Form_Name_Delivery_Booking>
+		<Delivery_Booking_Title>LIMA UAT 4.6.Delivery Booking</Delivery_Booking_Title>
+		<LIMA_TestURL_BookingDiary>https://uat-urbn.allportlima.net</LIMA_TestURL_BookingDiary>
+		<LIMA_UserName_BookingDiary>anand.mumbai</LIMA_UserName_BookingDiary>
+		<LIMA_Password_BookingDiary>Xperforce123</LIMA_Password_BookingDiary>
+		<LIMA_Booking_Diary_CatalogPageTitle>LIMA Demo.Catalog</LIMA_Booking_Diary_CatalogPageTitle>
+	</LIMA>
+	
+	<WFL>
+		<WFL_TestURL>https://uat-wfl2.tactivity.net</WFL_TestURL>
+		<WFL_UserName>xperforce</WFL_UserName>
+		<WFL_Password>adjuno</WFL_Password>
+		<WFL_Title_HomePage>WFL UAT.Home</WFL_Title_HomePage>
+		<WFL_Title_PO_Manager>WFL UAT.PO Manager</WFL_Title_PO_Manager>
+		<WFL_Page_Title_Priority>WFL UAT.Priority</WFL_Page_Title_Priority>
+		<WFL_Page_Title_Catalog>WFL UAT.Catalog</WFL_Page_Title_Catalog>
+		<Form_Name_Certificate_Confirmation>LIMA_Shipment_SUTPOCertification_PARAM</Form_Name_Certificate_Confirmation>
+		<WFL_Page_Title_Certificate_Confirmation>WFL UAT.Certificate Confirmation</WFL_Page_Title_Certificate_Confirmation>
+		<Form_Name_Catalog>ArenaQueryParams</Form_Name_Catalog>
+		<Manifest_Page_Titile>WFL UAT.Manifest</Manifest_Page_Titile>
+		<Search_Form_Name_Certificate_Confirmation>div_LIMA_Shipment_SUTPOCertification_PARAM</Search_Form_Name_Certificate_Confirmation>
+		<Form_Name_Certificate_Page>LIMA_Shipment_SUTPOCertification_UPDATE</Form_Name_Certificate_Page>
+		<Form_Name_Complete_Page>ProgressForm</Form_Name_Complete_Page>
+		<WFL_Customer_UserName>Xper.Cust</WFL_Customer_UserName>
+		<WFL_Customer_Password>Adjuno1234</WFL_Customer_Password>
+		<Form_Name_Customer_Page>div_Dashboard_DeliveryPlanning_Workflow_7</Form_Name_Customer_Page>
+		<Form_Name_Destination_QC_PreInspection>LIMA_Shipment_SUT_DestinationPreInspection_PARAM</Form_Name_Destination_QC_PreInspection>
+		<WFL_Destination_QC_PreInspection_WFLRef_FormName>LH_PurchaseOrder</WFL_Destination_QC_PreInspection_WFLRef_FormName>
+		<WFL_Page_Title_Destination_QC_PreInspection>WFL UAT.Destination QC (Pre-Inspection)</WFL_Page_Title_Destination_QC_PreInspection>
+		<WFL_DestinationQC_FormName>LIMA_Shipment_SUT_DestinationPreInspection_UPDATE</WFL_DestinationQC_FormName>
+		<WFL_DestinationQC_PostInspection_FormName>LIMA_Shipment_SUT_DestinationPostInspection_PARAM</WFL_DestinationQC_PostInspection_FormName>
+		<WFL_DestinationQC_PostInspection_Page_Title>WFL UAT.Destination QC (Post-Inspection)</WFL_DestinationQC_PostInspection_Page_Title>
+		<WFL_Destination_QC_PostInspection_GridFormName>LIMA_Shipment_SUT_DestinationPostInspection_UPDATE</WFL_Destination_QC_PostInspection_GridFormName>
+		<WFL_Destination_QC_PostInspection_WFLRefFormName>LH_PurchaseOrder</WFL_Destination_QC_PostInspection_WFLRefFormName>
+		<WFL_DestinationQC_PostInspection_Complete_FieldValidation_FormName>ProgressForm</WFL_DestinationQC_PostInspection_Complete_FieldValidation_FormName>
+		<WFL_DestinationQC_PostDisposal_FormName>LIMA_Shipment_SUT_PostDisposal_PARAM</WFL_DestinationQC_PostDisposal_FormName>
+		<WFL_DestinationQC_PostDisposal_Page_Title>WFL UAT.Destination QC (Post-Disposal)</WFL_DestinationQC_PostDisposal_Page_Title>
+		<WFL_Destination_QC_PostDisposal_WFLRefFormName>LH_PurchaseOrder</WFL_Destination_QC_PostDisposal_WFLRefFormName>
+		<WFL_Destination_QC_PostDisposal_GridFormName>LIMA_Shipment_SUT_PostDisposal_UPDATE</WFL_Destination_QC_PostDisposal_GridFormName>
+		<WFL_Title_Delivery_Booking>WFL UAT.Delivery Booking</WFL_Title_Delivery_Booking>
+		<WFL_Form_Name_Delivery_Booking>Lima_Delivery_SUT_DeliveryBooking_PARAM</WFL_Form_Name_Delivery_Booking>
+		<WFL_Delivery_Booking_Chevorn>LIMA_Delivery_SUT_DeliveryBooking_Input</WFL_Delivery_Booking_Chevorn>
+		<WFL_Booking_Cancel>Lima_Delivery_SUT_DeliveryBooking_CANCEL</WFL_Booking_Cancel>
+		<WFL_DeliveryBooking_WFLRefFormName>LH_PurchaseOrder</WFL_DeliveryBooking_WFLRefFormName>
+		<WFL_DeliveryBooking_Dialog>LIMA_Delivery_SUT_DeliveryBooking_Dialog</WFL_DeliveryBooking_Dialog>
+		<WFL_Complete_FieldValidation_FormName>ProgressForm</WFL_Complete_FieldValidation_FormName>
+		<WFL_DeliveryPlanning_FormName>LIMA_Order_DeliveryPlanning_PARAM</WFL_DeliveryPlanning_FormName>
+		<WFL_DeliveryPlanning_WFLRefFormName>LH_PurchaseOrder</WFL_DeliveryPlanning_WFLRefFormName>
+		<WFL_DeliveryPlanning_PageTitle>WFL UAT.Delivery Planning (Delivery Planning Tool)</WFL_DeliveryPlanning_PageTitle>
+		<WFL_DeliveryPlanning_DeliveryPlanningStage_FormName>LIMA_Order_DeliveryPlanning_INPUT</WFL_DeliveryPlanning_DeliveryPlanningStage_FormName>
+
+		
+	</WFL>
+			
+</config>

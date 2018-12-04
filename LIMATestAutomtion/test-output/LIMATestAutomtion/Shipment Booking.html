@@ -1,0 +1,611 @@
+<html>
+<head>
+<title>TestNG:  Shipment Booking</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Shipment Booking</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>54/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 05 12:12:12 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>1177 seconds (1177173 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_37_verifyMandatoryFieldComment()'><b>Test_37_verifyMandatoryFieldComment</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	*****test ID:_37_&apos;&gt; KPI Reason is a required field&apos; message is not displayed***** expected [true] but found [false]
+	at com.lima.test.AdjunoLIMAShipmentBookingTest.Test_37_verifyMandatoryFieldComment(AdjunoLIMAShipmentBookingTest.java:1163)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace356691811", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace356691811'><pre>java.lang.AssertionError: The following asserts failed:
+	*****test ID:_37_&apos;&gt; KPI Reason is a required field&apos; message is not displayed***** expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lima.test.AdjunoLIMAShipmentBookingTest.Test_37_verifyMandatoryFieldComment(AdjunoLIMAShipmentBookingTest.java:1163)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_66_verifyBookingeditViewDetails()'><b>Test_66_verifyBookingeditViewDetails</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;ProgressForm_FeedbackControl_inner&apos;]&quot;}
+Command duration or timeout: 10.18 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3e80a194-8e69-4c29-b770-087fbb04eda9
+*** Element info: {Using=xpath, value=.//*[@id=&apos;ProgressForm_FeedbackControl_inner&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.getText(Unknown Source)
+	at com.lima.test.AdjunoLIMAShipmentBookingTest.Test_66_verifyBookingeditViewDetails(AdjunoLIMAShipmentBookingTest.java:1648)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;ProgressForm_FeedbackControl_inner&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Anand/AppData/Local/Temp/anonymous139745649108824676webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Anand/AppData/Local/Temp/anonymous139745649108824676webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7646139", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace7646139'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;ProgressForm_FeedbackControl_inner&apos;]&quot;}
+Command duration or timeout: 10.18 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3e80a194-8e69-4c29-b770-087fbb04eda9
+*** Element info: {Using=xpath, value=.//*[@id=&apos;ProgressForm_FeedbackControl_inner&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.getText(Unknown Source)
+	at com.lima.test.AdjunoLIMAShipmentBookingTest.Test_66_verifyBookingeditViewDetails(AdjunoLIMAShipmentBookingTest.java:1648)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;ProgressForm_FeedbackControl_inner&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Anand/AppData/Local/Temp/anonymous139745649108824676webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Anand/AppData/Local/Temp/anonymous139745649108824676webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div></td>
+<td>39</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_81_verifyDailogColumn()'><b>Test_81_verifyDailogColumn</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;InnerContent&apos;]/div[3]/div[2]/div[2]/table/tbody/tr[2]/td[25]/span/a&quot;}
+Command duration or timeout: 10.28 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3e80a194-8e69-4c29-b770-087fbb04eda9
+*** Element info: {Using=xpath, value=.//*[@id=&apos;InnerContent&apos;]/div[3]/div[2]/div[2]/table/tbody/tr[2]/td[25]/span/a}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.getAttribute(Unknown Source)
+	at com.lima.test.AdjunoLIMAShipmentBookingTest.Test_81_verifyDailogColumn(AdjunoLIMAShipmentBookingTest.java:1916)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;InnerContent&apos;]/div[3]/div[2]/div[2]/table/tbody/tr[2]/td[25]/span/a&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Anand/AppData/Local/Temp/anonymous139745649108824676webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Anand/AppData/Local/Temp/anonymous139745649108824676webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1440995011", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1440995011'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;InnerContent&apos;]/div[3]/div[2]/div[2]/table/tbody/tr[2]/td[25]/span/a&quot;}
+Command duration or timeout: 10.28 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3e80a194-8e69-4c29-b770-087fbb04eda9
+*** Element info: {Using=xpath, value=.//*[@id=&apos;InnerContent&apos;]/div[3]/div[2]/div[2]/table/tbody/tr[2]/td[25]/span/a}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.getAttribute(Unknown Source)
+	at com.lima.test.AdjunoLIMAShipmentBookingTest.Test_81_verifyDailogColumn(AdjunoLIMAShipmentBookingTest.java:1916)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;InnerContent&apos;]/div[3]/div[2]/div[2]/table/tbody/tr[2]/td[25]/span/a&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Anand/AppData/Local/Temp/anonymous139745649108824676webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Anand/AppData/Local/Temp/anonymous139745649108824676webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div></td>
+<td>15</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_84_verifyShipAuthorityBookingStatus()'><b>Test_84_verifyShipAuthorityBookingStatus</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	***** Test Id:84 - No results are found  ***** expected [true] but found [false]
+	at com.lima.test.AdjunoLIMAShipmentBookingTest.Test_84_verifyShipAuthorityBookingStatus(AdjunoLIMAShipmentBookingTest.java:2021)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace59465509", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace59465509'><pre>java.lang.AssertionError: The following asserts failed:
+	***** Test Id:84 - No results are found  ***** expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lima.test.AdjunoLIMAShipmentBookingTest.Test_84_verifyShipAuthorityBookingStatus(AdjunoLIMAShipmentBookingTest.java:2021)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>35</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_0_accessshipmentBooking()'><b>Test_0_accessshipmentBooking</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>28</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_10_verifyPODetails()'><b>Test_10_verifyPODetails</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>44</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_11_compareGridData()'><b>Test_11_compareGridData</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_13_verifyGridHeader()'><b>Test_13_verifyGridHeader</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>5</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_16_17_verifyShipmentDetailsData()'><b>Test_16_17_verifyShipmentDetailsData</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>3</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_19_verifyinvalidcheckbox()'><b>Test_19_verifyinvalidcheckbox</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>49</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_20_verifyBookingCheveron()'><b>Test_20_verifyBookingCheveron</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>47</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_21_verifyBookingDetails()'><b>Test_21_verifyBookingDetails</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>3</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_22_clickPOHyperlink()'><b>Test_22_clickPOHyperlink</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>6</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_23_26_clickBookingProduct()'><b>Test_23_26_clickBookingProduct</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>18</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_27_29_verifyBookingValue()'><b>Test_27_29_verifyBookingValue</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>12</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_2_checkForChevorons()'><b>Test_2_checkForChevorons</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>1</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_30_clickRoutingTab()'><b>Test_30_clickRoutingTab</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>11</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_31_checkForShipmentSectionField()'><b>Test_31_checkForShipmentSectionField</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>1</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_32_setValueForShipmentSectionField()'><b>Test_32_setValueForShipmentSectionField</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>8</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_33_checkForVoyageLegsSectionField()'><b>Test_33_checkForVoyageLegsSectionField</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>1</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_34_clickaddLegButton()'><b>Test_34_clickaddLegButton</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>4</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_35_deleteLegButton()'><b>Test_35_deleteLegButton</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>5</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_36_verifyKPIdetails()'><b>Test_36_verifyKPIdetails</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>6</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_38_setKPIReasonField()'><b>Test_38_setKPIReasonField</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>17</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_39_verifyViewDetails()'><b>Test_39_verifyViewDetails</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>8</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_3_checkForShipmentBookingfields()'><b>Test_3_checkForShipmentBookingfields</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>1</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_40_accessEdit()'><b>Test_40_accessEdit</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>49</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_42_verifyPOStatus()'><b>Test_42_verifyPOStatus</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>46</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_45_clickSearchTab1()'><b>Test_45_clickSearchTab1</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>11</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_46_amendedPOdetails()'><b>Test_46_amendedPOdetails</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>35</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_47_selectamenmendshipmentcheckbox()'><b>Test_47_selectamenmendshipmentcheckbox</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>18</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_48_EditBookingfielddetils()'><b>Test_48_EditBookingfielddetils</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>28</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_49_veifyKPIfielddetils()'><b>Test_49_veifyKPIfielddetils</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>37</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_51_verifyeditViewDetails()'><b>Test_51_verifyeditViewDetails</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>6</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_52_accessEditDetails()'><b>Test_52_accessEditDetails</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>47</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_55_verifyeditPOStatus()'><b>Test_55_verifyeditPOStatus</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>45</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_61_verifySearchtabFields2()'><b>Test_61_verifySearchtabFields2</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>16</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_62_verifyBookingmadeStatus()'><b>Test_62_verifyBookingmadeStatus</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>26</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_63_clickcancelbutton()'><b>Test_63_clickcancelbutton</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>15</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_64_verifyMandatoryFieldCommentKPI()'><b>Test_64_verifyMandatoryFieldCommentKPI</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>14</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_65_setBookingKPIReasonField()'><b>Test_65_setBookingKPIReasonField</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>17</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_67_accessBookingEditDetails()'><b>Test_67_accessBookingEditDetails</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>48</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_68_lnkshipmentbooking()'><b>Test_68_lnkshipmentbooking</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>1</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_69_verifyBookingPOStatus()'><b>Test_69_verifyBookingPOStatus</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>44</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_72_verifySearchtabFields3()'><b>Test_72_verifySearchtabFields3</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>15</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_73_verifyBookingmadeStatus3()'><b>Test_73_verifyBookingmadeStatus3</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>29</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_74_clickAddDialogbutton()'><b>Test_74_clickAddDialogbutton</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>12</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_75_checkDialogFields()'><b>Test_75_checkDialogFields</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_76_verifyMandatoryDialogMessage()'><b>Test_76_verifyMandatoryDialogMessage</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>31</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_77_verifyCompleteMessage()'><b>Test_77_verifyCompleteMessage</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>26</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_83_verifyVendorBookingStatus()'><b>Test_83_verifyVendorBookingStatus</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>49</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.Test_9_verifyIncorrectmsg()'><b>Test_9_verifyIncorrectmsg</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>24</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.clickKPICheveron()'><b>clickKPICheveron</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>12</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.clkshipmentbooking()'><b>clkshipmentbooking</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>1</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.compareBookingGridData()'><b>compareBookingGridData</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.compareEDITShipmentGridData()'><b>compareEDITShipmentGridData</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>20</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.compareEditGridData()'><b>compareEditGridData</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAShipmentBookingTest.setVoyageField()'><b>setVoyageField</b><br>Test class: com.lima.test.AdjunoLIMAShipmentBookingTest</td>
+<td></td>
+<td>19</td>
+<td>com.lima.test.AdjunoLIMAShipmentBookingTest@589838eb</td></tr>
+</table><p>
+</body>
+</html>

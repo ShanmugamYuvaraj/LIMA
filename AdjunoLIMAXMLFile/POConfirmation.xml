@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<POConfirmation>
+
+     <SearchParams>
+		<InvalidPoNumber>abc1eewtsg</InvalidPoNumber>
+		<ConfirmationStatusAny>{Any}</ConfirmationStatusAny>
+		<ConfirmationStatusPending>Pending</ConfirmationStatusPending>
+		<ConfirmationStatusUnderQuery>Under Query</ConfirmationStatusUnderQuery>
+		<ConfirmationStatusConfirmed>Confirmed</ConfirmationStatusConfirmed>
+		<ConfirmationStatus>Pending</ConfirmationStatus>
+		<ReasonCode>Quality Issue</ReasonCode>
+		<ConfirmationStatus1>Query</ConfirmationStatus1>
+        <ConfirmationStatus2>Confirmed</ConfirmationStatus2>
+		<Comments>very good</Comments>
+		<VendorBooked_Status>PO Query</VendorBooked_Status>
+		
+     </SearchParams>
+
+	<PurchaseOrderDetails>
+		<Caption>PO Number</Caption>
+		<Caption>Vendor</Caption>
+		<Caption>Buying Agent</Caption>
+		<Caption>Factory</Caption>
+		<Caption>Origin</Caption>
+		<Caption>Buying Terms</Caption>
+		<Caption>Purchase Currency</Caption>
+		<Caption>Payment Terms</Caption>
+		<Caption>Confirmation Status</Caption>
+		<Caption>Dialog(s)</Caption>
+	</PurchaseOrderDetails>
+
+	<ProductDetails>
+		<Caption>Product</Caption>
+		<Caption>Sku</Caption>
+		<Caption>Colour</Caption>
+		<Caption>Size</Caption>
+		<Caption>Description</Caption>
+		<Caption>Priority</Caption>
+		<Caption>Quantity</Caption>
+		<Caption>Pack Type</Caption>
+		<Caption>Unit Price</Caption>
+		<Caption>Total Cost</Caption>
+		<Caption>Origin Port</Caption>
+		<Caption>Mode</Caption>
+		<Caption>Ship Date</Caption>
+		<Caption>Latest Ship Date</Caption>
+		<Caption>Delivery Date</Caption>
+		<Caption>Destination</Caption>
+		<Caption>Vendor Reference</Caption>
+		<Caption>Confirmation Status</Caption>
+		<Caption>Reason Code</Caption>
+		<Caption>Comments</Caption>
+	</ProductDetails>
+
+
+</POConfirmation>

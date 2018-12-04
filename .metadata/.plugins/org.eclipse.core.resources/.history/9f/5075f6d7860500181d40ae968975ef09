@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="LIMATestAutomtion" thread-count="1" verbose="1" annotations="JDK">
+	
+<!-- 	<test name="Delivery Yard"> -->
+<!-- 		<classes> -->
+<!-- 				<class name="com.lima.test.AdjunoLIMADeliveredYardTest"/> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+	
+	<test name="Off Dock Location">
+		<classes>
+				<class name="com.lima.test.AdjunoLIMAOffDockLocationTest"/>
+		</classes>
+	</test>
+	
+<!-- 	<test name="Container Restitution"> -->
+<!-- 		<classes> -->
+<!-- 				<class name="com.lima.test.AdjunoLIMAContainerRestitutionTest"/> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+	
+	
+</suite>

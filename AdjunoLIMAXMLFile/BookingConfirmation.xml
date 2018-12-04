@@ -1,0 +1,47 @@
+<Booking_Confirmation>
+	<Search_Params>
+		<Status_Pending>Pending</Status_Pending>
+		<Status_Declined>Declined</Status_Declined>
+		<Status_Any>{Any}</Status_Any>
+		<Status_Confirmed>Confirmed</Status_Confirmed>
+		<Status_Booked>Booked</Status_Booked>
+		<Invalid_PONumber>xyz</Invalid_PONumber>
+		<Confirmed_Status_No>No</Confirmed_Status_No>
+		<Confirmed_Status_Yes>Yes</Confirmed_Status_Yes>
+		<Reason>DC Congestion</Reason>
+		<Mail_ID>xyz@xperforce.com</Mail_ID>
+		<Message>Booking Confirmation</Message>
+	</Search_Params>
+	<BookingConfirmation_Grid>
+		<Caption>Destination</Caption>
+		<Caption>Area</Caption>
+		<Caption>Bay</Caption>
+		<Caption>Booking Ref</Caption>
+		<Caption>Booking Date</Caption>
+		<Caption>Booking Time</Caption>
+		<Caption>Duration</Caption>
+		<Caption>Delivery Method</Caption>
+		<Caption>Container/MAWB Trailer</Caption>
+		<Caption>Order Type</Caption>
+		<Caption>Client Ref</Caption>
+		<Caption>Confirmed</Caption>
+		<Caption>Haulier</Caption>
+		<Caption>Reason</Caption>
+	</BookingConfirmation_Grid>
+	<BookingConfirmationPO_Grid>
+		<Caption>PO Number</Caption>
+		<Caption>Product</Caption>
+		<Caption>SKU</Caption>
+		<Caption>Identifier</Caption>
+		<Caption>Pack Type</Caption>
+		<Caption>Mode</Caption>
+		<Caption>PO Delivery Date</Caption>
+		<Caption>Ship Qty</Caption>
+		<Caption>Bkd Qty</Caption>
+		<Caption>Ship Ctns</Caption>
+		<Caption>Bkd Ctns</Caption>
+		<Caption>Ship CBM</Caption>
+		<Caption>Bkd CBM</Caption>
+		
+	</BookingConfirmationPO_Grid>
+</Booking_Confirmation>

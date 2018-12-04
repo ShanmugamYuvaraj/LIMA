@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+
+<ShipmentBooking>
+
+     <SearchParams>
+	    <InvalidPoNumber>seewass122</InvalidPoNumber>
+		<PoNumber1>LIMATEST82XPF767</PoNumber1>
+		<PoNumber2>LIMATEST29XPF886</PoNumber2>
+		<Mode>Air</Mode>
+		<Mode1>Sea</Mode1>
+		<ConfirmationStatusPendingShip>Awaiting</ConfirmationStatusPendingShip>
+		<ConfirmationStatusPendingShip1>Bookings Made</ConfirmationStatusPendingShip1>
+		<ConfirmationStatusPendingShip2>Booked</ConfirmationStatusPendingShip2>
+		<Bookingstatus>Vendor Booked</Bookingstatus>
+		<Bookingstatus1>Complete(R)</Bookingstatus1>
+		<Bookingstatus2>Overbooked(R)</Bookingstatus2>
+		<Bookingstatus3>Partial Booked</Bookingstatus3>
+		<VendorBooked>Yes</VendorBooked>
+		<Status>Awaiting Authorisation</Status>
+		<Status1>Vendor Booked</Status1>
+		<Status2>Awaiting</Status2>
+		<Subject>abc49</Subject>
+		<Message1>abcd</Message1>
+		<CopybyEmailto1>nehasingh@xperforce.com</CopybyEmailto1>
+		<Bkdctns>2.0</Bkdctns>
+		<Bkdcbm>1.000000</Bkdcbm>
+		<Grkgs>0.2</Grkgs>
+		<Chkgs>1.00</Chkgs>
+		<PackType>Boxed</PackType>
+		<FreightTerms>50/50</FreightTerms>
+		<Carrier>ABV</Carrier>
+		<CarrierType>Direct</CarrierType>
+		<Vessel>Agnes Rickmers</Vessel>
+		<Voyage>1234A</Voyage>
+		<OriginPort>Antwerp</OriginPort>
+		<DestinationPort>Chittagong</DestinationPort>
+		<KPIReason>Mode Change</KPIReason>
+		<Leg>Flight</Leg>
+		<ContactNo>7856435689</ContactNo>
+		<PackTypeedit>Boxed</PackTypeedit>
+		<FreightTermsedit>Collect</FreightTermsedit>
+		<Carrieredit>Air China</Carrieredit>
+		<CarrierTypeedit>FECL</CarrierTypeedit>
+		
+		</SearchParams>
+	 
+</ShipmentBooking>

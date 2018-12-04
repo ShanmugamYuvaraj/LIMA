@@ -1,0 +1,246 @@
+<PO_Manager>
+	<Order_Header>
+		<WLF_Ref>WF-0001668</WLF_Ref>
+		<WLF_Ref_Invalid>shdb</WLF_Ref_Invalid>
+		<Order_Type>Initial</Order_Type>
+		<Consignee>Consignee Name Goes Here</Consignee>
+		<Customer>Luscious Farms Ltd (WFLC03)</Customer>		
+	</Order_Header>
+	
+	<Order_Summary>
+		<Supplier>Indeed Laboratories</Supplier>	
+		<Origin_Desc>Argentina</Origin_Desc>
+		<Mode>Air</Mode>	
+		<Destination_Port_Desc>Chittagong</Destination_Port_Desc>
+		<Category>Category A</Category>
+		<Department>Dept 2</Department>
+		<Destination_Desc>North East RDC</Destination_Desc>
+		<ExFactory_Date></ExFactory_Date>
+		<Latest_Shipment_Date></Latest_Shipment_Date>
+		<DeliveryDate></DeliveryDate>	
+		<Certificate_Type>Animal Product (A)</Certificate_Type>
+	</Order_Summary>
+	
+	<Product_Summary>
+		<Buyer>Buyer A</Buyer>
+		<Buying_Agent>Buying Agent A</Buying_Agent>
+		<Buying_Terms>DDP</Buying_Terms>
+		<Purchase_Currency>Australia Dollar</Purchase_Currency>
+		<Retail_Currency>Australia Dollar</Retail_Currency>
+		<Merchandiser>Merchandiser 1</Merchandiser>
+		<Quantity_Tolerance>20</Quantity_Tolerance>
+		<Season>AW12</Season>
+		<Load_Type>AIR</Load_Type>
+		<Promotion_Code></Promotion_Code>
+		<Lead_Time></Lead_Time>
+		<Region_Code></Region_Code>
+		<Buying_Commission></Buying_Commission>
+		<Payment_Terms></Payment_Terms>
+		<Promotion></Promotion>
+		<Factory></Factory>
+		<Usance_Terms></Usance_Terms>
+		<Exchange_Rate></Exchange_Rate>
+		<Promo_Start_Date></Promo_Start_Date>
+		<Refrigeration>+20 Degrees Centigrade</Refrigeration>
+	</Product_Summary>
+	
+	<New_Product>
+		<New_Product_Code>st06</New_Product_Code>
+		<New_Identifie>test</New_Identifie>	
+		<New_SKU_Code>Test</New_SKU_Code>
+		<Quantity>20</Quantity>
+		<Description>This is test product</Description>
+		<Colour>green</Colour>
+		<Primary_Size>12</Primary_Size>
+		<Secondary_Size>13</Secondary_Size>
+		<Cartons>3</Cartons>
+		<Cube>2.00000</Cube>
+		<Weight>20.00</Weight>
+		<Weight_Type>KGS</Weight_Type>
+		<Pack_Type>Boxed</Pack_Type>
+		<Unit_Price>25.0000</Unit_Price>
+		<Retail_Price>30.00</Retail_Price>
+		<Projected_Landed_Cost>35.00</Projected_Landed_Cost>
+		<Priority>Yes</Priority>
+		<Line_Type_1>Direct Order</Line_Type_1>
+		<Line_Type_3>Stock Order</Line_Type_3>
+		<Line_Type_2>Cross Dock Order</Line_Type_2>
+	</New_Product>
+	
+	<Product_Card_Value>
+		<Vendor_Ref>abc</Vendor_Ref>
+		<Commodity_Code>abc</Commodity_Code>
+		<Duty_Rate>10</Duty_Rate>
+		<QA_Request>test</QA_Request>
+		<Pieces_Per_Inner>10</Pieces_Per_Inner>
+		<Inners_Per_Outer>10</Inners_Per_Outer>
+		<Carton_Length>12</Carton_Length>
+		<Carton_Width>14</Carton_Width>
+		<Carton_Depth>15</Carton_Depth>
+		<Outer_Weight>40.00</Outer_Weight>
+		<Outer_EAN>1</Outer_EAN>
+		<Inner_EAN>1</Inner_EAN>
+		<TI>1</TI>
+		<HI>1</HI>
+		<Net_Weight>20.00</Net_Weight>
+	</Product_Card_Value>
+	
+	<Lima_Product_Summary_Details_Captions>
+		<caption>Product</caption>
+		<caption>Identifier</caption>
+		<caption>SKU</caption>
+		<caption>Description</caption>
+		<caption>Colour</caption>
+		<caption>Primary Size</caption>
+		<caption>Secondary Size</caption>
+		<caption>Quantity</caption>
+		<caption>Cartons</caption>
+		<caption>Cube</caption>
+		<caption>Weight</caption>
+		<caption>Weight Type</caption>
+		<caption>Pack Type</caption>
+		<caption>Unit Price</caption>
+		<caption>Total Price</caption>
+		<caption>Retail Price</caption>
+		<caption>Projected Landed Cost</caption>
+		<caption>Priority</caption>
+		<caption>Mode</caption>
+		<caption>Ex Factory Date</caption>
+		<caption>Ship Date</caption>
+		<caption>Latest Ship Date</caption>
+		<caption>Delivery Date</caption>
+		<caption>Split</caption>
+		<caption>Product Destination</caption>
+		<caption>Department</caption>
+		<caption>Category</caption>
+		<caption>Buyer</caption>
+		<caption>Season</caption>
+	</Lima_Product_Summary_Details_Captions>
+	
+	<Wfl_Product_Summary_Details_Captions>
+		<caption>Product</caption>
+		<caption>Identifier</caption>
+		<caption>SKU</caption>
+		<caption>Description</caption>
+		<caption>Colour</caption>
+		<caption>Cartons</caption>
+		<caption>Cube</caption>
+		<caption>Weight</caption>
+		<caption>Weight Type</caption>
+		<caption>Pack Type</caption>
+		<caption>Unit Price</caption>
+		<caption>Total Price</caption>
+		<caption>Retail Price</caption>
+		<caption>Projected Landed Cost</caption>
+		<caption>Priority</caption>
+		<caption>Mode</caption>
+		<caption>Ex Producer Date</caption>
+		<caption>Ship Date</caption>
+		<caption>Latest Ship Date</caption>
+		<caption>Delivery Date</caption>
+		<caption>Split</caption>
+		<caption>Product Destination</caption>
+		<caption>Department</caption>
+		<caption>Category</caption>
+		<caption>Buyer</caption>
+		<caption>Batch No.</caption>
+		<caption>Pallet ID</caption>
+		<caption>Best Before</caption>
+		<caption>DisplayUntil</caption>
+		<caption>Refrigeration</caption>
+		<caption>LineType</caption>
+		<caption>Line Consignee</caption>
+		<caption>Ex Producer Date</caption>
+	</Wfl_Product_Summary_Details_Captions>
+	
+	<Lima_Product_Card_Captions>
+		<caption>Product</caption>
+		<caption>Identifier</caption>
+		<caption>SKU</caption>
+		<caption>Description</caption>
+		<caption>Customer Ref</caption>
+		<caption>Authorisation Date</caption>
+		<caption>Commodity Code</caption>
+		<caption>Duty Rate</caption>
+		<caption>QA Request</caption>
+		<caption>Pieces Per Inner</caption>
+		<caption>Inners Per Outer</caption>
+		<caption>Carton Type</caption>
+		<caption>Carton Length</caption>
+		<caption>Carton Width</caption>
+		<caption>Carton Depth</caption>
+		<caption>Outer Weight</caption>
+		<caption>Outer EAN</caption>
+		<caption>Inner EAN</caption>
+		<caption>TI</caption>
+		<caption>HI</caption>
+		<caption>Net Weight</caption>
+	</Lima_Product_Card_Captions>
+	
+	<Wfl_Product_Card_Captions>
+		<caption>Product</caption>
+		<caption>Identifier</caption>
+		<caption>SKU</caption>
+		<caption>Description</caption>
+		<caption>Authorisation Date</caption>
+		<caption>Commodity Code</caption>
+		<caption>Duty Rate</caption>
+		<caption>QA Request</caption>
+		<caption>Pieces Per Inner</caption>
+		<caption>Inners Per Outer</caption>
+		<caption>Carton Type</caption>
+		<caption>Carton Length</caption>
+		<caption>Carton Width</caption>
+		<caption>Carton Depth</caption>
+		<caption>Outer Weight</caption>
+		<caption>Outer EAN</caption>
+		<caption>Inner EAN</caption>
+		<caption>TI</caption>
+		<caption>HI</caption>
+		<caption>Net Weight</caption>
+		<caption>Certificate Type</caption>		
+		<caption>Order Number</caption>
+	</Wfl_Product_Card_Captions>
+	
+	<Ratio_Pack_Captions>
+		<caption>Pack Ref</caption>
+		<caption>Total Packs</caption>
+		<caption>Pieces Per Pack</caption>
+		<caption>Pack Price</caption>		
+	</Ratio_Pack_Captions>	
+	
+	<Ratio_Pack_Details_Captions>
+		<caption>Pack Ref</caption>
+		<caption>Product</caption>
+		<caption>Identifier</caption>
+		<caption>SKU</caption>
+		<caption>Description</caption>
+		<caption>Colour</caption>
+		<caption>Primary Size</caption>
+		<caption>Secondary Size</caption>
+		<caption>Quantity</caption>
+		<caption>Pieces Per Pack</caption>
+		<caption>Unit Price</caption>
+	</Ratio_Pack_Details_Captions>	
+	
+	<BWS>
+		<caption>Product</caption>
+		<caption>Identifier</caption>
+		<caption>SKU</caption>
+		<caption>Tax Code</caption>
+		<caption>ABV</caption>
+		<caption>CL</caption>
+		<caption>Wine Type</caption>
+		<caption>Line Duty</caption>
+		<caption>Vintage</caption>		
+	</BWS>	
+	
+	<BWS_Value>
+		<Tax_Code>testcode</Tax_Code>
+		<ABV>testabv</ABV>
+		<CL>test cl</CL>
+		<Wine_Type>test wine</Wine_Type>
+		<Line_Duty>test line</Line_Duty>
+		<Vintage>test vintage</Vintage>		
+	</BWS_Value>	
+</PO_Manager>

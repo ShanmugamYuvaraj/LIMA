@@ -1,0 +1,718 @@
+<html>
+<head>
+<title>TestNG:  Forward Reference</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Forward Reference</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>41/9/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 05 13:36:36 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>1084 seconds (1084607 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_23_verifyGridForwarder()'><b>test_23_verifyGridForwarder</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	***** Test ID : 23 - In Forwarder Reference Tool the selected ETA value under Select Chevron does not match with ETA value displayed in Reference Chevron under GirdForwarder Details Grid ***** expected [true] but found [false]
+	at com.lima.test.AdjunoLIMAForwarderReferenceTest.test_23_verifyGridForwarder(AdjunoLIMAForwarderReferenceTest.java:637)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace137902612", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace137902612'><pre>java.lang.AssertionError: The following asserts failed:
+	***** Test ID : 23 - In Forwarder Reference Tool the selected ETA value under Select Chevron does not match with ETA value displayed in Reference Chevron under GirdForwarder Details Grid ***** expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lima.test.AdjunoLIMAForwarderReferenceTest.test_23_verifyGridForwarder(AdjunoLIMAForwarderReferenceTest.java:637)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>30</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_33_clickForwardReference()'><b>test_33_clickForwardReference</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	*****Test id :33- In Shipment page the Forwarder Reference record is not found ***** expected [true] but found [false]
+	at com.lima.test.AdjunoLIMAForwarderReferenceTest.test_33_clickForwardReference(AdjunoLIMAForwarderReferenceTest.java:851)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace337360568", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace337360568'><pre>java.lang.AssertionError: The following asserts failed:
+	*****Test id :33- In Shipment page the Forwarder Reference record is not found ***** expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lima.test.AdjunoLIMAForwarderReferenceTest.test_33_clickForwardReference(AdjunoLIMAForwarderReferenceTest.java:851)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>22</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_36_checkStatus()'><b>test_36_checkStatus</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	***** Test Id :36 -  In PO Status Page&quot;PO Number&quot; Status is not matched as &quot;Shipped&quot; ***** expected [true] but found [false]
+	at com.lima.test.AdjunoLIMAForwarderReferenceTest.test_36_checkStatus(AdjunoLIMAForwarderReferenceTest.java:908)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1421545876", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1421545876'><pre>java.lang.AssertionError: The following asserts failed:
+	***** Test Id :36 -  In PO Status Page&quot;PO Number&quot; Status is not matched as &quot;Shipped&quot; ***** expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lima.test.AdjunoLIMAForwarderReferenceTest.test_36_checkStatus(AdjunoLIMAForwarderReferenceTest.java:908)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>2</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_37_verifyHyperLink()'><b>test_37_verifyHyperLink</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	***** Test ID : 37 - In Shipped Page&quot;PO Number Hyperlink&quot; Field is not found ***** expected [true] but found [false],
+	*****_37_In Shipped page &quot;Po Number&quot;field is not a hyperLink***** expected [true] but found [false],
+	***** Test ID : 37 - In Shipped Page&quot;Container Hyperlink&quot; Field is not found ***** expected [true] but found [false],
+	*****_37_*****_37_In Shipped page &quot;Po Number&quot;field is not a hyperLink*****In Shipped page &quot;Container&quot;field is not a hyperLink***** expected [true] but found [false]
+	at com.lima.test.AdjunoLIMAForwarderReferenceTest.test_37_verifyHyperLink(AdjunoLIMAForwarderReferenceTest.java:952)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1057418208", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1057418208'><pre>java.lang.AssertionError: The following asserts failed:
+	***** Test ID : 37 - In Shipped Page&quot;PO Number Hyperlink&quot; Field is not found ***** expected [true] but found [false],
+	*****_37_In Shipped page &quot;Po Number&quot;field is not a hyperLink***** expected [true] but found [false],
+	***** Test ID : 37 - In Shipped Page&quot;Container Hyperlink&quot; Field is not found ***** expected [true] but found [false],
+	*****_37_*****_37_In Shipped page &quot;Po Number&quot;field is not a hyperLink*****In Shipped page &quot;Container&quot;field is not a hyperLink***** expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lima.test.AdjunoLIMAForwarderReferenceTest.test_37_verifyHyperLink(AdjunoLIMAForwarderReferenceTest.java:952)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>40</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_38_clickPONumberHyperLink()'><b>test_38_clickPONumberHyperLink</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: window.ArenaForms is undefined
+Command duration or timeout: 79 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5aa5a2ff-11b4-4ba7-b4b0-ca8fac43a4d2
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.getElemetValue(AdjunoUILibrary.java:513)
+	at com.lima.pagefactory.AdjunoLIMAForwarderReferencePOM.getFieldValue(AdjunoLIMAForwarderReferencePOM.java:993)
+	at com.lima.test.AdjunoLIMAForwarderReferenceTest.test_38_clickPONumberHyperLink(AdjunoLIMAForwarderReferenceTest.java:965)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=654f4eada53b44cd94a049b7f3b08741&amp;MenuId=&amp;Action=FindRequest&amp;ActionOption=PO+Status&amp;Reference=ACTIVITYLIMAUAT46_00160 line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=654f4eada53b44cd94a049b7f3b08741&amp;MenuId=&amp;Action=FindRequest&amp;ActionOption=PO+Status&amp;Reference=ACTIVITYLIMAUAT46_00160:69)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace507975812", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace507975812'><pre>org.openqa.selenium.WebDriverException: window.ArenaForms is undefined
+Command duration or timeout: 79 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5aa5a2ff-11b4-4ba7-b4b0-ca8fac43a4d2
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.getElemetValue(AdjunoUILibrary.java:513)
+	at com.lima.pagefactory.AdjunoLIMAForwarderReferencePOM.getFieldValue(AdjunoLIMAForwarderReferencePOM.java:993)
+	at com.lima.test.AdjunoLIMAForwarderReferenceTest.test_38_clickPONumberHyperLink(AdjunoLIMAForwarderReferenceTest.java:965)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=654f4eada53b44cd94a049b7f3b08741&amp;MenuId=&amp;Action=FindRequest&amp;ActionOption=PO+Status&amp;Reference=ACTIVITYLIMAUAT46_00160 line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=654f4eada53b44cd94a049b7f3b08741&amp;MenuId=&amp;Action=FindRequest&amp;ActionOption=PO+Status&amp;Reference=ACTIVITYLIMAUAT46_00160:69)
+</pre></div></td>
+<td>35</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_44_verifyGridForwarder()'><b>test_44_verifyGridForwarder</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	***** Test ID : 44 - In Forwarder Reference Tool the selected ETA value under Select Chevron does not match with ETA value displayed in Reference Chevron under GirdForwarder Details Grid ***** expected [true] but found [false]
+	at com.lima.test.AdjunoLIMAForwarderReferenceTest.test_44_verifyGridForwarder(AdjunoLIMAForwarderReferenceTest.java:1112)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace376330861", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace376330861'><pre>java.lang.AssertionError: The following asserts failed:
+	***** Test ID : 44 - In Forwarder Reference Tool the selected ETA value under Select Chevron does not match with ETA value displayed in Reference Chevron under GirdForwarder Details Grid ***** expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lima.test.AdjunoLIMAForwarderReferenceTest.test_44_verifyGridForwarder(AdjunoLIMAForwarderReferenceTest.java:1112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>30</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_58_checkStatus()'><b>test_58_checkStatus</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	***** Test Id :58 -  In PO Status Page&quot;PO Number&quot; Status is not matched as &quot;Shipped&quot; ***** expected [true] but found [false]
+	at com.lima.test.AdjunoLIMAForwarderReferenceTest.test_58_checkStatus(AdjunoLIMAForwarderReferenceTest.java:1335)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1947725647", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1947725647'><pre>java.lang.AssertionError: The following asserts failed:
+	***** Test Id :58 -  In PO Status Page&quot;PO Number&quot; Status is not matched as &quot;Shipped&quot; ***** expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lima.test.AdjunoLIMAForwarderReferenceTest.test_58_checkStatus(AdjunoLIMAForwarderReferenceTest.java:1335)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>3</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_59_verifyHyperLink()'><b>test_59_verifyHyperLink</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	***** Test ID : 37 - In Shipped Page&quot;PO Number Hyperlink&quot; Field is not found ***** expected [true] but found [false],
+	*****_37_In Shipped page &quot;Po Number&quot;field is not a hyperLink***** expected [true] but found [false],
+	***** Test ID : 37 - In Shipped Page&quot;Container Hyperlink&quot; Field is not found ***** expected [true] but found [false],
+	*****_37_*****_37_In Shipped page &quot;Po Number&quot;field is not a hyperLink*****In Shipped page &quot;Container&quot;field is not a hyperLink***** expected [true] but found [false]
+	at com.lima.test.AdjunoLIMAForwarderReferenceTest.test_59_verifyHyperLink(AdjunoLIMAForwarderReferenceTest.java:1378)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1910997770", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1910997770'><pre>java.lang.AssertionError: The following asserts failed:
+	***** Test ID : 37 - In Shipped Page&quot;PO Number Hyperlink&quot; Field is not found ***** expected [true] but found [false],
+	*****_37_In Shipped page &quot;Po Number&quot;field is not a hyperLink***** expected [true] but found [false],
+	***** Test ID : 37 - In Shipped Page&quot;Container Hyperlink&quot; Field is not found ***** expected [true] but found [false],
+	*****_37_*****_37_In Shipped page &quot;Po Number&quot;field is not a hyperLink*****In Shipped page &quot;Container&quot;field is not a hyperLink***** expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lima.test.AdjunoLIMAForwarderReferenceTest.test_59_verifyHyperLink(AdjunoLIMAForwarderReferenceTest.java:1378)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>40</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_60_clickPONumberHyperLink()'><b>test_60_clickPONumberHyperLink</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: window.ArenaForms is undefined
+Command duration or timeout: 63 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5aa5a2ff-11b4-4ba7-b4b0-ca8fac43a4d2
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.getElemetValue(AdjunoUILibrary.java:513)
+	at com.lima.pagefactory.AdjunoLIMAForwarderReferencePOM.getFieldValue(AdjunoLIMAForwarderReferencePOM.java:993)
+	at com.lima.test.AdjunoLIMAForwarderReferenceTest.test_60_clickPONumberHyperLink(AdjunoLIMAForwarderReferenceTest.java:1391)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=654f4eada53b44cd94a049b7f3b08741&amp;MenuId=&amp;Action=FindRequest&amp;ActionOption=PO+Status&amp;Reference=ACTIVITYLIMAUAT46_00648 line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=654f4eada53b44cd94a049b7f3b08741&amp;MenuId=&amp;Action=FindRequest&amp;ActionOption=PO+Status&amp;Reference=ACTIVITYLIMAUAT46_00648:69)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace727682657", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace727682657'><pre>org.openqa.selenium.WebDriverException: window.ArenaForms is undefined
+Command duration or timeout: 63 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5aa5a2ff-11b4-4ba7-b4b0-ca8fac43a4d2
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.getElemetValue(AdjunoUILibrary.java:513)
+	at com.lima.pagefactory.AdjunoLIMAForwarderReferencePOM.getFieldValue(AdjunoLIMAForwarderReferencePOM.java:993)
+	at com.lima.test.AdjunoLIMAForwarderReferenceTest.test_60_clickPONumberHyperLink(AdjunoLIMAForwarderReferenceTest.java:1391)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=654f4eada53b44cd94a049b7f3b08741&amp;MenuId=&amp;Action=FindRequest&amp;ActionOption=PO+Status&amp;Reference=ACTIVITYLIMAUAT46_00648 line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=654f4eada53b44cd94a049b7f3b08741&amp;MenuId=&amp;Action=FindRequest&amp;ActionOption=PO+Status&amp;Reference=ACTIVITYLIMAUAT46_00648:69)
+</pre></div></td>
+<td>35</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_10_VerifyMultipleCriteriaSearchData()'><b>test_10_VerifyMultipleCriteriaSearchData</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>29</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_11_VerifySingleInvalidCriteriaSearchData()'><b>test_11_VerifySingleInvalidCriteriaSearchData</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>16</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_12_VerifyMultipleInvalidCriteriaSearchData()'><b>test_12_VerifyMultipleInvalidCriteriaSearchData</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>18</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_14_VerifyStatusReferencedSearchData()'><b>test_14_VerifyStatusReferencedSearchData</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>81</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_15_VerifyConatinerSearchData()'><b>test_15_VerifyConatinerSearchData</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>29</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_18_VerifyConatinerSearchData()'><b>test_18_VerifyConatinerSearchData</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>11</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_1_AccessForwardReference()'><b>test_1_AccessForwardReference</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>30</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_20_VerifyConatinerAwaitingStaus()'><b>test_20_VerifyConatinerAwaitingStaus</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>11</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_21_Click_Reference()'><b>test_21_Click_Reference</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>13</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_22_verifyGridsInReferenceChevron()'><b>test_22_verifyGridsInReferenceChevron</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_24_verifyGridForwarder()'><b>test_24_verifyGridForwarder</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>17</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_25_VerifyForwardReferenceMandatory()'><b>test_25_VerifyForwardReferenceMandatory</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>7</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_26_VerifyPoHyperLink()'><b>test_26_VerifyPoHyperLink</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_27_ClickHyperLink()'><b>test_27_ClickHyperLink</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>5</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_28_VerifyShipQtyAndCtnInPOLink()'><b>test_28_VerifyShipQtyAndCtnInPOLink</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>1</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_29_VerifyMandatory()'><b>test_29_VerifyMandatory</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>11</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_2_verifyDropDownExistance()'><b>test_2_verifyDropDownExistance</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>25</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_30_SetForwardRef()'><b>test_30_SetForwardRef</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>20</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_31_GetReference_Num()'><b>test_31_GetReference_Num</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>8</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_32_AccessEdit()'><b>test_32_AccessEdit</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>41</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_35_verifyPONumber()'><b>test_35_verifyPONumber</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>33</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_39_clickContainerNoHyperLink()'><b>test_39_clickContainerNoHyperLink</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>18</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_40_verifyContainerNoWithAwaitingStatus()'><b>test_40_verifyContainerNoWithAwaitingStatus</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>36</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_41_verifyContainerNoWithReferenceStatus()'><b>test_41_verifyContainerNoWithReferenceStatus</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>23</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_42_Click_ReferenceTab()'><b>test_42_Click_ReferenceTab</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>14</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_43_verifyGridsInReferenceChevron()'><b>test_43_verifyGridsInReferenceChevron</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_45_VerifyForwardReferenceMandatory()'><b>test_45_VerifyForwardReferenceMandatory</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>9</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_48_ClickPOHyperLink()'><b>test_48_ClickPOHyperLink</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>5</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_50_checkForward()'><b>test_50_checkForward</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>4</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_51_EditForwardReferenceValue()'><b>test_51_EditForwardReferenceValue</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>19</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_52_GetReference_Num()'><b>test_52_GetReference_Num</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>8</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_53_AccessEdit()'><b>test_53_AccessEdit</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>39</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_54_clickForwardReference()'><b>test_54_clickForwardReference</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>10</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_57_verifyPONumber()'><b>test_57_verifyPONumber</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>30</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_61_clickContainerNoHyperLink()'><b>test_61_clickContainerNoHyperLink</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>16</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_62_verifyContainerNoWithAwaitingStatus()'><b>test_62_verifyContainerNoWithAwaitingStatus</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>33</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_63_verifyContainerNoWithReferenceStatus()'><b>test_63_verifyContainerNoWithReferenceStatus</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>31</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_7_VerifyExistanceOfFields()'><b>test_7_VerifyExistanceOfFields</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>10</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_8_VerifyExistanceOfFields()'><b>test_8_VerifyExistanceOfFields</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>7</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.test_9_VerifySingleCriteriaSearchData()'><b>test_9_VerifySingleCriteriaSearchData</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>62</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAForwarderReferenceTest.verifyExixtanceOFChevrons()'><b>verifyExixtanceOFChevrons</b><br>Test class: com.lima.test.AdjunoLIMAForwarderReferenceTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMAForwarderReferenceTest@3327bd23</td></tr>
+</table><p>
+</body>
+</html>

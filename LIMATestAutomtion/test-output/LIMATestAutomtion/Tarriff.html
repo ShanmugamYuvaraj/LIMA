@@ -1,0 +1,1887 @@
+<html>
+<head>
+<title>TestNG:  Tarriff</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Tarriff</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>59/24/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 05 14:03:59 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>4987 seconds (4987446 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_007_VerifyAirFreightTariffTabs_AirFreightCosts_AirEcoAirRates()'><b>test_LIMA_TARR_AF_007_VerifyAirFreightTariffTabs_AirFreightCosts_AirEcoAirRates</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Airfreight is undefined
+Command duration or timeout: 5.97 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.getNoOfColumnsGrid(AdjunoUILibrary.java:191)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.getCaptionsList(AdjunoLIMATariffPOM.java:522)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_007_VerifyAirFreightTariffTabs_AirFreightCosts_AirEcoAirRates(AdjunoLIMATariffTest.java:2557)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Airfreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Airfreight&amp;Reference=ACTIVITYLIMAUAT46_00843&amp;Id=&amp;Version=2018020007&amp;OperationType=View line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Airfreight&amp;Reference=ACTIVITYLIMAUAT46_00843&amp;Id=&amp;Version=2018020007&amp;OperationType=View:69)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace413168155", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace413168155'><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Airfreight is undefined
+Command duration or timeout: 5.97 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.getNoOfColumnsGrid(AdjunoUILibrary.java:191)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.getCaptionsList(AdjunoLIMATariffPOM.java:522)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_007_VerifyAirFreightTariffTabs_AirFreightCosts_AirEcoAirRates(AdjunoLIMATariffTest.java:2557)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Airfreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Airfreight&amp;Reference=ACTIVITYLIMAUAT46_00843&amp;Id=&amp;Version=2018020007&amp;OperationType=View line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Airfreight&amp;Reference=ACTIVITYLIMAUAT46_00843&amp;Id=&amp;Version=2018020007&amp;OperationType=View:69)
+</pre></div></td>
+<td>33</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_008_VerifyAirFreightTariffTabs_AirFreightCosts_ExpressService()'><b>test_LIMA_TARR_AF_008_VerifyAirFreightTariffTabs_AirFreightCosts_ExpressService</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	*****test_LIMA_TARR_AF_008_Step_No_2_Add Row button is not disabled in Express Service Grid***** expected [true] but found [false],
+	*****test_LIMA_TARR_AF_008_Step_No_2_Delete Row button is disabled in Express Service Grid***** expected [true] but found [false]
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_008_VerifyAirFreightTariffTabs_AirFreightCosts_ExpressService(AdjunoLIMATariffTest.java:2584)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1108039149", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1108039149'><pre>java.lang.AssertionError: The following asserts failed:
+	*****test_LIMA_TARR_AF_008_Step_No_2_Add Row button is not disabled in Express Service Grid***** expected [true] but found [false],
+	*****test_LIMA_TARR_AF_008_Step_No_2_Delete Row button is disabled in Express Service Grid***** expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_008_VerifyAirFreightTariffTabs_AirFreightCosts_ExpressService(AdjunoLIMATariffTest.java:2584)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>9</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_009_VerifyAirFreightTariffTabs_AirFreightCosts_AirChargeComments()'><b>test_LIMA_TARR_AF_009_VerifyAirFreightTariffTabs_AirFreightCosts_AirChargeComments</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	*****test_LIMA_TARR_AF_009_Step_No_1_Air Charge Comments field is not in Readonly mode***** expected [true] but found [false]
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_009_VerifyAirFreightTariffTabs_AirFreightCosts_AirChargeComments(AdjunoLIMATariffTest.java:2604)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace243156317", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace243156317'><pre>java.lang.AssertionError: The following asserts failed:
+	*****test_LIMA_TARR_AF_009_Step_No_1_Air Charge Comments field is not in Readonly mode***** expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_009_VerifyAirFreightTariffTabs_AirFreightCosts_AirChargeComments(AdjunoLIMATariffTest.java:2604)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_010_VerifyAirFreightTariffTabsAirFreightCosts_ExpressServiceComments()'><b>test_LIMA_TARR_AF_010_VerifyAirFreightTariffTabsAirFreightCosts_ExpressServiceComments</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	*****test_LIMA_TARR_AF_010_Step_No_1_Express Services Comments field is not in Readonly mode***** expected [true] but found [false]
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_010_VerifyAirFreightTariffTabsAirFreightCosts_ExpressServiceComments(AdjunoLIMATariffTest.java:2624)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1330798099", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1330798099'><pre>java.lang.AssertionError: The following asserts failed:
+	*****test_LIMA_TARR_AF_010_Step_No_1_Express Services Comments field is not in Readonly mode***** expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_010_VerifyAirFreightTariffTabsAirFreightCosts_ExpressServiceComments(AdjunoLIMATariffTest.java:2624)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_011_VerifyAirFreightTariffTabs_AirLandsideCosts_AirLandsideCostsGrid()'><b>test_LIMA_TARR_AF_011_VerifyAirFreightTariffTabs_AirLandsideCosts_AirLandsideCostsGrid</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	*****test_LIMA_TARR_AF_011_Step_No_3_Add Row button is not disabled in Air Landside Cost Grid***** expected [true] but found [false],
+	*****test_LIMA_TARR_AF_011_Step_No_3_Delete Row button is disabled in Air Landside Cost Grid***** expected [true] but found [false]
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_011_VerifyAirFreightTariffTabs_AirLandsideCosts_AirLandsideCostsGrid(AdjunoLIMATariffTest.java:2648)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace436625455", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace436625455'><pre>java.lang.AssertionError: The following asserts failed:
+	*****test_LIMA_TARR_AF_011_Step_No_3_Add Row button is not disabled in Air Landside Cost Grid***** expected [true] but found [false],
+	*****test_LIMA_TARR_AF_011_Step_No_3_Delete Row button is disabled in Air Landside Cost Grid***** expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_011_VerifyAirFreightTariffTabs_AirLandsideCosts_AirLandsideCostsGrid(AdjunoLIMATariffTest.java:2648)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>5</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_012_VerifyAirFreightTariffTabs_AirLandsideCosts_LandsideChargesCommentsGrid()'><b>test_LIMA_TARR_AF_012_VerifyAirFreightTariffTabs_AirLandsideCosts_LandsideChargesCommentsGrid</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	*****test_LIMA_TARR_AF_012_Step_No_1_Landside Charges Comments field is not in Readonly mode***** expected [true] but found [false]
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_012_VerifyAirFreightTariffTabs_AirLandsideCosts_LandsideChargesCommentsGrid(AdjunoLIMATariffTest.java:2668)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace421984610", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace421984610'><pre>java.lang.AssertionError: The following asserts failed:
+	*****test_LIMA_TARR_AF_012_Step_No_1_Landside Charges Comments field is not in Readonly mode***** expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_012_VerifyAirFreightTariffTabs_AirLandsideCosts_LandsideChargesCommentsGrid(AdjunoLIMATariffTest.java:2668)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_013_VerifyAirFreightTariffTabs_AirHaulageCosts_AirHaulageCosts()'><b>test_LIMA_TARR_AF_013_VerifyAirFreightTariffTabs_AirHaulageCosts_AirHaulageCosts</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	*****test_LIMA_TARR_AF_013_Step_No_2_Add Row button is not disabled in Air Haulage Cost Grid***** expected [true] but found [false],
+	*****test_LIMA_TARR_AF_013_Step_No_2_Delete Row button is disabled in Air Haulage Cost Grid***** expected [true] but found [false]
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_013_VerifyAirFreightTariffTabs_AirHaulageCosts_AirHaulageCosts(AdjunoLIMATariffTest.java:2692)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace739241900", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace739241900'><pre>java.lang.AssertionError: The following asserts failed:
+	*****test_LIMA_TARR_AF_013_Step_No_2_Add Row button is not disabled in Air Haulage Cost Grid***** expected [true] but found [false],
+	*****test_LIMA_TARR_AF_013_Step_No_2_Delete Row button is disabled in Air Haulage Cost Grid***** expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_013_VerifyAirFreightTariffTabs_AirHaulageCosts_AirHaulageCosts(AdjunoLIMATariffTest.java:2692)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>4</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_014_VerifyAirFreightTariffTabs_AirHaulageCosts_AirStorageCosts()'><b>test_LIMA_TARR_AF_014_VerifyAirFreightTariffTabs_AirHaulageCosts_AirStorageCosts</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	*****test_LIMA_TARR_AF_014_Step_No_3_Add Row button is not disabled in Air Storage Cost Grid***** expected [true] but found [false],
+	*****test_LIMA_TARR_AF_014_Step_No_3_Delete Row button is disabled in Air Storage Cost Grid***** expected [true] but found [false]
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_014_VerifyAirFreightTariffTabs_AirHaulageCosts_AirStorageCosts(AdjunoLIMATariffTest.java:2715)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace340017397", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace340017397'><pre>java.lang.AssertionError: The following asserts failed:
+	*****test_LIMA_TARR_AF_014_Step_No_3_Add Row button is not disabled in Air Storage Cost Grid***** expected [true] but found [false],
+	*****test_LIMA_TARR_AF_014_Step_No_3_Delete Row button is disabled in Air Storage Cost Grid***** expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_014_VerifyAirFreightTariffTabs_AirHaulageCosts_AirStorageCosts(AdjunoLIMATariffTest.java:2715)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>6</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_015_VerifyAirFreightTariffTabs_AirHaulageCosts_HaulageComments()'><b>test_LIMA_TARR_AF_015_VerifyAirFreightTariffTabs_AirHaulageCosts_HaulageComments</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	*****test_LIMA_TARR_AF_015_Step_No_1_Haulage Costs Comments field is not in Readonly mode***** expected [true] but found [false]
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_015_VerifyAirFreightTariffTabs_AirHaulageCosts_HaulageComments(AdjunoLIMATariffTest.java:2735)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace731827461", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace731827461'><pre>java.lang.AssertionError: The following asserts failed:
+	*****test_LIMA_TARR_AF_015_Step_No_1_Haulage Costs Comments field is not in Readonly mode***** expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_015_VerifyAirFreightTariffTabs_AirHaulageCosts_HaulageComments(AdjunoLIMATariffTest.java:2735)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_017_AirFreight_CreateNewTariff_UpdateAnExistingTariff_AddANewRowOnAirEcoAirRatesGrid()'><b>test_LIMA_TARR_AF_017_AirFreight_CreateNewTariff_UpdateAnExistingTariff_AddANewRowOnAirEcoAirRatesGrid</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Airfreight.Controls.Grid_AirRates.getElement(...) is undefined
+Command duration or timeout: 125 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.getGridCellElementValue(AdjunoUILibrary.java:416)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.getGridCellValue(AdjunoLIMATariffPOM.java:788)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_017_AirFreight_CreateNewTariff_UpdateAnExistingTariff_AddANewRowOnAirEcoAirRatesGrid(AdjunoLIMATariffTest.java:2832)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Airfreight.Controls.Grid_AirRates.getElement(...) is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Airfreight&amp;Reference=ACTIVITYLIMAUAT46_00843&amp;Id=&amp;Version=2018020008&amp;OperationType=View line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Airfreight&amp;Reference=ACTIVITYLIMAUAT46_00843&amp;Id=&amp;Version=2018020008&amp;OperationType=View:69)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1145680499", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1145680499'><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Airfreight.Controls.Grid_AirRates.getElement(...) is undefined
+Command duration or timeout: 125 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.getGridCellElementValue(AdjunoUILibrary.java:416)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.getGridCellValue(AdjunoLIMATariffPOM.java:788)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_017_AirFreight_CreateNewTariff_UpdateAnExistingTariff_AddANewRowOnAirEcoAirRatesGrid(AdjunoLIMATariffTest.java:2832)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Airfreight.Controls.Grid_AirRates.getElement(...) is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Airfreight&amp;Reference=ACTIVITYLIMAUAT46_00843&amp;Id=&amp;Version=2018020008&amp;OperationType=View line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Airfreight&amp;Reference=ACTIVITYLIMAUAT46_00843&amp;Id=&amp;Version=2018020008&amp;OperationType=View:69)
+</pre></div></td>
+<td>88</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_023_AmendmentLogMandatoryFieldCheck()'><b>test_LIMA_TARR_AF_023_AmendmentLogMandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: A script on this page may be busy, or it may have stopped responding. You can stop the script now, open the script in the debugger, or let the script continue.
+
+Script: https://uat-lima46.adjuno.com/…ces.ext-all.js&amp;Cache=3.0.0.208:7): A script on this page may be busy, or it may have stopped responding. You can stop the script now, open the script in the debugger, or let the script continue.
+
+Script: https://uat-lima46.adjuno.com/…ces.ext-all.js&amp;Cache=3.0.0.208:7
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+*** Element info: {Using=xpath, value=.//*[@name=&apos;Apply&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.clickButtonUsingWebElement(AdjunoLIMATariffPOM.java:596)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_023_AmendmentLogMandatoryFieldCheck(AdjunoLIMATariffTest.java:3428)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace843444187", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace843444187'><pre>org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: A script on this page may be busy, or it may have stopped responding. You can stop the script now, open the script in the debugger, or let the script continue.
+
+Script: https://uat-lima46.adjuno.com/…ces.ext-all.js&amp;Cache=3.0.0.208:7): A script on this page may be busy, or it may have stopped responding. You can stop the script now, open the script in the debugger, or let the script continue.
+
+Script: https://uat-lima46.adjuno.com/…ces.ext-all.js&amp;Cache=3.0.0.208:7
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+*** Element info: {Using=xpath, value=.//*[@name=&apos;Apply&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.clickButtonUsingWebElement(AdjunoLIMATariffPOM.java:596)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_023_AmendmentLogMandatoryFieldCheck(AdjunoLIMATariffTest.java:3428)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>54</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_026_FCLFreightCost_MandatoryFieldCheck()'><b>test_LIMA_TARR_SF_026_FCLFreightCost_MandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_TariffTool is undefined
+Command duration or timeout: 2.05 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.getElement(AdjunoUILibrary.java:91)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.clickButton(AdjunoLIMATariffPOM.java:773)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_026_FCLFreightCost_MandatoryFieldCheck(AdjunoLIMATariffTest.java:965)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_TariffTool is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace302869695", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace302869695'><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_TariffTool is undefined
+Command duration or timeout: 2.05 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.getElement(AdjunoUILibrary.java:91)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.clickButton(AdjunoLIMATariffPOM.java:773)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_026_FCLFreightCost_MandatoryFieldCheck(AdjunoLIMATariffTest.java:965)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_TariffTool is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+</pre></div></td>
+<td>4</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_027_FCLFreightCostsGOHCostsMandatoryFieldCheck()'><b>test_LIMA_TARR_SF_027_FCLFreightCostsGOHCostsMandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Command duration or timeout: 125 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.getNoOfRowsGrid(AdjunoUILibrary.java:181)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.getNoOfRowsGrid(AdjunoLIMATariffPOM.java:566)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_027_FCLFreightCostsGOHCostsMandatoryFieldCheck(AdjunoLIMATariffTest.java:1094)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace503117914", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace503117914'><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Command duration or timeout: 125 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.getNoOfRowsGrid(AdjunoUILibrary.java:181)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.getNoOfRowsGrid(AdjunoLIMATariffPOM.java:566)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_027_FCLFreightCostsGOHCostsMandatoryFieldCheck(AdjunoLIMATariffTest.java:1094)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+</pre></div></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_030_FCLFreightCostsAdditionalFreightCostsMandatoryFieldCheck()'><b>test_LIMA_TARR_SF_030_FCLFreightCostsAdditionalFreightCostsMandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Command duration or timeout: 281 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.getNoOfRowsGrid(AdjunoUILibrary.java:181)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.getNoOfRowsGrid(AdjunoLIMATariffPOM.java:566)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_030_FCLFreightCostsAdditionalFreightCostsMandatoryFieldCheck(AdjunoLIMATariffTest.java:1164)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace330472244", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace330472244'><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Command duration or timeout: 281 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.getNoOfRowsGrid(AdjunoUILibrary.java:181)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.getNoOfRowsGrid(AdjunoLIMATariffPOM.java:566)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_030_FCLFreightCostsAdditionalFreightCostsMandatoryFieldCheck(AdjunoLIMATariffTest.java:1164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+</pre></div></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_031_FCLLandsideCostsFCLDestinationLandsideCosts_MandatoryFieldCheck()'><b>test_LIMA_TARR_SF_031_FCLLandsideCostsFCLDestinationLandsideCosts_MandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Command duration or timeout: 125 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.clickTabToMakeItActive(AdjunoUILibrary.java:425)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.clickTab(AdjunoLIMATariffPOM.java:711)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_031_FCLLandsideCostsFCLDestinationLandsideCosts_MandatoryFieldCheck(AdjunoLIMATariffTest.java:1295)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace484258212", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace484258212'><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Command duration or timeout: 125 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.clickTabToMakeItActive(AdjunoUILibrary.java:425)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.clickTab(AdjunoLIMATariffPOM.java:711)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_031_FCLLandsideCostsFCLDestinationLandsideCosts_MandatoryFieldCheck(AdjunoLIMATariffTest.java:1295)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+</pre></div></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_032_FCLLandsideCostsOriginLandsideCostsMandatoryFieldCheck()'><b>test_LIMA_TARR_SF_032_FCLLandsideCostsOriginLandsideCostsMandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Command duration or timeout: 94 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.getElement(AdjunoUILibrary.java:91)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.checkDoesElementExist(AdjunoLIMATariffPOM.java:502)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_032_FCLLandsideCostsOriginLandsideCostsMandatoryFieldCheck(AdjunoLIMATariffTest.java:1415)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace337875491", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace337875491'><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Command duration or timeout: 94 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.getElement(AdjunoUILibrary.java:91)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.checkDoesElementExist(AdjunoLIMATariffPOM.java:502)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_032_FCLLandsideCostsOriginLandsideCostsMandatoryFieldCheck(AdjunoLIMATariffTest.java:1415)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+</pre></div></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_033_FCLHaulageCostsMandatoryFieldCheck()'><b>test_LIMA_TARR_SF_033_FCLHaulageCostsMandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Command duration or timeout: 93 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.clickTabToMakeItActive(AdjunoUILibrary.java:425)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.clickTab(AdjunoLIMATariffPOM.java:711)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_033_FCLHaulageCostsMandatoryFieldCheck(AdjunoLIMATariffTest.java:1518)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace590794129", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace590794129'><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Command duration or timeout: 93 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.clickTabToMakeItActive(AdjunoUILibrary.java:425)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.clickTab(AdjunoLIMATariffPOM.java:711)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_033_FCLHaulageCostsMandatoryFieldCheck(AdjunoLIMATariffTest.java:1518)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+</pre></div></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_034_AdditionalHaulageCosts_MandatoryFieldCheck()'><b>test_LIMA_TARR_SF_034_AdditionalHaulageCosts_MandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Command duration or timeout: 110 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.clickTabToMakeItActive(AdjunoUILibrary.java:425)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.clickTab(AdjunoLIMATariffPOM.java:711)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_034_AdditionalHaulageCosts_MandatoryFieldCheck(AdjunoLIMATariffTest.java:1637)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1813922009", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1813922009'><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Command duration or timeout: 110 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.clickTabToMakeItActive(AdjunoUILibrary.java:425)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.clickTab(AdjunoLIMATariffPOM.java:711)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_034_AdditionalHaulageCosts_MandatoryFieldCheck(AdjunoLIMATariffTest.java:1637)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+</pre></div></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_035_DemurrageAndStorageCosts_MandatoryFieldCheck()'><b>test_LIMA_TARR_SF_035_DemurrageAndStorageCosts_MandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Command duration or timeout: 125 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.clickTabToMakeItActive(AdjunoUILibrary.java:425)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.clickTab(AdjunoLIMATariffPOM.java:711)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_035_DemurrageAndStorageCosts_MandatoryFieldCheck(AdjunoLIMATariffTest.java:1741)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1126853225", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1126853225'><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Command duration or timeout: 125 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.clickTabToMakeItActive(AdjunoUILibrary.java:425)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.clickTab(AdjunoLIMATariffPOM.java:711)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_035_DemurrageAndStorageCosts_MandatoryFieldCheck(AdjunoLIMATariffTest.java:1741)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+</pre></div></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_036_LCLFreightCosts_MandatoryFieldCheck()'><b>test_LIMA_TARR_SF_036_LCLFreightCosts_MandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Command duration or timeout: 125 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.clickTabToMakeItActive(AdjunoUILibrary.java:425)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.clickTab(AdjunoLIMATariffPOM.java:711)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_036_LCLFreightCosts_MandatoryFieldCheck(AdjunoLIMATariffTest.java:1783)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace354051480", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace354051480'><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Command duration or timeout: 125 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.clickTabToMakeItActive(AdjunoUILibrary.java:425)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.clickTab(AdjunoLIMATariffPOM.java:711)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_036_LCLFreightCosts_MandatoryFieldCheck(AdjunoLIMATariffTest.java:1783)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+</pre></div></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_037_AdditionalLCLFreightCosts_MandatoryFieldCheck()'><b>test_LIMA_TARR_SF_037_AdditionalLCLFreightCosts_MandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Command duration or timeout: 125 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.clickTabToMakeItActive(AdjunoUILibrary.java:425)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.clickTab(AdjunoLIMATariffPOM.java:711)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_037_AdditionalLCLFreightCosts_MandatoryFieldCheck(AdjunoLIMATariffTest.java:1886)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1188120765", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1188120765'><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Command duration or timeout: 125 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.clickTabToMakeItActive(AdjunoUILibrary.java:425)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.clickTab(AdjunoLIMATariffPOM.java:711)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_037_AdditionalLCLFreightCosts_MandatoryFieldCheck(AdjunoLIMATariffTest.java:1886)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+</pre></div></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_038_LCLLandSideCosts_MandatoryFieldCheck()'><b>test_LIMA_TARR_SF_038_LCLLandSideCosts_MandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Command duration or timeout: 125 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.clickTabToMakeItActive(AdjunoUILibrary.java:425)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.clickTab(AdjunoLIMATariffPOM.java:711)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_038_LCLLandSideCosts_MandatoryFieldCheck(AdjunoLIMATariffTest.java:2044)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace90418597", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace90418597'><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Command duration or timeout: 125 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.clickTabToMakeItActive(AdjunoUILibrary.java:425)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.clickTab(AdjunoLIMATariffPOM.java:711)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_038_LCLLandSideCosts_MandatoryFieldCheck(AdjunoLIMATariffTest.java:2044)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+</pre></div></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_039_LCLHaulageCosts_MandatoryFieldCheck()'><b>test_LIMA_TARR_SF_039_LCLHaulageCosts_MandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Command duration or timeout: 141 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.clickTabToMakeItActive(AdjunoUILibrary.java:425)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.clickTab(AdjunoLIMATariffPOM.java:711)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_039_LCLHaulageCosts_MandatoryFieldCheck(AdjunoLIMATariffTest.java:2166)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace408107501", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace408107501'><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Command duration or timeout: 141 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.clickTabToMakeItActive(AdjunoUILibrary.java:425)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.clickTab(AdjunoLIMATariffPOM.java:711)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_039_LCLHaulageCosts_MandatoryFieldCheck(AdjunoLIMATariffTest.java:2166)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+</pre></div></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_040_AmendmentMandatoryFieldCheck()'><b>test_LIMA_TARR_SF_040_AmendmentMandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Command duration or timeout: 156 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.clickTabToMakeItActive(AdjunoUILibrary.java:425)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.clickTab(AdjunoLIMATariffPOM.java:711)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_040_AmendmentMandatoryFieldCheck(AdjunoLIMATariffTest.java:2292)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1746080167", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1746080167'><pre>org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Command duration or timeout: 156 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70c956a4-a547-4fe8-954b-84fd68d30354
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.lima.library.AdjunoUILibrary.clickTabToMakeItActive(AdjunoUILibrary.java:425)
+	at com.lima.pagefactory.AdjunoLIMATariffPOM.clickTab(AdjunoLIMATariffPOM.java:711)
+	at com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_040_AmendmentMandatoryFieldCheck(AdjunoLIMATariffTest.java:2292)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.WebDriverException: window.ArenaForms.LIMA_Tariff_Seafreight is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(https://uat-lima46.adjuno.com/default.aspx?Guid=496e676e3ca949c8bf7287125e0b2854&amp;MenuId=&amp;Action=ToolDraw&amp;ActionOption=Tariff%20&amp;Reference=ACTIVITYLIMAUAT46_00842&amp;Option=Seafreight:69)
+</pre></div></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.deleteFilesInDownLoads()'><b>deleteFilesInDownLoads</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_001_CheckForTariffPage()'><b>test_LIMA_TARR_AF_001_CheckForTariffPage</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>11</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_002_ViewAirFreightTariffHistoryResults()'><b>test_LIMA_TARR_AF_002_ViewAirFreightTariffHistoryResults</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>9</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_003_CheckPagination()'><b>test_LIMA_TARR_AF_003_CheckPagination</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>7</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_004_CheckViewTarifflink()'><b>test_LIMA_TARR_AF_004_CheckViewTarifflink</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>35</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_006_CheckDownloadAirFreightTemplateLink()'><b>test_LIMA_TARR_AF_006_CheckDownloadAirFreightTemplateLink</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>25</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_016_VerifyAirFreightTariffTabs_AmendmentLog()'><b>test_LIMA_TARR_AF_016_VerifyAirFreightTariffTabs_AmendmentLog</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>3</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_017_AirFreightCostExpressService_MandatoryFieldCheck()'><b>test_LIMA_TARR_AF_017_AirFreightCostExpressService_MandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>4</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_018_AirFreightCostsAirOrEcoAirRates_MandatoryFieldCheck()'><b>test_LIMA_TARR_AF_018_AirFreightCostsAirOrEcoAirRates_MandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>233</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_020_AirLandsideCostsAirLandsideCost_MandatoryFieldCheck()'><b>test_LIMA_TARR_AF_020_AirLandsideCostsAirLandsideCost_MandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>226</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_021_AirHaulageCostsMandatoryFieldCheck()'><b>test_LIMA_TARR_AF_021_AirHaulageCostsMandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>301</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_AF_022_AirHaulageCosts_AirStorageCosts_MandatoryFieldCheck()'><b>test_LIMA_TARR_AF_022_AirHaulageCosts_AirStorageCosts_MandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>323</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_RF_001_CheckforTariffPage()'><b>test_LIMA_TARR_RF_001_CheckforTariffPage</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>10</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_RF_002_ViewRoadFreightTariffHistoryResults()'><b>test_LIMA_TARR_RF_002_ViewRoadFreightTariffHistoryResults</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>7</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_RF_003_CheckPagination()'><b>test_LIMA_TARR_RF_003_CheckPagination</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>6</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_RF_004_CheckViewTariffLink()'><b>test_LIMA_TARR_RF_004_CheckViewTariffLink</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>35</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_RF_006_CheckDownloadRoadFreightTemplateLink()'><b>test_LIMA_TARR_RF_006_CheckDownloadRoadFreightTemplateLink</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>21</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_RF_007_VerifyRoadFreightTariff_FullTrailerCostsTabs_FullTrailerCostsGrid()'><b>test_LIMA_TARR_RF_007_VerifyRoadFreightTariff_FullTrailerCostsTabs_FullTrailerCostsGrid</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>55</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_RF_008_VerifyRoadFreightTariff_FullTrailerCostsTab_FullTrailerGOHCostsGrid()'><b>test_LIMA_TARR_RF_008_VerifyRoadFreightTariff_FullTrailerCostsTab_FullTrailerGOHCostsGrid</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>3</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_RF_009_VerifyRoadFreightTariff_FullTrailerCostsTabs_FullTrailerLandsideCostsGrid()'><b>test_LIMA_TARR_RF_009_VerifyRoadFreightTariff_FullTrailerCostsTabs_FullTrailerLandsideCostsGrid</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>3</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_RF_010_VerifyRoadFreightTariff_FullTrailerCostsTab_FullTrailerDeliveryCosts()'><b>test_LIMA_TARR_RF_010_VerifyRoadFreightTariff_FullTrailerCostsTab_FullTrailerDeliveryCosts</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>2</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_RF_011_VerifyRoadFreightTariff_GroupageTrailerCostsTabs_GroupageTrailerCosts()'><b>test_LIMA_TARR_RF_011_VerifyRoadFreightTariff_GroupageTrailerCostsTabs_GroupageTrailerCosts</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>3</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_RF_012_VerifyRoadFreightTariff_GroupageTrailerCostsTabs_GroupageGOHCosts()'><b>test_LIMA_TARR_RF_012_VerifyRoadFreightTariff_GroupageTrailerCostsTabs_GroupageGOHCosts</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>2</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_RF_013_VerifyRoadFreightTariff_GroupageTrailerCostsTab_GroupageLandsideCosts()'><b>test_LIMA_TARR_RF_013_VerifyRoadFreightTariff_GroupageTrailerCostsTab_GroupageLandsideCosts</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>2</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_RF_014_VerifyRoadFreightTariff_GroupageTrailerCostsTab_GroupageHaulageCosts()'><b>test_LIMA_TARR_RF_014_VerifyRoadFreightTariff_GroupageTrailerCostsTab_GroupageHaulageCosts</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>3</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_RF_015_RoadFreight_CreateNewTariff_Update_An_Existing_Tariff_AddNewRowOnFullTrailerCostGrid()'><b>test_LIMA_TARR_RF_015_RoadFreight_CreateNewTariff_Update_An_Existing_Tariff_AddNewRowOnFullTrailerCostGrid</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>125</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_RF_016_VerifyRoadFreightTariffTabs_AmendmentLog()'><b>test_LIMA_TARR_RF_016_VerifyRoadFreightTariffTabs_AmendmentLog</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>2</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_RF_017_FullTrailerCostsTab_FullTrailerCostsGridMandatoryFieldCheck()'><b>test_LIMA_TARR_RF_017_FullTrailerCostsTab_FullTrailerCostsGridMandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>542</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_RF_018_FullTrailerCostsTab_FullTrailerGOHCostGrid_MandatoryFieldCheck()'><b>test_LIMA_TARR_RF_018_FullTrailerCostsTab_FullTrailerGOHCostGrid_MandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>254</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_RF_019_FullTrailerCostsTab_FullLandsideCosts_MandatoryFieldCheck()'><b>test_LIMA_TARR_RF_019_FullTrailerCostsTab_FullLandsideCosts_MandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>254</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_RF_020_FullTrailerCostTab_FullTrailerDeliveryCosts_MandatoryFieldCheck()'><b>test_LIMA_TARR_RF_020_FullTrailerCostTab_FullTrailerDeliveryCosts_MandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>275</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_RF_021_GroupageTrailerCostsTab_GroupageTrailerCostsGrid_MandatoryFieldCheck()'><b>test_LIMA_TARR_RF_021_GroupageTrailerCostsTab_GroupageTrailerCostsGrid_MandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>420</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_RF_022_GroupageTrailerCostsTab_GroupageGOHCosts_MandatoryFieldCheck()'><b>test_LIMA_TARR_RF_022_GroupageTrailerCostsTab_GroupageGOHCosts_MandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>416</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_RF_023_GroupageTrailerCostsTab_GroupageLandsideCostsGrid_MandatoryFieldCheck()'><b>test_LIMA_TARR_RF_023_GroupageTrailerCostsTab_GroupageLandsideCostsGrid_MandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>256</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_RF_024_GroupageTrailerCostsTab_GroupageHaulageCostsGrid_MandatoryFieldCheck()'><b>test_LIMA_TARR_RF_024_GroupageTrailerCostsTab_GroupageHaulageCostsGrid_MandatoryFieldCheck</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>478</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_001_CheckForTariffPage()'><b>test_LIMA_TARR_SF_001_CheckForTariffPage</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>23</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_002_ViewSeaFreightTariffHistoryResults()'><b>test_LIMA_TARR_SF_002_ViewSeaFreightTariffHistoryResults</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>15</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_003_CheckPagination()'><b>test_LIMA_TARR_SF_003_CheckPagination</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>10</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_004_CheckViewTarifflink()'><b>test_LIMA_TARR_SF_004_CheckViewTarifflink</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>32</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_006_CheckDownloadSeaFreightTemplateLink()'><b>test_LIMA_TARR_SF_006_CheckDownloadSeaFreightTemplateLink</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>44</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_007_VerifySeaFreightTariffTabsFCLFreightCostsGrid()'><b>test_LIMA_TARR_SF_007_VerifySeaFreightTariffTabsFCLFreightCostsGrid</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>55</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_008_VerifySeaFreightTariffTabsFCLFreightCostsGOHCostsGrid()'><b>test_LIMA_TARR_SF_008_VerifySeaFreightTariffTabsFCLFreightCostsGOHCostsGrid</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>9</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_009_VerifySeaFreightTariffTabsFCLFreightCostsAdditionalFreightCostsGridGrid()'><b>test_LIMA_TARR_SF_009_VerifySeaFreightTariffTabsFCLFreightCostsAdditionalFreightCostsGridGrid</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>5</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_010_VerifySeaFreightTariffTabsFCLFreightCostsCommentsGrid()'><b>test_LIMA_TARR_SF_010_VerifySeaFreightTariffTabsFCLFreightCostsCommentsGrid</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_011_VerifySeaFreightTariffTabsFCLLandsideCostsFCLDestinationLandsideCosts()'><b>test_LIMA_TARR_SF_011_VerifySeaFreightTariffTabsFCLLandsideCostsFCLDestinationLandsideCosts</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>5</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_012_VerifySeaFreightTariffTabsFCLLandsideCostsFCLOriginLandsideCosts()'><b>test_LIMA_TARR_SF_012_VerifySeaFreightTariffTabsFCLLandsideCostsFCLOriginLandsideCosts</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>4</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_013_VerifySeaFreightTariffTabsFCLHaulageCosts()'><b>test_LIMA_TARR_SF_013_VerifySeaFreightTariffTabsFCLHaulageCosts</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>4</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_014_VerifySeaFreightTariffTabsFCLHaulageCostsAdditionalHaulageCosts()'><b>test_LIMA_TARR_SF_014_VerifySeaFreightTariffTabsFCLHaulageCostsAdditionalHaulageCosts</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>5</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_015_VerifySeaFreightTariffTabsFCLHaulageCostsDemurrageandStorageCosts()'><b>test_LIMA_TARR_SF_015_VerifySeaFreightTariffTabsFCLHaulageCostsDemurrageandStorageCosts</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>5</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_016_VerifySeaFreightTariffTabsFCLHaulageCostsComments()'><b>test_LIMA_TARR_SF_016_VerifySeaFreightTariffTabsFCLHaulageCostsComments</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_017_VerifySeaFreightTariffTabsLCLFreightCosts()'><b>test_LIMA_TARR_SF_017_VerifySeaFreightTariffTabsLCLFreightCosts</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>4</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_017_VerifySeaFreightTariffTabsLCLFreightCostsComments()'><b>test_LIMA_TARR_SF_017_VerifySeaFreightTariffTabsLCLFreightCostsComments</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_018_VerifySeaFreightTariffTabsLCLFreightCostsAdditionalLCLFreightCosts()'><b>test_LIMA_TARR_SF_018_VerifySeaFreightTariffTabsLCLFreightCostsAdditionalLCLFreightCosts</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>5</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_020_VerifySeaFreightTariffTabsLCLLandsideCosts()'><b>test_LIMA_TARR_SF_020_VerifySeaFreightTariffTabsLCLLandsideCosts</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>5</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_021_VerifySeaFreightTariffTabsLCLHaulageCosts()'><b>test_LIMA_TARR_SF_021_VerifySeaFreightTariffTabsLCLHaulageCosts</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>3</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_022_VerifySeaFreightTariffTabsLCLHaulageCostsLCLStorageCosts()'><b>test_LIMA_TARR_SF_022_VerifySeaFreightTariffTabsLCLHaulageCostsLCLStorageCosts</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>3</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_023_VerifySeaFreightTariffTabsLCLHaulageCostsComments()'><b>test_LIMA_TARR_SF_023_VerifySeaFreightTariffTabsLCLHaulageCostsComments</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_024_VerifySeaFreightTariffTabsLCLHaulageCostsLCLStorageCosts()'><b>test_LIMA_TARR_SF_024_VerifySeaFreightTariffTabsLCLHaulageCostsLCLStorageCosts</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>2</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMATariffTest.test_LIMA_TARR_SF_025_SeaFreight_CreateNewTariff_UpdateanExistingTariff_AddANewRowOnFCLFreightCostGrid()'><b>test_LIMA_TARR_SF_025_SeaFreight_CreateNewTariff_UpdateanExistingTariff_AddANewRowOnFCLFreightCostGrid</b><br>Test class: com.lima.test.AdjunoLIMATariffTest</td>
+<td></td>
+<td>116</td>
+<td>com.lima.test.AdjunoLIMATariffTest@6d7b4f4c</td></tr>
+</table><p>
+</body>
+</html>

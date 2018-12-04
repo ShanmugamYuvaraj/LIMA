@@ -1,0 +1,26 @@
+<Catalog>
+    <SearchParams>
+        <Type_Supplier>Supplier</Type_Supplier>
+        <Type_Customer>Customer</Type_Customer>
+		<Type_Country>Country</Type_Country>
+		<Type_LoCode>LOCODE</Type_LoCode>
+    </SearchParams>
+    <Certificate_Confirmation>
+        <SearchParams>
+            <Origin_Port>Chicago</Origin_Port>
+            <Booked_Vessel>Hyundai Force</Booked_Vessel>
+            <Mode>Air</Mode>
+            <ETD_From></ETD_From>
+            <ETD_To></ETD_To>
+            <Status_Awaiting>Awaiting</Status_Awaiting>
+            <Status_PartComplete>Part-Complete</Status_PartComplete>
+            <Status_Any>{Any}</Status_Any>
+            <Status_Certified>Certified</Status_Certified>
+            <Order_Number></Order_Number>
+            <Customer></Customer>
+            <Vendor_Ref></Vendor_Ref>
+           <Product></Product>
+            <WFL_Ref></WFL_Ref>        
+        </SearchParams>
+    </Certificate_Confirmation>
+</Catalog>

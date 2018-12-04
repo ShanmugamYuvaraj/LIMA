@@ -1,0 +1,41 @@
+<ProductionCheck>
+	<SearchParams>
+		<Origin></Origin>
+		<OriginPort></OriginPort>
+		<Vendor></Vendor>
+		<Vendor_Reference></Vendor_Reference>
+		<Buying_Agent></Buying_Agent>
+		<Mode></Mode>
+		<Invalid_PONumber>ABCD</Invalid_PONumber>
+		<PONumber></PONumber>
+		<Production_Status>{Any}</Production_Status>
+		<Production_Status_Pending>Pending</Production_Status_Pending>
+		<Production_Status_Progressed>Progressed</Production_Status_Progressed>
+		<Production_Status_PartProgressed>Part Progressed</Production_Status_PartProgressed>
+		<Workflow_Status></Workflow_Status>	
+		<IntendedShipDate>27-07-2017</IntendedShipDate>
+		<IntendedShipQty>100</IntendedShipQty>
+		<ReasonCode>SCM</ReasonCode>
+		<Comment>Good</Comment>
+	</SearchParams>	
+	<Orders_Progress>
+		<Caption>PO Number</Caption>
+		<Caption>Vendor</Caption>
+		<Caption>Buying Agent</Caption>
+		<Caption>Factory</Caption>
+	</Orders_Progress>
+	<Product_Progress>
+		<Caption>Product</Caption>
+		<Caption>Description</Caption>
+		<Caption>Production Started</Caption>
+		<Caption>Split Shipment</Caption>
+		<Caption>Mode</Caption>
+		<Caption>PO Ship Date</Caption>
+		<Caption>Intended Ship Date</Caption>
+		<Caption>Inspection Date</Caption>
+		<Caption>PO Quantity</Caption>
+		<Caption>Intended Ship Quantity</Caption>
+		<Caption>Reason Code</Caption>
+		<Caption>Comments</Caption>
+	</Product_Progress>
+</ProductionCheck>

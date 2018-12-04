@@ -1,0 +1,96 @@
+<manifest>
+	<Search_Param>
+		<Supplier>Supplier</Supplier>
+		<Mode_Sea>Sea</Mode_Sea>
+		<Mode_Air>Air</Mode_Air>
+		<Customer>Customer</Customer>
+		<Status_Any>Any</Status_Any>
+		<Vendor>Alliance Farms NZ</Vendor>
+		<Customer_Val>Luscious Farms Ltd (WFLC03)</Customer_Val>
+		<Ref_Num>WF-0001442</Ref_Num>
+		<Invalid_Po>jdfjdh</Invalid_Po>
+		<Valid_Po>ME196</Valid_Po>
+		<Status_Awaiting>Awaiting</Status_Awaiting>
+		<Status_Manifest>Manifest</Status_Manifest>
+		<Quantity>10</Quantity>
+		<Cube>5</Cube>
+		<Cartons>100</Cartons>
+		<NetWeight>40</NetWeight>
+		<GrWeight>55</GrWeight>
+		<PackType>Boxed</PackType>
+		<FreightTerms>Collect</FreightTerms>
+		<ProductPallet>1234</ProductPallet>
+		<HouseBill>asgah</HouseBill>
+		<DocType>HBL</DocType>
+		<Container>CBHU3656680</Container>
+		<Seal>RWGJ</Seal>
+		<VGM>10</VGM>
+		<KPI>On Time</KPI>
+		<Loading>CFS/CY</Loading>
+		<Equipment>20FT</Equipment>
+	</Search_Param>
+	<Dailog_Value>
+		<Message>test Message</Message>
+		<email>abc@test.com</email>
+	</Dailog_Value>
+	
+	<Container_Captions>
+		<Caption>Container</Caption>
+		<Caption>Seal</Caption>
+		<Caption>Loading</Caption> 
+		<Caption>Equipment</Caption>
+		<Caption>Substitute</Caption>
+		<Caption>Rig Type</Caption>
+		<Caption>Bars</Caption>
+		<Caption>VGM</Caption>
+		<Caption>KPI</Caption>		
+	</Container_Captions>	
+	
+	<Product_Detail_Captions>
+		<Caption>PO Number</Caption>
+		<Caption>Product</Caption>
+		<Caption>Vendor</Caption> 
+		<Caption>DC</Caption>
+		<Caption>Qty</Caption>			
+		<Caption>Ctns</Caption>
+		<Caption>Cbm</Caption>
+		<Caption>Gr Kgs</Caption>
+		<Caption>Nt Kgs</Caption>
+		<Caption>Pack Type</Caption>
+		<Caption>Doc. Type</Caption>
+		<Caption>HBL/FCR</Caption>
+		<Caption>OBL</Caption>
+		<Caption>Position</Caption>
+	</Product_Detail_Captions>
+
+	<Product_Captions>
+		<Caption>PO Number</Caption>
+		<Caption>Product</Caption>
+		<Caption>Identifier</Caption> 
+		<Caption>SKU</Caption>
+		<Caption>Vendor</Caption>
+		<Caption>Supplier Ref</Caption>
+		<Caption>DC</Caption>
+		<Caption>Bkd Qty</Caption>
+		<Caption>Qty</Caption>			
+		<Caption>Ctns</Caption>
+		<Caption>Cbm</Caption>
+		<Caption>Gr Kgs</Caption>
+		<Caption>Nt Kgs</Caption>
+		<Caption>Pack Type</Caption>
+		<Caption>Freight Terms</Caption>
+		<Caption>Ctns</Caption>
+		<Caption>Cbm</Caption>
+		<Caption>Gr Kgs</Caption>
+		<Caption>Nt Kgs</Caption>
+		<Caption>Pack Type</Caption>
+		<Caption>Freight Terms</Caption>
+		<Caption>Pallets</Caption>
+		<Caption>Doc. Type</Caption>
+		<Caption>HBL/FCR</Caption>
+		<Caption>OBL</Caption>
+		<Caption>Manifest Ref</Caption>
+		<Caption>-></Caption>
+		<Caption>Position</Caption>
+	</Product_Captions>
+</manifest>	

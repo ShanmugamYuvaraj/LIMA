@@ -1,0 +1,461 @@
+<html>
+<head>
+<title>TestNG:  Document Received</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Document Received</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Feb 02 17:04:49 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>348 seconds (348982 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMADocumentReceivedTest.Test_close()'><b>Test_close</b><br>Test class: com.lima.test.AdjunoLIMADocumentReceivedTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	close is not available expected [true] but found [false],
+	*****_13_5_close is not clicked in pop up***** expected [true] but found [false]
+	at com.lima.test.AdjunoLIMADocumentReceivedTest.Test_close(AdjunoLIMADocumentReceivedTest.java:721)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace735627505", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace735627505'><pre>java.lang.AssertionError: The following asserts failed:
+	close is not available expected [true] but found [false],
+	*****_13_5_close is not clicked in pop up***** expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lima.test.AdjunoLIMADocumentReceivedTest.Test_close(AdjunoLIMADocumentReceivedTest.java:721)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>25</td>
+<td>com.lima.test.AdjunoLIMADocumentReceivedTest@3701eaf6</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMADocumentReceivedTest.checkforValidationMsg()'><b>checkforValidationMsg</b><br>Test class: com.lima.test.AdjunoLIMADocumentReceivedTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	error msg is not Visible expected [true] but found [false]
+	at com.lima.test.AdjunoLIMADocumentReceivedTest.checkforValidationMsg(AdjunoLIMADocumentReceivedTest.java:594)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1080107094", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1080107094'><pre>java.lang.AssertionError: The following asserts failed:
+	error msg is not Visible expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lima.test.AdjunoLIMADocumentReceivedTest.checkforValidationMsg(AdjunoLIMADocumentReceivedTest.java:594)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMADocumentReceivedTest@3701eaf6</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMADocumentReceivedTest.checkuploadfile()'><b>checkuploadfile</b><br>Test class: com.lima.test.AdjunoLIMADocumentReceivedTest</td>
+<td><div><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 10.22 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f6c23f48-4848-433a-bcfc-e039c76ef6da
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.lima.pagefactory.AdjunoLIMADocumentReceivedPOM.clickButtonUsingWebElement(AdjunoLIMADocumentReceivedPOM.java:966)
+	at com.lima.test.AdjunoLIMADocumentReceivedTest.checkuploadfile(AdjunoLIMADocumentReceivedTest.java:639)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/Anand/AppData/Local/Temp/anonymous2592470802840224872webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/Anand/AppData/Local/Temp/anonymous2592470802840224872webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Anand/AppData/Local/Temp/anonymous2592470802840224872webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Anand/AppData/Local/Temp/anonymous2592470802840224872webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace145279672", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace145279672'><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 10.22 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f6c23f48-4848-433a-bcfc-e039c76ef6da
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.lima.pagefactory.AdjunoLIMADocumentReceivedPOM.clickButtonUsingWebElement(AdjunoLIMADocumentReceivedPOM.java:966)
+	at com.lima.test.AdjunoLIMADocumentReceivedTest.checkuploadfile(AdjunoLIMADocumentReceivedTest.java:639)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/Anand/AppData/Local/Temp/anonymous2592470802840224872webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/Anand/AppData/Local/Temp/anonymous2592470802840224872webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Anand/AppData/Local/Temp/anonymous2592470802840224872webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Anand/AppData/Local/Temp/anonymous2592470802840224872webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+</pre></div></td>
+<td>13</td>
+<td>com.lima.test.AdjunoLIMADocumentReceivedTest@3701eaf6</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMADocumentReceivedTest.clickAddButton()'><b>clickAddButton</b><br>Test class: com.lima.test.AdjunoLIMADocumentReceivedTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Clear All Button is not Present expected [true] but found [false],
+	Remove Button is not Present expected [true] but found [false],
+	Upload Button is not Present expected [true] but found [false]
+	at com.lima.test.AdjunoLIMADocumentReceivedTest.clickAddButton(AdjunoLIMADocumentReceivedTest.java:630)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1584929615", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1584929615'><pre>java.lang.AssertionError: The following asserts failed:
+	Clear All Button is not Present expected [true] but found [false],
+	Remove Button is not Present expected [true] but found [false],
+	Upload Button is not Present expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lima.test.AdjunoLIMADocumentReceivedTest.clickAddButton(AdjunoLIMADocumentReceivedTest.java:630)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>2</td>
+<td>com.lima.test.AdjunoLIMADocumentReceivedTest@3701eaf6</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMADocumentReceivedTest.clickHyperlink()'><b>clickHyperlink</b><br>Test class: com.lima.test.AdjunoLIMADocumentReceivedTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;ext-gen185&apos;]/div[1]/table/tbody/tr/td[4]/div/a&quot;}
+Command duration or timeout: 10.24 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f6c23f48-4848-433a-bcfc-e039c76ef6da
+*** Element info: {Using=xpath, value=.//*[@id=&apos;ext-gen185&apos;]/div[1]/table/tbody/tr/td[4]/div/a}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.lima.test.AdjunoLIMADocumentReceivedTest.clickHyperlink(AdjunoLIMADocumentReceivedTest.java:606)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;ext-gen185&apos;]/div[1]/table/tbody/tr/td[4]/div/a&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Anand/AppData/Local/Temp/anonymous2592470802840224872webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Anand/AppData/Local/Temp/anonymous2592470802840224872webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1242945013", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1242945013'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;ext-gen185&apos;]/div[1]/table/tbody/tr/td[4]/div/a&quot;}
+Command duration or timeout: 10.24 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f6c23f48-4848-433a-bcfc-e039c76ef6da
+*** Element info: {Using=xpath, value=.//*[@id=&apos;ext-gen185&apos;]/div[1]/table/tbody/tr/td[4]/div/a}
+	at sun.reflect.GeneratedConstructorAccessor23.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.lima.test.AdjunoLIMADocumentReceivedTest.clickHyperlink(AdjunoLIMADocumentReceivedTest.java:606)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;ext-gen185&apos;]/div[1]/table/tbody/tr/td[4]/div/a&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Anand/AppData/Local/Temp/anonymous2592470802840224872webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Anand/AppData/Local/Temp/anonymous2592470802840224872webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div></td>
+<td>20</td>
+<td>com.lima.test.AdjunoLIMADocumentReceivedTest@3701eaf6</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMADocumentReceivedTest.ClearDocumentReceivedFields()'><b>ClearDocumentReceivedFields</b><br>Test class: com.lima.test.AdjunoLIMADocumentReceivedTest</td>
+<td></td>
+<td>20</td>
+<td>com.lima.test.AdjunoLIMADocumentReceivedTest@3701eaf6</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMADocumentReceivedTest.attachmentDocStatus()'><b>attachmentDocStatus</b><br>Test class: com.lima.test.AdjunoLIMADocumentReceivedTest</td>
+<td></td>
+<td>10</td>
+<td>com.lima.test.AdjunoLIMADocumentReceivedTest@3701eaf6</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMADocumentReceivedTest.checkforValidationBox()'><b>checkforValidationBox</b><br>Test class: com.lima.test.AdjunoLIMADocumentReceivedTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMADocumentReceivedTest@3701eaf6</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMADocumentReceivedTest.checkforchevrons()'><b>checkforchevrons</b><br>Test class: com.lima.test.AdjunoLIMADocumentReceivedTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMADocumentReceivedTest@3701eaf6</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMADocumentReceivedTest.clickDeleteDocumentBtn()'><b>clickDeleteDocumentBtn</b><br>Test class: com.lima.test.AdjunoLIMADocumentReceivedTest</td>
+<td></td>
+<td>7</td>
+<td>com.lima.test.AdjunoLIMADocumentReceivedTest@3701eaf6</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMADocumentReceivedTest.clickadddocumentbtn()'><b>clickadddocumentbtn</b><br>Test class: com.lima.test.AdjunoLIMADocumentReceivedTest</td>
+<td></td>
+<td>1</td>
+<td>com.lima.test.AdjunoLIMADocumentReceivedTest@3701eaf6</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMADocumentReceivedTest.selectCheckBoxData()'><b>selectCheckBoxData</b><br>Test class: com.lima.test.AdjunoLIMADocumentReceivedTest</td>
+<td></td>
+<td>3</td>
+<td>com.lima.test.AdjunoLIMADocumentReceivedTest@3701eaf6</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMADocumentReceivedTest.test_16_2_SetFieldMultipleValue()'><b>test_16_2_SetFieldMultipleValue</b><br>Test class: com.lima.test.AdjunoLIMADocumentReceivedTest</td>
+<td></td>
+<td>43</td>
+<td>com.lima.test.AdjunoLIMADocumentReceivedTest@3701eaf6</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMADocumentReceivedTest.test_16d1_AccessDocumentReceived()'><b>test_16d1_AccessDocumentReceived</b><br>Test class: com.lima.test.AdjunoLIMADocumentReceivedTest</td>
+<td></td>
+<td>29</td>
+<td>com.lima.test.AdjunoLIMADocumentReceivedTest@3701eaf6</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMADocumentReceivedTest.test_16d1_SetFeildDocumentReceivedfield()'><b>test_16d1_SetFeildDocumentReceivedfield</b><br>Test class: com.lima.test.AdjunoLIMADocumentReceivedTest</td>
+<td></td>
+<td>25</td>
+<td>com.lima.test.AdjunoLIMADocumentReceivedTest@3701eaf6</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMADocumentReceivedTest.test_17d5_UpdateChevValidation()'><b>test_17d5_UpdateChevValidation</b><br>Test class: com.lima.test.AdjunoLIMADocumentReceivedTest</td>
+<td></td>
+<td>32</td>
+<td>com.lima.test.AdjunoLIMADocumentReceivedTest@3701eaf6</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMADocumentReceivedTest.test_17d7_UpdateTrackAWB()'><b>test_17d7_UpdateTrackAWB</b><br>Test class: com.lima.test.AdjunoLIMADocumentReceivedTest</td>
+<td></td>
+<td>19</td>
+<td>com.lima.test.AdjunoLIMADocumentReceivedTest@3701eaf6</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMADocumentReceivedTest.test_19d1_CompleteChev()'><b>test_19d1_CompleteChev</b><br>Test class: com.lima.test.AdjunoLIMADocumentReceivedTest</td>
+<td></td>
+<td>31</td>
+<td>com.lima.test.AdjunoLIMADocumentReceivedTest@3701eaf6</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMADocumentReceivedTest.uploadmultiplefile()'><b>uploadmultiplefile</b><br>Test class: com.lima.test.AdjunoLIMADocumentReceivedTest</td>
+<td></td>
+<td>3</td>
+<td>com.lima.test.AdjunoLIMADocumentReceivedTest@3701eaf6</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMADocumentReceivedTest.verifyDocumentReceivedFields()'><b>verifyDocumentReceivedFields</b><br>Test class: com.lima.test.AdjunoLIMADocumentReceivedTest</td>
+<td></td>
+<td>1</td>
+<td>com.lima.test.AdjunoLIMADocumentReceivedTest@3701eaf6</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMADocumentReceivedTest.verifyFileNameAndSize()'><b>verifyFileNameAndSize</b><br>Test class: com.lima.test.AdjunoLIMADocumentReceivedTest</td>
+<td></td>
+<td>10</td>
+<td>com.lima.test.AdjunoLIMADocumentReceivedTest@3701eaf6</td></tr>
+</table><p>
+</body>
+</html>

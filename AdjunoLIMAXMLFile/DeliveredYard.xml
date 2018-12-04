@@ -1,0 +1,31 @@
+<DeliveredYard>
+	<Search_Param> 
+		<Catalog_Locode>LOCODE</Catalog_Locode>
+		<Catalog_Vessel>Vessel</Catalog_Vessel>
+		<Status_Awaiting>Awaiting</Status_Awaiting>
+		<Status_Arrived>Yard Arrived</Status_Arrived>
+		<Status_Departed>Yard Departed</Status_Departed>
+		<Invalid_Container>ee219jgsd</Invalid_Container>		
+		<Destination_port>Felixstowe</Destination_port>
+		<Destination>DC2</Destination>
+		<Destination2>DC3</Destination2>
+		<Reason>Reason 1</Reason>
+		<ForwarderRef>testRef</ForwarderRef>
+		<Vessel_value>Angela</Vessel_value>
+		<Comments>Test cmt</Comments>
+	</Search_Param>
+	<Status>
+		<Status_Value>Awaiting</Status_Value>
+		<Status_Value>Yard Arrived</Status_Value>
+		<Status_Value>Yard Departed</Status_Value>
+	</Status>
+	<Grid_Caption>
+		<caption>Container</caption>
+		<caption>Arrival Date</caption>
+		<caption>Yard Arrival Date</caption>
+		<caption>Yard Departure Date</caption>
+		<caption>Destination</caption>
+		<caption>Reason</caption>
+		<caption>Comments</caption>
+	</Grid_Caption>
+</DeliveredYard>

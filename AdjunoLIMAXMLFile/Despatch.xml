@@ -1,0 +1,61 @@
+<Despatch>
+	<SearchParams>
+		<OriginPort>Boulogne</OriginPort>
+		<DestinationPort>Grangemouth</DestinationPort>
+		<Mode>Sea</Mode>
+		<Carrier></Carrier>
+		<Invalid_Carrier>ABV</Invalid_Carrier>
+		<ETD_From></ETD_From>
+		<ETD_To></ETD_To>
+		<Status>Awaiting</Status>
+		<Status_Despatched>Despatched</Status_Despatched>
+		<Status_Awaiting_Transhipment>Awaiting Transhipment</Status_Awaiting_Transhipment>
+		<Vessel></Vessel>
+		<Invalid_Vessel>Adrian Maersk</Invalid_Vessel>
+		<Container>TRLU6585820</Container>
+		<Manifested_Container_Number>FSCU5112867</Manifested_Container_Number>
+		<Invalid_Container>@#</Invalid_Container>
+		<HBL></HBL>
+		<Vendor></Vendor>
+		<Loading></Loading>
+		<Voyage>TEST</Voyage>
+		<CTD>06 Aug 2017</CTD>
+		<Past_ETA>02 Aug 2017</Past_ETA>
+		<Transhipment_Status_NA>N/A</Transhipment_Status_NA>
+		<KPI>On-Time</KPI>
+		<TransShipment_Status_Awaiting>Awaiting</TransShipment_Status_Awaiting>
+		<PONumber_Manifest>LIMATEST4XPF705</PONumber_Manifest>
+		<Status_Manifest>Manifested</Status_Manifest>
+		<VoyageType_Despatch>Origin Feeder</VoyageType_Despatch>
+		<OriginPort_Despatch>Bangkok</OriginPort_Despatch>
+		<DestinationPort_Despatch>Dartford</DestinationPort_Despatch>
+		<CTD_Despatch>10 Aug 2017</CTD_Despatch>
+		<ETA_Despatch>13 Aug 2017</ETA_Despatch>
+		<Vessel_Despatch>Air Premium</Vessel_Despatch>
+		<Voyage_Despatch>1234</Voyage_Despatch>
+		<TranshipmentStatus_Despatch>Awaiting</TranshipmentStatus_Despatch>
+		<KPI_Despatch>On-Time</KPI_Despatch>
+	</SearchParams>
+	<GridLeg_Despatch>
+		<Caption>Voyage Type</Caption>
+		<Caption>Origin Port</Caption>
+		<Caption>Destination Port</Caption>
+		<Caption>Voyage</Caption>
+		<Caption>CTD</Caption>
+		<Caption>ETA</Caption>
+		<Caption>Transhipment Status</Caption>
+		<Caption>KPI</Caption>
+		<Caption>P/L</Caption>
+	</GridLeg_Despatch>
+	<Container_Despatch>
+		<Caption>Container</Caption>
+		<Caption>Seal</Caption>
+		<Caption>Equipment</Caption>
+		<Caption>Loading</Caption>
+		<Caption>Carrier</Caption>
+		<Caption>Carrier Type</Caption>
+		<Caption>Contract No</Caption>
+		<Caption>Co-Loader</Caption>
+		<Caption>Status</Caption>
+	</Container_Despatch>
+</Despatch>

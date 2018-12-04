@@ -1,0 +1,19 @@
+<Forwarder_Reference>
+	<Search_Param>
+		<Status_Awaiting>Awaiting</Status_Awaiting>
+		<Status_Referenced>Referenced</Status_Referenced>
+		<Vessel>Cap Castillo</Vessel>
+		<Invalid_Container>abc</Invalid_Container>
+		<Invalid_Forward_Ref>abc</Invalid_Forward_Ref>
+		<ForwardReference>jhkiji</ForwardReference>
+	</Search_Param>	
+	<Po_captions>
+		<Caption>Product</Caption>
+		<Caption>Identifier</Caption>
+		<Caption>Ship Qty</Caption>
+		<Caption>Ship Ctns</Caption>
+		<Caption>Ship Cbm</Caption>
+		<Caption>PO Number</Caption>
+		<Caption>Kgs</Caption>
+	</Po_captions>	
+</Forwarder_Reference>

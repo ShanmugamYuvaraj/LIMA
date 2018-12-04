@@ -1,0 +1,142 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="LIMATestAutomtion" thread-count="1" verbose="1" annotations="JDK">
+	
+<test name="POManager">
+	
+		<classes>
+				<class name="com.lima.test.AdjunoLIMAPoManagerTest"/>
+		</classes>
+	</test>
+		
+	
+	<test name="POConfirmation">
+		<classes>
+				<class name="com.lima.test.AdjunoLIMAPoConfirmationTest"/>
+		</classes>
+	</test>
+	
+	<test name="ProductionCheck">
+		<classes>
+				<class name="com.lima.test.AdjunoLIMAProductionCheckTest"/>
+		</classes>		
+	</test>
+	
+	<test name="Shipment Booking">
+		<classes>
+				<class name="com.lima.test.AdjunoLIMAShipmentBookingTest"/>
+		</classes>
+	</test>
+	
+	<test name="CargoReceipt">
+		<classes>
+				<class name="com.lima.test.AdjunoLIMACargoReceiptTest"/>
+		</classes>
+	</test>
+	
+	<test name="Shipment Authority">
+		<classes>
+				<class name="com.lima.test.AdjunoLIMAShipAuthorityTest"/>
+		</classes>
+	</test>
+	
+	<test name="Despatch">
+		<classes>
+				<class name="com.lima.test.AdjunoLIMADespatchTest"/>
+		</classes>
+	</test>
+	
+	<test name="Confirm Arrival">
+		<classes>
+				<class name="com.lima.test.AdjunoLIMAConfirmArrivalTest"/>
+		</classes>
+	</test>
+	
+	<test name="Custom Clearance">
+		<classes>
+				<class name="com.lima.test.AdjunoLIMACustomClearenceTest"/>
+		</classes>
+	</test>
+	
+	<test name="Booking Confirmation">
+		<classes>
+				<class name="com.lima.test.AdjunoLIMABookingConfirmationTest"/>
+		</classes>
+	</test>
+	
+	<test name="Freight Payment">
+		<classes>
+				<class name="com.lima.test.AdjunoLIMAFreightPaymentsTest"/>
+		</classes>
+	</test>
+	
+	<test name="Forward Reference">
+		<classes>
+				<class name="com.lima.test.AdjunoLIMAForwarderReferenceTest"/>
+		</classes>
+	</test>
+	
+	<test name="Manifest Lima">
+		<classes>
+				<class name="com.lima.test.AdjunoLIMAManifestTest"/>
+		</classes>
+	</test>
+	
+	<test name="Tarriff">
+		<classes>
+				<class name="com.lima.test.AdjunoLIMATariffTest"/>
+		</classes>
+	</test>
+	
+	<test name="Delivery Yard">
+		<classes>
+				<class name="com.lima.test.AdjunoLIMADeliveredYardTest"/>
+		</classes>
+	</test>
+	
+	<test name="Off Dock Location">
+		<classes>
+				<class name="com.lima.test.AdjunoLIMAOffDockLocationTest"/>
+		</classes>
+	</test>
+	
+	<test name="Container Restitution">
+		<classes>
+				<class name="com.lima.test.AdjunoLIMAContainerRestitutionTest"/>
+		</classes>
+	</test>
+	
+	<test name="Estimated Landed Cost">
+		<classes>
+				<class name="com.lima.test.AdjunoLIMAEstimatedLandedCostTest"/>
+		</classes>
+	</test>
+	
+	<test name="Document Received">
+		<classes>
+				<class name="com.lima.test.AdjunoLIMADocumentReceivedTest"/>
+		</classes>
+	</test>
+	
+	<test name="Document Sent">
+		<classes>
+				<class name="com.lima.test.AdjunoLIMADocumentSentTest"/>
+		</classes>
+	</test>
+	
+	<test name="Vendor Booking">
+		<classes>
+				<class name="com.lima.test.AdjunoLIMAVendorBookingTest"/>
+		</classes>
+	</test>
+	
+	
+	<test name="Delivery Booking">
+		<classes>
+				<class name="com.lima.test.AdjunoLIMADeliveryBookingTest"/>
+		</classes>
+	</test>
+	
+	
+	
+</suite>

@@ -1,0 +1,254 @@
+<html>
+<head>
+<title>TestNG:  POManager</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>POManager</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>35/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 05 11:45:16 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>437 seconds (437826 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.accessPOManager()'><b>accessPOManager</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>26</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.addRow()'><b>addRow</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>18</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.checkDataInPurchaseOrder()'><b>checkDataInPurchaseOrder</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>2</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.checkForPurchaseOrderDisplay()'><b>checkForPurchaseOrderDisplay</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>3</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.checkPageLoaded()'><b>checkPageLoaded</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>1</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.checkProductSummaryTabFields()'><b>checkProductSummaryTabFields</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>2</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.clearsearchFields()'><b>clearsearchFields</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.newPOCreate()'><b>newPOCreate</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>5</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.searchForPoNumberInPriority()'><b>searchForPoNumberInPriority</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>6</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.setFieldValue()'><b>setFieldValue</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>15</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.test_1_VerifyExistanceOfChevorns()'><b>test_1_VerifyExistanceOfChevorns</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.test_22_verifyCaptionsInProductSummary()'><b>test_22_verifyCaptionsInProductSummary</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>6</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.test_23_SetProductSummaryGridValue()'><b>test_23_SetProductSummaryGridValue</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>57</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.test_24_verifyCaptionsInProductCard()'><b>test_24_verifyCaptionsInProductCard</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>4</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.test_25to41_SetValueInProductCardTab()'><b>test_25to41_SetValueInProductCardTab</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>60</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.test_2_VerifyExistanceOfFields()'><b>test_2_VerifyExistanceOfFields</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.test_3_AccessPOManagerEdit()'><b>test_3_AccessPOManagerEdit</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>1</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.test_42_VerifyCaptionsInRatioPackDetailCard()'><b>test_42_VerifyCaptionsInRatioPackDetailCard</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>3</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.test_43_VerifyCaptionsBWSTab()'><b>test_43_VerifyCaptionsBWSTab</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>1</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.test_44_to_49_SetValueInBWSTab()'><b>test_44_to_49_SetValueInBWSTab</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>23</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.test_4_VerifyElementsInEditChevron()'><b>test_4_VerifyElementsInEditChevron</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.test_50_clickComplite()'><b>test_50_clickComplite</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>17</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.test_51_GetTrackRefNo()'><b>test_51_GetTrackRefNo</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>4</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.test_52_ClickOnTrackLink()'><b>test_52_ClickOnTrackLink</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>40</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.test_55_checkPoInConfirmation()'><b>test_55_checkPoInConfirmation</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>46</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.test_5_VerifyOrderHeaderFields()'><b>test_5_VerifyOrderHeaderFields</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.test_6_setConsigneeFields()'><b>test_6_setConsigneeFields</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.test_7_setOrderTypeFields()'><b>test_7_setOrderTypeFields</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.test_8_VerifyOrderSummarySectionFields()'><b>test_8_VerifyOrderSummarySectionFields</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>4</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.test_9to21_SetOrderSummuryFields()'><b>test_9to21_SetOrderSummuryFields</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>6</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.test_AcessPriority()'><b>test_AcessPriority</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>8</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.test_setValueForProductSummaryTabFields()'><b>test_setValueForProductSummaryTabFields</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>5</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.verifyDataFromSearchInEdit()'><b>verifyDataFromSearchInEdit</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.verifyStausInPOConfirmation()'><b>verifyStausInPOConfirmation</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAPoManagerTest.viewPoInEditMode()'><b>viewPoInEditMode</b><br>Test class: com.lima.test.AdjunoLIMAPoManagerTest</td>
+<td></td>
+<td>16</td>
+<td>com.lima.test.AdjunoLIMAPoManagerTest@5e3a8624</td></tr>
+</table><p>
+</body>
+</html>

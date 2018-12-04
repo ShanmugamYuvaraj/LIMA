@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<DocumentsSent>
+     <SearchParams>
+	    <DocumentStatus>Pending</DocumentStatus>
+		<DocumentStatus1>Sent</DocumentStatus1>
+		<DocumentStatus2>Part Sent</DocumentStatus2>
+		<Status>Shipped</Status>
+		<Courier>Aramex</Courier>
+		<CourierAWB>1234</CourierAWB>
+	    <Recepient>Client</Recepient>
+		<OriginalCopy>Original</OriginalCopy>
+	</SearchParams>
+	 
+</DocumentsSent>

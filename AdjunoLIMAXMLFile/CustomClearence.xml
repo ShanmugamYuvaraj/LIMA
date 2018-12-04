@@ -1,0 +1,23 @@
+<Custom_Clearence>
+	<Search_Params>
+		<Invalid_ContainerNumber>1233</Invalid_ContainerNumber>
+		<Awaiting_Status>Awaiting</Awaiting_Status>
+		<EPU>Test</EPU>
+		<UCR>Test</UCR>
+	</Search_Params>
+	<Vessel_Grid>
+		<Caption>Vessel</Caption>
+		<Caption>Arrival Date</Caption>
+		<Caption>Container</Caption>
+	</Vessel_Grid>
+	<HouseBill_Grid>
+		<Caption>PO Number</Caption>
+		<Caption>House Bill</Caption>
+		<Caption>Entry Date</Caption>
+		<Caption>Entry Number</Caption>
+		<Caption>Clearance Date</Caption>
+		<Caption>EPU</Caption>
+		<Caption>UCR</Caption>
+		<Caption>TaxPoint</Caption>
+	</HouseBill_Grid>
+</Custom_Clearence>

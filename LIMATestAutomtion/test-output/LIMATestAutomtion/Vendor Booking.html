@@ -1,0 +1,551 @@
+<html>
+<head>
+<title>TestNG:  Vendor Booking</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Vendor Booking</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>38/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Feb 02 17:16:48 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>1416 seconds (1416220 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_10_SelectOneRecordAndVerifyInBookingPage()'><b>test_10_SelectOneRecordAndVerifyInBookingPage</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	For PONumber &apos;71217&apos;, BkdQty field has issues on PO Details Grid in Bookings page expected [true] but found [false]
+	at com.lima.test.AdjunoLIMAVendorBookingTest.test_10_SelectOneRecordAndVerifyInBookingPage(AdjunoLIMAVendorBookingTest.java:663)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1532954299", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1532954299'><pre>java.lang.AssertionError: The following asserts failed:
+	For PONumber &apos;71217&apos;, BkdQty field has issues on PO Details Grid in Bookings page expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lima.test.AdjunoLIMAVendorBookingTest.test_10_SelectOneRecordAndVerifyInBookingPage(AdjunoLIMAVendorBookingTest.java:663)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>55</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_25_ChangeModeFieldInShipmentDetailsPanel()'><b>test_25_ChangeModeFieldInShipmentDetailsPanel</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	*****test ID:25_Changing Mode pop up is not displayed in Booking page***** expected [true] but found [false],
+	*****test ID:25_Validation Message in Changing Mode pop up is wrong***** expected [true] but found [false]
+	at com.lima.test.AdjunoLIMAVendorBookingTest.test_25_ChangeModeFieldInShipmentDetailsPanel(AdjunoLIMAVendorBookingTest.java:1389)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1950830528", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1950830528'><pre>java.lang.AssertionError: The following asserts failed:
+	*****test ID:25_Changing Mode pop up is not displayed in Booking page***** expected [true] but found [false],
+	*****test ID:25_Validation Message in Changing Mode pop up is wrong***** expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lima.test.AdjunoLIMAVendorBookingTest.test_25_ChangeModeFieldInShipmentDetailsPanel(AdjunoLIMAVendorBookingTest.java:1389)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>19</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_26_ClickNoButtonInChangeModePopUp()'><b>test_26_ClickNoButtonInChangeModePopUp</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td><div><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 10.22 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: edb92ee1-63d1-4d31-869c-efaff906b106
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.lima.pagefactory.AdjunoLIMAVendorBookingPOM.clickButton(AdjunoLIMAVendorBookingPOM.java:716)
+	at com.lima.test.AdjunoLIMAVendorBookingTest.test_26_ClickNoButtonInChangeModePopUp(AdjunoLIMAVendorBookingTest.java:1401)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/Anand/AppData/Local/Temp/anonymous6977059626027483131webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/Anand/AppData/Local/Temp/anonymous6977059626027483131webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Anand/AppData/Local/Temp/anonymous6977059626027483131webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Anand/AppData/Local/Temp/anonymous6977059626027483131webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1691400419", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1691400419'><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 10.22 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: edb92ee1-63d1-4d31-869c-efaff906b106
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.lima.pagefactory.AdjunoLIMAVendorBookingPOM.clickButton(AdjunoLIMAVendorBookingPOM.java:716)
+	at com.lima.test.AdjunoLIMAVendorBookingTest.test_26_ClickNoButtonInChangeModePopUp(AdjunoLIMAVendorBookingTest.java:1401)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/Anand/AppData/Local/Temp/anonymous6977059626027483131webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/Anand/AppData/Local/Temp/anonymous6977059626027483131webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Anand/AppData/Local/Temp/anonymous6977059626027483131webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Anand/AppData/Local/Temp/anonymous6977059626027483131webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+</pre></div></td>
+<td>15</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_27_ClickYesButtonInChangeModePopUp()'><b>test_27_ClickYesButtonInChangeModePopUp</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td><div><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 10.15 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: edb92ee1-63d1-4d31-869c-efaff906b106
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.lima.pagefactory.AdjunoLIMAVendorBookingPOM.clickButton(AdjunoLIMAVendorBookingPOM.java:716)
+	at com.lima.test.AdjunoLIMAVendorBookingTest.test_27_ClickYesButtonInChangeModePopUp(AdjunoLIMAVendorBookingTest.java:1436)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/Anand/AppData/Local/Temp/anonymous6977059626027483131webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/Anand/AppData/Local/Temp/anonymous6977059626027483131webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Anand/AppData/Local/Temp/anonymous6977059626027483131webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Anand/AppData/Local/Temp/anonymous6977059626027483131webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace866941236", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace866941236'><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 10.15 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: edb92ee1-63d1-4d31-869c-efaff906b106
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.lima.pagefactory.AdjunoLIMAVendorBookingPOM.clickButton(AdjunoLIMAVendorBookingPOM.java:716)
+	at com.lima.test.AdjunoLIMAVendorBookingTest.test_27_ClickYesButtonInChangeModePopUp(AdjunoLIMAVendorBookingTest.java:1436)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;LAPTOP-L9I71BEA&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/Anand/AppData/Local/Temp/anonymous6977059626027483131webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/Anand/AppData/Local/Temp/anonymous6977059626027483131webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Anand/AppData/Local/Temp/anonymous6977059626027483131webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Anand/AppData/Local/Temp/anonymous6977059626027483131webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+</pre></div></td>
+<td>24</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_9_SelectMultipleRecordsAndVerifyInBookingPage()'><b>test_9_SelectMultipleRecordsAndVerifyInBookingPage</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	For PONumber &apos;71217&apos;, BkdQty field has issues on PO Details Grid in Bookings pageFor PONumber &apos;testABC09&apos;, BkdQty field has issues on PO Details Grid in Bookings pageFor PONumber &apos;testABC09&apos;, BkdCtns field has issues on PO Details Grid in Bookings pageFor PONumber &apos;testABC09&apos;, BkdCBM field has issues on PO Details Grid in Bookings page expected [true] but found [false]
+	at com.lima.test.AdjunoLIMAVendorBookingTest.test_9_SelectMultipleRecordsAndVerifyInBookingPage(AdjunoLIMAVendorBookingTest.java:611)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace674600411", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace674600411'><pre>java.lang.AssertionError: The following asserts failed:
+	For PONumber &apos;71217&apos;, BkdQty field has issues on PO Details Grid in Bookings pageFor PONumber &apos;testABC09&apos;, BkdQty field has issues on PO Details Grid in Bookings pageFor PONumber &apos;testABC09&apos;, BkdCtns field has issues on PO Details Grid in Bookings pageFor PONumber &apos;testABC09&apos;, BkdCBM field has issues on PO Details Grid in Bookings page expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lima.test.AdjunoLIMAVendorBookingTest.test_9_SelectMultipleRecordsAndVerifyInBookingPage(AdjunoLIMAVendorBookingTest.java:611)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>59</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_11_VerifyGridsInBookingPage()'><b>test_11_VerifyGridsInBookingPage</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>48</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_12_VerifyFieldsInConatinerDetailsPanel()'><b>test_12_VerifyFieldsInConatinerDetailsPanel</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_13_CheckForPODetailsGridInBookingPage()'><b>test_13_CheckForPODetailsGridInBookingPage</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>54</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_14_CheckForShipmentDetailsPanel()'><b>test_14_CheckForShipmentDetailsPanel</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>1</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_14_InspectFactoryDetailsDropDown()'><b>test_14_InspectFactoryDetailsDropDown</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>44</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_15_16_VerifyColumnHeaderInCYConatinerRequirementsGrid()'><b>test_15_16_VerifyColumnHeaderInCYConatinerRequirementsGrid</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>55</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_15_InspectNotifyPartyDetailsDropDown()'><b>test_15_InspectNotifyPartyDetailsDropDown</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>24</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_15_InspectOriginPortDropDownInShipmentDetailsPanel()'><b>test_15_InspectOriginPortDropDownInShipmentDetailsPanel</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>147</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_17_ContainerDetailsGridMandatoryFieldCheckInBookingPage()'><b>test_17_ContainerDetailsGridMandatoryFieldCheckInBookingPage</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_18_ProductDetailsGridMandatoryFieldCheckInBookingPage()'><b>test_18_ProductDetailsGridMandatoryFieldCheckInBookingPage</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>20</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_19_ShipmentDetailsGridMandatoryFieldCheckInBookingPage()'><b>test_19_ShipmentDetailsGridMandatoryFieldCheckInBookingPage</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>4</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_1_verifyAccessConfirmArrival()'><b>test_1_verifyAccessConfirmArrival</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>12</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_21_SetFieldValuesInContainerDetailsPanel()'><b>test_21_SetFieldValuesInContainerDetailsPanel</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>3</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_22_VerifyVendorDetailsHyperLink()'><b>test_22_VerifyVendorDetailsHyperLink</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>15</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_23_VerifyConsigneeDetailsHyperLink()'><b>test_23_VerifyConsigneeDetailsHyperLink</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>23</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_23_VerifyVendorAddressIsEditableInCatalog()'><b>test_23_VerifyVendorAddressIsEditableInCatalog</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>135</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_24_VerifyProductDetailsGridFunctionality()'><b>test_24_VerifyProductDetailsGridFunctionality</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>57</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_28_InspectOriginPortDropDown()'><b>test_28_InspectOriginPortDropDown</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_28_SetDataInAllFieldsUnderShipmentDetailsPanel()'><b>test_28_SetDataInAllFieldsUnderShipmentDetailsPanel</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>9</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_29_VerifyAddtionalRequirementHyperLinkInProductsGrid()'><b>test_29_VerifyAddtionalRequirementHyperLinkInProductsGrid</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>7</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_2_VerifyChevronsInVendorBookingSearchPage()'><b>test_2_VerifyChevronsInVendorBookingSearchPage</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>0</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_34_CloseAdditionalRequirementPopUp()'><b>test_34_CloseAdditionalRequirementPopUp</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>4</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_35_36_37_38_39_40_VerifyCYContainerRequirementGridFunctionality()'><b>test_35_36_37_38_39_40_VerifyCYContainerRequirementGridFunctionality</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>21</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_3_VerifySearchFeildsUnderSearchChevron()'><b>test_3_VerifySearchFeildsUnderSearchChevron</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>2</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_41_42_43_VerifyCompleteFunctionality()'><b>test_41_42_43_VerifyCompleteFunctionality</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>73</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_44_VerifyPurchaseOrderPage()'><b>test_44_VerifyPurchaseOrderPage</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>8</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_45_VerifyBookedPOInAwaitingStatus()'><b>test_45_VerifyBookedPOInAwaitingStatus</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>32</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_45_VerifyLatestShipmentRelatedLinkInPurchaseOrderPage()'><b>test_45_VerifyLatestShipmentRelatedLinkInPurchaseOrderPage</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>13</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_46_47_VerifyBookedPOInBookedStatus()'><b>test_46_47_VerifyBookedPOInBookedStatus</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>23</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_46_CheckForBookedPOStatusFunctionality()'><b>test_46_CheckForBookedPOStatusFunctionality</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>43</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_48_49_50_VerifyCancelBookingFunctionality()'><b>test_48_49_50_VerifyCancelBookingFunctionality</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>159</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_4_CheckMandatoryFieldsInSearchChevron()'><b>test_4_CheckMandatoryFieldsInSearchChevron</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>6</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_51_CheckForPOStatusFunctionalityForCancelBooking()'><b>test_51_CheckForPOStatusFunctionalityForCancelBooking</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>42</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_5_CheckForPendingStatusAndInvalidContainerNumberInSearchPage()'><b>test_5_CheckForPendingStatusAndInvalidContainerNumberInSearchPage</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>22</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_5_SetShipmentDueFieldAndCheckMandtoryFields()'><b>test_5_SetShipmentDueFieldAndCheckMandtoryFields</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>9</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_6_CheckForPendingStatusAndValidContainerNumberInSearchPage()'><b>test_6_CheckForPendingStatusAndValidContainerNumberInSearchPage</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>45</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_7_CheckForResultantGridHeadersInSelectPage()'><b>test_7_CheckForResultantGridHeadersInSelectPage</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>5</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMAVendorBookingTest.test_8_VerifyValidationMessageWithoutSelectingAnyRecordInSelectChevron()'><b>test_8_VerifyValidationMessageWithoutSelectingAnyRecordInSelectChevron</b><br>Test class: com.lima.test.AdjunoLIMAVendorBookingTest</td>
+<td></td>
+<td>12</td>
+<td>com.lima.test.AdjunoLIMAVendorBookingTest@cd2dae5</td></tr>
+</table><p>
+</body>
+</html>

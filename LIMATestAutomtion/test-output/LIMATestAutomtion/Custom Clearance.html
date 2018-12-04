@@ -1,0 +1,179 @@
+<html>
+<head>
+<title>TestNG:  Custom Clearance</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Custom Clearance</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>20/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 05 13:10:02 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>258 seconds (258780 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMACustomClearenceTest.Test_10_verifyHouseBillLink()'><b>Test_10_verifyHouseBillLink</b><br>Test class: com.lima.test.AdjunoLIMACustomClearenceTest</td>
+<td></td>
+<td>10</td>
+<td>com.lima.test.AdjunoLIMACustomClearenceTest@6adede5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMACustomClearenceTest.Test_11_verifyErrorMsg()'><b>Test_11_verifyErrorMsg</b><br>Test class: com.lima.test.AdjunoLIMACustomClearenceTest</td>
+<td></td>
+<td>12</td>
+<td>com.lima.test.AdjunoLIMACustomClearenceTest@6adede5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMACustomClearenceTest.Test_12_verifyCustomsClearencePageDisplayed()'><b>Test_12_verifyCustomsClearencePageDisplayed</b><br>Test class: com.lima.test.AdjunoLIMACustomClearenceTest</td>
+<td></td>
+<td>9</td>
+<td>com.lima.test.AdjunoLIMACustomClearenceTest@6adede5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMACustomClearenceTest.Test_13_verifyHouseBillGridColumn()'><b>Test_13_verifyHouseBillGridColumn</b><br>Test class: com.lima.test.AdjunoLIMACustomClearenceTest</td>
+<td></td>
+<td>1</td>
+<td>com.lima.test.AdjunoLIMACustomClearenceTest@6adede5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMACustomClearenceTest.Test_13_verifyVesselGridColumns()'><b>Test_13_verifyVesselGridColumns</b><br>Test class: com.lima.test.AdjunoLIMACustomClearenceTest</td>
+<td></td>
+<td>1</td>
+<td>com.lima.test.AdjunoLIMACustomClearenceTest@6adede5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMACustomClearenceTest.Test_14_verifyEntryDatefield()'><b>Test_14_verifyEntryDatefield</b><br>Test class: com.lima.test.AdjunoLIMACustomClearenceTest</td>
+<td></td>
+<td>5</td>
+<td>com.lima.test.AdjunoLIMACustomClearenceTest@6adede5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMACustomClearenceTest.Test_15_verifyEntryNumberField()'><b>Test_15_verifyEntryNumberField</b><br>Test class: com.lima.test.AdjunoLIMACustomClearenceTest</td>
+<td></td>
+<td>5</td>
+<td>com.lima.test.AdjunoLIMACustomClearenceTest@6adede5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMACustomClearenceTest.Test_16_verifyClearenceDateField()'><b>Test_16_verifyClearenceDateField</b><br>Test class: com.lima.test.AdjunoLIMACustomClearenceTest</td>
+<td></td>
+<td>5</td>
+<td>com.lima.test.AdjunoLIMACustomClearenceTest@6adede5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMACustomClearenceTest.Test_17_verifyEPUField()'><b>Test_17_verifyEPUField</b><br>Test class: com.lima.test.AdjunoLIMACustomClearenceTest</td>
+<td></td>
+<td>5</td>
+<td>com.lima.test.AdjunoLIMACustomClearenceTest@6adede5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMACustomClearenceTest.Test_18_verifyUCRField()'><b>Test_18_verifyUCRField</b><br>Test class: com.lima.test.AdjunoLIMACustomClearenceTest</td>
+<td></td>
+<td>5</td>
+<td>com.lima.test.AdjunoLIMACustomClearenceTest@6adede5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMACustomClearenceTest.Test_19_verifyCompleteProcess()'><b>Test_19_verifyCompleteProcess</b><br>Test class: com.lima.test.AdjunoLIMACustomClearenceTest</td>
+<td></td>
+<td>8</td>
+<td>com.lima.test.AdjunoLIMACustomClearenceTest@6adede5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMACustomClearenceTest.Test_20_verifyViewDetail()'><b>Test_20_verifyViewDetail</b><br>Test class: com.lima.test.AdjunoLIMACustomClearenceTest</td>
+<td></td>
+<td>37</td>
+<td>com.lima.test.AdjunoLIMACustomClearenceTest@6adede5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMACustomClearenceTest.Test_21_EnterTrackRefNumber()'><b>Test_21_EnterTrackRefNumber</b><br>Test class: com.lima.test.AdjunoLIMACustomClearenceTest</td>
+<td></td>
+<td>17</td>
+<td>com.lima.test.AdjunoLIMACustomClearenceTest@6adede5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMACustomClearenceTest.Test_22_clickOnCustomClearenceLink()'><b>Test_22_clickOnCustomClearenceLink</b><br>Test class: com.lima.test.AdjunoLIMACustomClearenceTest</td>
+<td></td>
+<td>12</td>
+<td>com.lima.test.AdjunoLIMACustomClearenceTest@6adede5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMACustomClearenceTest.Test_2_acessCustomClearence()'><b>Test_2_acessCustomClearence</b><br>Test class: com.lima.test.AdjunoLIMACustomClearenceTest</td>
+<td></td>
+<td>11</td>
+<td>com.lima.test.AdjunoLIMACustomClearenceTest@6adede5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMACustomClearenceTest.Test_3_verifySearchFields()'><b>Test_3_verifySearchFields</b><br>Test class: com.lima.test.AdjunoLIMACustomClearenceTest</td>
+<td></td>
+<td>1</td>
+<td>com.lima.test.AdjunoLIMACustomClearenceTest@6adede5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMACustomClearenceTest.Test_4_setAwaitingAndInvalidPO()'><b>Test_4_setAwaitingAndInvalidPO</b><br>Test class: com.lima.test.AdjunoLIMACustomClearenceTest</td>
+<td></td>
+<td>48</td>
+<td>com.lima.test.AdjunoLIMACustomClearenceTest@6adede5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMACustomClearenceTest.Test_5_setAwaitingAndValidContainerNo()'><b>Test_5_setAwaitingAndValidContainerNo</b><br>Test class: com.lima.test.AdjunoLIMACustomClearenceTest</td>
+<td></td>
+<td>8</td>
+<td>com.lima.test.AdjunoLIMACustomClearenceTest@6adede5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMACustomClearenceTest.Test_6_verifyResultantGridHeader()'><b>Test_6_verifyResultantGridHeader</b><br>Test class: com.lima.test.AdjunoLIMACustomClearenceTest</td>
+<td></td>
+<td>1</td>
+<td>com.lima.test.AdjunoLIMACustomClearenceTest@6adede5</td></tr>
+<tr>
+<td title='com.lima.test.AdjunoLIMACustomClearenceTest.Test_9_verifyContainerHyperLink()'><b>Test_9_verifyContainerHyperLink</b><br>Test class: com.lima.test.AdjunoLIMACustomClearenceTest</td>
+<td></td>
+<td>6</td>
+<td>com.lima.test.AdjunoLIMACustomClearenceTest@6adede5</td></tr>
+</table><p>
+</body>
+</html>

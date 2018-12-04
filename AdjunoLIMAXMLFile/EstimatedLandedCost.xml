@@ -1,0 +1,50 @@
+
+<EstimatedLandedCost>
+    <SearchParams>
+		<EstimatedShipDate_InvalidFormat>22  2017 Nov</EstimatedShipDate_InvalidFormat>
+		<EstimatedShipDate_validFormat>09 Nov 2017</EstimatedShipDate_validFormat>
+		<IntendedDeliverydate_InvalidFormat>24  2017 Nov</IntendedDeliverydate_InvalidFormat>
+		<IntendedDeliverydate_validFormat>09 Dec 2017</IntendedDeliverydate_validFormat>
+		<OriginCountry>Bangladesh</OriginCountry>
+		<DestinationCountry>United Kingdom</DestinationCountry>
+		<Destination>DC3</Destination>
+		<Mode_Value>Sea</Mode_Value>
+		<CostperPiece>5.00</CostperPiece>
+		<RetailPrice>10.00</RetailPrice>
+		<DutyRate>0</DutyRate>
+		<CBMperCarton>0.8</CBMperCarton>
+		<Dimensions_L>55.00</Dimensions_L>
+		<Dimensions_W>65.00</Dimensions_W>
+		<Dimensions_H>75.00</Dimensions_H>
+		<TotalPieces>2000</TotalPieces>
+		<PiecesPerCarton>20</PiecesPerCarton>
+		<ValidDateFormatValidationMsg>> The value you have entered is not a valid date -- please enter dates in the format dd/mm/yyyy</ValidDateFormatValidationMsg>
+		<Currency>GBP</Currency>
+		<Equipment>20FT</Equipment>
+		<Equipment_All>All</Equipment_All>
+		<Catalog_Equipment>Equipment</Catalog_Equipment>
+		<Catalog_Vendor>Supplier</Catalog_Vendor>
+		<Catalog_Destination>Destination</Catalog_Destination>
+		<Catalog_LOCODE>LOCODE</Catalog_LOCODE>
+		<Catalog_Currency>Currency</Catalog_Currency>
+	</SearchParams>
+	
+	<ColumnDetails>
+		<Caption>Ranking</Caption>
+		<Caption>Margin</Caption>
+		<Caption>Product Landed Cost</Caption>
+		<Caption>Product Shipping Cost</Caption>
+		<Caption>Product Cost</Caption>
+		<Caption>Transit Time</Caption>
+		<Caption>Est Delivery Date</Caption>
+		<Caption>Origin Port</Caption>
+		<Caption>Mode</Caption>
+		<Caption>Destination Port</Caption>
+		<Caption>Equipment</Caption>
+	</ColumnDetails>
+	
+	<Loading>
+		<Caption>FCL</Caption>
+		<Caption>LCL</Caption>
+	</Loading>
+</EstimatedLandedCost>

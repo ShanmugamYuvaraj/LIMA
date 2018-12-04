@@ -1,0 +1,2476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [LIMATestAutomtion]">
+  <test name="ProductionCheck(failed)">
+    <classes>
+      <class name="com.lima.test.AdjunoLIMABookingConfirmationTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMABookingConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveryBookingTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveryBookingTest -->
+      <class name="com.lima.test.AdjunoLIMAVendorBookingTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAVendorBookingTest -->
+      <class name="com.lima.test.AdjunoLIMATariffTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMATariffTest -->
+      <class name="com.lima.test.AdjunoLIMAEstimatedLandedCostTest">
+        <methods>
+          <include name="closeBrwser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAEstimatedLandedCostTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentSentTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentSentTest -->
+      <class name="com.lima.test.AdjunoLIMACargoReceiptTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACargoReceiptTest -->
+      <class name="com.lima.test.AdjunoLIMAPoConfirmationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminateBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMAProductionCheckTest">
+        <methods>
+          <include name="setup"/>
+          <include name="test_24_verifyPOStatus"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAProductionCheckTest -->
+      <class name="com.lima.test.AdjunoLIMAFreightPaymentsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAFreightPaymentsTest -->
+      <class name="com.lima.test.AdjunoLIMAShipmentBookingTest">
+        <methods>
+          <include name="terminateBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipmentBookingTest -->
+      <class name="com.lima.test.AdjunoLIMACustomClearenceTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACustomClearenceTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentReceivedTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentReceivedTest -->
+      <class name="com.lima.test.AdjunoLIMAForwarderReferenceTest">
+        <methods>
+          <include name="test_CloseBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAForwarderReferenceTest -->
+      <class name="com.lima.test.AdjunoLIMAShipAuthorityTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipAuthorityTest -->
+      <class name="com.lima.test.AdjunoLIMAOffDockLocationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAOffDockLocationTest -->
+      <class name="com.lima.test.AdjunoLIMADespatchTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADespatchTest -->
+      <class name="com.lima.test.AdjunoLIMAContainerRestitutionTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAContainerRestitutionTest -->
+      <class name="com.lima.test.AdjunoLIMAManifestTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAManifestTest -->
+      <class name="com.lima.test.AdjunoLIMAPoManagerTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoManagerTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveredYardTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveredYardTest -->
+      <class name="com.lima.test.AdjunoLIMAConfirmArrivalTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAConfirmArrivalTest -->
+    </classes>
+  </test> <!-- ProductionCheck(failed) -->
+  <test name="Shipment Booking(failed)">
+    <classes>
+      <class name="com.lima.test.AdjunoLIMABookingConfirmationTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMABookingConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveryBookingTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveryBookingTest -->
+      <class name="com.lima.test.AdjunoLIMAVendorBookingTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAVendorBookingTest -->
+      <class name="com.lima.test.AdjunoLIMATariffTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMATariffTest -->
+      <class name="com.lima.test.AdjunoLIMAEstimatedLandedCostTest">
+        <methods>
+          <include name="closeBrwser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAEstimatedLandedCostTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentSentTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentSentTest -->
+      <class name="com.lima.test.AdjunoLIMACargoReceiptTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACargoReceiptTest -->
+      <class name="com.lima.test.AdjunoLIMAPoConfirmationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminateBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMAProductionCheckTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAProductionCheckTest -->
+      <class name="com.lima.test.AdjunoLIMAFreightPaymentsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAFreightPaymentsTest -->
+      <class name="com.lima.test.AdjunoLIMAShipmentBookingTest">
+        <methods>
+          <include name="Test_81_verifyDailogColumn"/>
+          <include name="Test_84_verifyShipAuthorityBookingStatus"/>
+          <include name="terminateBrowser"/>
+          <include name="Test_66_verifyBookingeditViewDetails"/>
+          <include name="setup"/>
+          <include name="Test_37_verifyMandatoryFieldComment"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipmentBookingTest -->
+      <class name="com.lima.test.AdjunoLIMACustomClearenceTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACustomClearenceTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentReceivedTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentReceivedTest -->
+      <class name="com.lima.test.AdjunoLIMAForwarderReferenceTest">
+        <methods>
+          <include name="test_CloseBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAForwarderReferenceTest -->
+      <class name="com.lima.test.AdjunoLIMAShipAuthorityTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipAuthorityTest -->
+      <class name="com.lima.test.AdjunoLIMAOffDockLocationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAOffDockLocationTest -->
+      <class name="com.lima.test.AdjunoLIMADespatchTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADespatchTest -->
+      <class name="com.lima.test.AdjunoLIMAContainerRestitutionTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAContainerRestitutionTest -->
+      <class name="com.lima.test.AdjunoLIMAManifestTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAManifestTest -->
+      <class name="com.lima.test.AdjunoLIMAPoManagerTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoManagerTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveredYardTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveredYardTest -->
+      <class name="com.lima.test.AdjunoLIMAConfirmArrivalTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAConfirmArrivalTest -->
+    </classes>
+  </test> <!-- Shipment Booking(failed) -->
+  <test name="CargoReceipt(failed)">
+    <classes>
+      <class name="com.lima.test.AdjunoLIMABookingConfirmationTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMABookingConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveryBookingTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveryBookingTest -->
+      <class name="com.lima.test.AdjunoLIMAVendorBookingTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAVendorBookingTest -->
+      <class name="com.lima.test.AdjunoLIMATariffTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMATariffTest -->
+      <class name="com.lima.test.AdjunoLIMAEstimatedLandedCostTest">
+        <methods>
+          <include name="closeBrwser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAEstimatedLandedCostTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentSentTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentSentTest -->
+      <class name="com.lima.test.AdjunoLIMACargoReceiptTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Setup"/>
+          <include name="test_46_CheckBkdHistory"/>
+          <include name="test_43_CheckStatusTrackRef"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACargoReceiptTest -->
+      <class name="com.lima.test.AdjunoLIMAPoConfirmationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminateBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMAProductionCheckTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAProductionCheckTest -->
+      <class name="com.lima.test.AdjunoLIMAFreightPaymentsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAFreightPaymentsTest -->
+      <class name="com.lima.test.AdjunoLIMAShipmentBookingTest">
+        <methods>
+          <include name="terminateBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipmentBookingTest -->
+      <class name="com.lima.test.AdjunoLIMACustomClearenceTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACustomClearenceTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentReceivedTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentReceivedTest -->
+      <class name="com.lima.test.AdjunoLIMAForwarderReferenceTest">
+        <methods>
+          <include name="test_CloseBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAForwarderReferenceTest -->
+      <class name="com.lima.test.AdjunoLIMAShipAuthorityTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipAuthorityTest -->
+      <class name="com.lima.test.AdjunoLIMAOffDockLocationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAOffDockLocationTest -->
+      <class name="com.lima.test.AdjunoLIMADespatchTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADespatchTest -->
+      <class name="com.lima.test.AdjunoLIMAContainerRestitutionTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAContainerRestitutionTest -->
+      <class name="com.lima.test.AdjunoLIMAManifestTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAManifestTest -->
+      <class name="com.lima.test.AdjunoLIMAPoManagerTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoManagerTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveredYardTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveredYardTest -->
+      <class name="com.lima.test.AdjunoLIMAConfirmArrivalTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAConfirmArrivalTest -->
+    </classes>
+  </test> <!-- CargoReceipt(failed) -->
+  <test name="Despatch(failed)">
+    <classes>
+      <class name="com.lima.test.AdjunoLIMABookingConfirmationTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMABookingConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveryBookingTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveryBookingTest -->
+      <class name="com.lima.test.AdjunoLIMAVendorBookingTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAVendorBookingTest -->
+      <class name="com.lima.test.AdjunoLIMATariffTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMATariffTest -->
+      <class name="com.lima.test.AdjunoLIMAEstimatedLandedCostTest">
+        <methods>
+          <include name="closeBrwser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAEstimatedLandedCostTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentSentTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentSentTest -->
+      <class name="com.lima.test.AdjunoLIMACargoReceiptTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACargoReceiptTest -->
+      <class name="com.lima.test.AdjunoLIMAPoConfirmationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminateBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMAProductionCheckTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAProductionCheckTest -->
+      <class name="com.lima.test.AdjunoLIMAFreightPaymentsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAFreightPaymentsTest -->
+      <class name="com.lima.test.AdjunoLIMAShipmentBookingTest">
+        <methods>
+          <include name="terminateBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipmentBookingTest -->
+      <class name="com.lima.test.AdjunoLIMACustomClearenceTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACustomClearenceTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentReceivedTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentReceivedTest -->
+      <class name="com.lima.test.AdjunoLIMAForwarderReferenceTest">
+        <methods>
+          <include name="test_CloseBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAForwarderReferenceTest -->
+      <class name="com.lima.test.AdjunoLIMAShipAuthorityTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipAuthorityTest -->
+      <class name="com.lima.test.AdjunoLIMAOffDockLocationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAOffDockLocationTest -->
+      <class name="com.lima.test.AdjunoLIMADespatchTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Test_40_verifyViewDetail"/>
+          <include name="setup"/>
+          <include name="Test_39_verifyDespatchComplete"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADespatchTest -->
+      <class name="com.lima.test.AdjunoLIMAContainerRestitutionTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAContainerRestitutionTest -->
+      <class name="com.lima.test.AdjunoLIMAManifestTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAManifestTest -->
+      <class name="com.lima.test.AdjunoLIMAPoManagerTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoManagerTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveredYardTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveredYardTest -->
+      <class name="com.lima.test.AdjunoLIMAConfirmArrivalTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAConfirmArrivalTest -->
+    </classes>
+  </test> <!-- Despatch(failed) -->
+  <test name="Booking Confirmation(failed)">
+    <classes>
+      <class name="com.lima.test.AdjunoLIMABookingConfirmationTest">
+        <methods>
+          <include name="Test_29_SetBookingConfirmedStatusYes"/>
+          <include name="test_10_VerifyCopyDownsDisplayed"/>
+          <include name="Test_27_VerifyPONumberInDeclinedStatus"/>
+          <include name="test_19_CloseDailogPopUp"/>
+          <include name="test_15_SetReasonValue"/>
+          <include name="test_6_VerifyGridHeader"/>
+          <include name="test_20_VerifyPONumberHyperLink"/>
+          <include name="test_14_SetConfirmedStatusNo"/>
+          <include name="Test_35_VerifyConfirmedPOInConfirmedStatus"/>
+          <include name="test_5_SetAwaitingAndValidPONumber"/>
+          <include name="test_13_VerifyMandatoryFields"/>
+          <include name="setup"/>
+          <include name="test_16_VerifyDiaologsHyperLink"/>
+          <include name="test_8_VerifyUpdatePageLoaded"/>
+          <include name="test_21_VerifyCompletePage"/>
+          <include name="test_11_VerifyBookingConfirmationGridCaptions"/>
+          <include name="test_12_VerifyBookingConfirmationPOGridCaptions"/>
+          <include name="test_18_SetMessageField"/>
+          <include name="test_17_VerifyMandatoryFieldInDailogPopUp"/>
+          <include name="test_9_VerifyGridsInUpdatePage"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMABookingConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveryBookingTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveryBookingTest -->
+      <class name="com.lima.test.AdjunoLIMAVendorBookingTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAVendorBookingTest -->
+      <class name="com.lima.test.AdjunoLIMATariffTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMATariffTest -->
+      <class name="com.lima.test.AdjunoLIMAEstimatedLandedCostTest">
+        <methods>
+          <include name="closeBrwser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAEstimatedLandedCostTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentSentTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentSentTest -->
+      <class name="com.lima.test.AdjunoLIMACargoReceiptTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACargoReceiptTest -->
+      <class name="com.lima.test.AdjunoLIMAPoConfirmationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminateBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMAProductionCheckTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAProductionCheckTest -->
+      <class name="com.lima.test.AdjunoLIMAFreightPaymentsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAFreightPaymentsTest -->
+      <class name="com.lima.test.AdjunoLIMAShipmentBookingTest">
+        <methods>
+          <include name="terminateBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipmentBookingTest -->
+      <class name="com.lima.test.AdjunoLIMACustomClearenceTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACustomClearenceTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentReceivedTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentReceivedTest -->
+      <class name="com.lima.test.AdjunoLIMAForwarderReferenceTest">
+        <methods>
+          <include name="test_CloseBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAForwarderReferenceTest -->
+      <class name="com.lima.test.AdjunoLIMAShipAuthorityTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipAuthorityTest -->
+      <class name="com.lima.test.AdjunoLIMAOffDockLocationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAOffDockLocationTest -->
+      <class name="com.lima.test.AdjunoLIMADespatchTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADespatchTest -->
+      <class name="com.lima.test.AdjunoLIMAContainerRestitutionTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAContainerRestitutionTest -->
+      <class name="com.lima.test.AdjunoLIMAManifestTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAManifestTest -->
+      <class name="com.lima.test.AdjunoLIMAPoManagerTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoManagerTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveredYardTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveredYardTest -->
+      <class name="com.lima.test.AdjunoLIMAConfirmArrivalTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAConfirmArrivalTest -->
+    </classes>
+  </test> <!-- Booking Confirmation(failed) -->
+  <test name="Freight Payment(failed)">
+    <classes>
+      <class name="com.lima.test.AdjunoLIMABookingConfirmationTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMABookingConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveryBookingTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveryBookingTest -->
+      <class name="com.lima.test.AdjunoLIMAVendorBookingTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAVendorBookingTest -->
+      <class name="com.lima.test.AdjunoLIMATariffTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMATariffTest -->
+      <class name="com.lima.test.AdjunoLIMAEstimatedLandedCostTest">
+        <methods>
+          <include name="closeBrwser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAEstimatedLandedCostTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentSentTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentSentTest -->
+      <class name="com.lima.test.AdjunoLIMACargoReceiptTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACargoReceiptTest -->
+      <class name="com.lima.test.AdjunoLIMAPoConfirmationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminateBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMAProductionCheckTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAProductionCheckTest -->
+      <class name="com.lima.test.AdjunoLIMAFreightPaymentsTest">
+        <methods>
+          <include name="test_Scn_8_TcNo_13_VerifyAuthorisedContainerInSearchPage"/>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAFreightPaymentsTest -->
+      <class name="com.lima.test.AdjunoLIMAShipmentBookingTest">
+        <methods>
+          <include name="terminateBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipmentBookingTest -->
+      <class name="com.lima.test.AdjunoLIMACustomClearenceTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACustomClearenceTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentReceivedTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentReceivedTest -->
+      <class name="com.lima.test.AdjunoLIMAForwarderReferenceTest">
+        <methods>
+          <include name="test_CloseBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAForwarderReferenceTest -->
+      <class name="com.lima.test.AdjunoLIMAShipAuthorityTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipAuthorityTest -->
+      <class name="com.lima.test.AdjunoLIMAOffDockLocationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAOffDockLocationTest -->
+      <class name="com.lima.test.AdjunoLIMADespatchTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADespatchTest -->
+      <class name="com.lima.test.AdjunoLIMAContainerRestitutionTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAContainerRestitutionTest -->
+      <class name="com.lima.test.AdjunoLIMAManifestTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAManifestTest -->
+      <class name="com.lima.test.AdjunoLIMAPoManagerTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoManagerTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveredYardTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveredYardTest -->
+      <class name="com.lima.test.AdjunoLIMAConfirmArrivalTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAConfirmArrivalTest -->
+    </classes>
+  </test> <!-- Freight Payment(failed) -->
+  <test name="Forward Reference(failed)">
+    <classes>
+      <class name="com.lima.test.AdjunoLIMABookingConfirmationTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMABookingConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveryBookingTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveryBookingTest -->
+      <class name="com.lima.test.AdjunoLIMAVendorBookingTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAVendorBookingTest -->
+      <class name="com.lima.test.AdjunoLIMATariffTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMATariffTest -->
+      <class name="com.lima.test.AdjunoLIMAEstimatedLandedCostTest">
+        <methods>
+          <include name="closeBrwser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAEstimatedLandedCostTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentSentTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentSentTest -->
+      <class name="com.lima.test.AdjunoLIMACargoReceiptTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACargoReceiptTest -->
+      <class name="com.lima.test.AdjunoLIMAPoConfirmationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminateBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMAProductionCheckTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAProductionCheckTest -->
+      <class name="com.lima.test.AdjunoLIMAFreightPaymentsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAFreightPaymentsTest -->
+      <class name="com.lima.test.AdjunoLIMAShipmentBookingTest">
+        <methods>
+          <include name="terminateBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipmentBookingTest -->
+      <class name="com.lima.test.AdjunoLIMACustomClearenceTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACustomClearenceTest -->
+      <class name="com.lima.test.AdjunoLIMAForwarderReferenceTest">
+        <methods>
+          <include name="test_CloseBrowser"/>
+          <include name="test_44_verifyGridForwarder"/>
+          <include name="test_59_verifyHyperLink"/>
+          <include name="test_60_clickPONumberHyperLink"/>
+          <include name="test_23_verifyGridForwarder"/>
+          <include name="setup"/>
+          <include name="test_38_clickPONumberHyperLink"/>
+          <include name="test_36_checkStatus"/>
+          <include name="test_58_checkStatus"/>
+          <include name="test_37_verifyHyperLink"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAForwarderReferenceTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentReceivedTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentReceivedTest -->
+      <class name="com.lima.test.AdjunoLIMAShipAuthorityTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipAuthorityTest -->
+      <class name="com.lima.test.AdjunoLIMAOffDockLocationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAOffDockLocationTest -->
+      <class name="com.lima.test.AdjunoLIMADespatchTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADespatchTest -->
+      <class name="com.lima.test.AdjunoLIMAContainerRestitutionTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAContainerRestitutionTest -->
+      <class name="com.lima.test.AdjunoLIMAManifestTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAManifestTest -->
+      <class name="com.lima.test.AdjunoLIMAPoManagerTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoManagerTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveredYardTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveredYardTest -->
+      <class name="com.lima.test.AdjunoLIMAConfirmArrivalTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAConfirmArrivalTest -->
+    </classes>
+  </test> <!-- Forward Reference(failed) -->
+  <test name="Manifest Lima(failed)">
+    <classes>
+      <class name="com.lima.test.AdjunoLIMABookingConfirmationTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMABookingConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveryBookingTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveryBookingTest -->
+      <class name="com.lima.test.AdjunoLIMAVendorBookingTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAVendorBookingTest -->
+      <class name="com.lima.test.AdjunoLIMATariffTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMATariffTest -->
+      <class name="com.lima.test.AdjunoLIMAEstimatedLandedCostTest">
+        <methods>
+          <include name="closeBrwser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAEstimatedLandedCostTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentSentTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentSentTest -->
+      <class name="com.lima.test.AdjunoLIMACargoReceiptTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACargoReceiptTest -->
+      <class name="com.lima.test.AdjunoLIMAPoConfirmationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminateBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMAProductionCheckTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAProductionCheckTest -->
+      <class name="com.lima.test.AdjunoLIMAFreightPaymentsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAFreightPaymentsTest -->
+      <class name="com.lima.test.AdjunoLIMAShipmentBookingTest">
+        <methods>
+          <include name="terminateBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipmentBookingTest -->
+      <class name="com.lima.test.AdjunoLIMACustomClearenceTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACustomClearenceTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentReceivedTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentReceivedTest -->
+      <class name="com.lima.test.AdjunoLIMAForwarderReferenceTest">
+        <methods>
+          <include name="test_CloseBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAForwarderReferenceTest -->
+      <class name="com.lima.test.AdjunoLIMAShipAuthorityTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipAuthorityTest -->
+      <class name="com.lima.test.AdjunoLIMAOffDockLocationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAOffDockLocationTest -->
+      <class name="com.lima.test.AdjunoLIMADespatchTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADespatchTest -->
+      <class name="com.lima.test.AdjunoLIMAContainerRestitutionTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAContainerRestitutionTest -->
+      <class name="com.lima.test.AdjunoLIMAManifestTest">
+        <methods>
+          <include name="test_22_to_27_ValidateContainer"/>
+          <include name="test_clickOnTrackLink"/>
+          <include name="test_verifyCompleteMessge"/>
+          <include name="test_getTrackRefNo"/>
+          <include name="setup"/>
+          <include name="test_setGridvalues"/>
+          <include name="test_setProductGridField"/>
+          <include name="test_verifyCancelCompleteMessge"/>
+          <include name="test_47_GetCancelTrackRefNo"/>
+          <include name="test_31_clickComplete"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAManifestTest -->
+      <class name="com.lima.test.AdjunoLIMAPoManagerTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoManagerTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveredYardTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveredYardTest -->
+      <class name="com.lima.test.AdjunoLIMAConfirmArrivalTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAConfirmArrivalTest -->
+    </classes>
+  </test> <!-- Manifest Lima(failed) -->
+  <test name="Tarriff(failed)">
+    <classes>
+      <class name="com.lima.test.AdjunoLIMABookingConfirmationTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMABookingConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveryBookingTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveryBookingTest -->
+      <class name="com.lima.test.AdjunoLIMATariffTest">
+        <methods>
+          <include name="test_LIMA_TARR_RF_023_GroupageTrailerCostsTab_GroupageLandsideCostsGrid_MandatoryFieldCheck"/>
+          <include name="test_LIMA_TARR_AF_004_CheckViewTarifflink"/>
+          <include name="test_LIMA_TARR_RF_001_CheckforTariffPage"/>
+          <include name="test_LIMA_TARR_RF_007_VerifyRoadFreightTariff_FullTrailerCostsTabs_FullTrailerCostsGrid"/>
+          <include name="test_LIMA_TARR_AF_001_CheckForTariffPage"/>
+          <include name="test_LIMA_TARR_RF_020_FullTrailerCostTab_FullTrailerDeliveryCosts_MandatoryFieldCheck"/>
+          <include name="test_LIMA_TARR_RF_010_VerifyRoadFreightTariff_FullTrailerCostsTab_FullTrailerDeliveryCosts"/>
+          <include name="test_LIMA_TARR_SF_039_LCLHaulageCosts_MandatoryFieldCheck"/>
+          <include name="test_LIMA_TARR_RF_022_GroupageTrailerCostsTab_GroupageGOHCosts_MandatoryFieldCheck"/>
+          <include name="test_LIMA_TARR_AF_008_VerifyAirFreightTariffTabs_AirFreightCosts_ExpressService"/>
+          <include name="test_LIMA_TARR_RF_017_FullTrailerCostsTab_FullTrailerCostsGridMandatoryFieldCheck"/>
+          <include name="test_LIMA_TARR_RF_018_FullTrailerCostsTab_FullTrailerGOHCostGrid_MandatoryFieldCheck"/>
+          <include name="setup"/>
+          <include name="test_LIMA_TARR_RF_011_VerifyRoadFreightTariff_GroupageTrailerCostsTabs_GroupageTrailerCosts"/>
+          <include name="test_LIMA_TARR_SF_038_LCLLandSideCosts_MandatoryFieldCheck"/>
+          <include name="test_LIMA_TARR_AF_015_VerifyAirFreightTariffTabs_AirHaulageCosts_HaulageComments"/>
+          <include name="test_LIMA_TARR_RF_024_GroupageTrailerCostsTab_GroupageHaulageCostsGrid_MandatoryFieldCheck"/>
+          <include name="test_LIMA_TARR_AF_009_VerifyAirFreightTariffTabs_AirFreightCosts_AirChargeComments"/>
+          <include name="test_LIMA_TARR_AF_013_VerifyAirFreightTariffTabs_AirHaulageCosts_AirHaulageCosts"/>
+          <include name="test_LIMA_TARR_RF_009_VerifyRoadFreightTariff_FullTrailerCostsTabs_FullTrailerLandsideCostsGrid"/>
+          <include name="test_LIMA_TARR_RF_015_RoadFreight_CreateNewTariff_Update_An_Existing_Tariff_AddNewRowOnFullTrailerCostGrid"/>
+          <include name="test_LIMA_TARR_AF_003_CheckPagination"/>
+          <include name="test_LIMA_TARR_RF_012_VerifyRoadFreightTariff_GroupageTrailerCostsTabs_GroupageGOHCosts"/>
+          <include name="test_LIMA_TARR_AF_014_VerifyAirFreightTariffTabs_AirHaulageCosts_AirStorageCosts"/>
+          <include name="test_LIMA_TARR_AF_010_VerifyAirFreightTariffTabsAirFreightCosts_ExpressServiceComments"/>
+          <include name="test_LIMA_TARR_AF_012_VerifyAirFreightTariffTabs_AirLandsideCosts_LandsideChargesCommentsGrid"/>
+          <include name="test_LIMA_TARR_AF_022_AirHaulageCosts_AirStorageCosts_MandatoryFieldCheck"/>
+          <include name="test_LIMA_TARR_RF_002_ViewRoadFreightTariffHistoryResults"/>
+          <include name="test_LIMA_TARR_AF_007_VerifyAirFreightTariffTabs_AirFreightCosts_AirEcoAirRates"/>
+          <include name="test_LIMA_TARR_AF_002_ViewAirFreightTariffHistoryResults"/>
+          <include name="test_LIMA_TARR_AF_020_AirLandsideCostsAirLandsideCost_MandatoryFieldCheck"/>
+          <include name="test_LIMA_TARR_RF_006_CheckDownloadRoadFreightTemplateLink"/>
+          <include name="test_LIMA_TARR_AF_021_AirHaulageCostsMandatoryFieldCheck"/>
+          <include name="test_LIMA_TARR_AF_011_VerifyAirFreightTariffTabs_AirLandsideCosts_AirLandsideCostsGrid"/>
+          <include name="test_LIMA_TARR_AF_023_AmendmentLogMandatoryFieldCheck"/>
+          <include name="test_LIMA_TARR_RF_003_CheckPagination"/>
+          <include name="test_LIMA_TARR_RF_008_VerifyRoadFreightTariff_FullTrailerCostsTab_FullTrailerGOHCostsGrid"/>
+          <include name="test_LIMA_TARR_RF_019_FullTrailerCostsTab_FullLandsideCosts_MandatoryFieldCheck"/>
+          <include name="test_LIMA_TARR_RF_004_CheckViewTariffLink"/>
+          <include name="test_LIMA_TARR_RF_013_VerifyRoadFreightTariff_GroupageTrailerCostsTab_GroupageLandsideCosts"/>
+          <include name="test_LIMA_TARR_RF_021_GroupageTrailerCostsTab_GroupageTrailerCostsGrid_MandatoryFieldCheck"/>
+          <include name="test_LIMA_TARR_AF_017_AirFreight_CreateNewTariff_UpdateAnExistingTariff_AddANewRowOnAirEcoAirRatesGrid"/>
+          <include name="test_LIMA_TARR_RF_016_VerifyRoadFreightTariffTabs_AmendmentLog"/>
+          <include name="test_LIMA_TARR_SF_040_AmendmentMandatoryFieldCheck"/>
+          <include name="test_LIMA_TARR_RF_014_VerifyRoadFreightTariff_GroupageTrailerCostsTab_GroupageHaulageCosts"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMATariffTest -->
+      <class name="com.lima.test.AdjunoLIMAVendorBookingTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAVendorBookingTest -->
+      <class name="com.lima.test.AdjunoLIMAEstimatedLandedCostTest">
+        <methods>
+          <include name="closeBrwser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAEstimatedLandedCostTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentSentTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentSentTest -->
+      <class name="com.lima.test.AdjunoLIMACargoReceiptTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACargoReceiptTest -->
+      <class name="com.lima.test.AdjunoLIMAPoConfirmationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminateBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMAProductionCheckTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAProductionCheckTest -->
+      <class name="com.lima.test.AdjunoLIMAFreightPaymentsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAFreightPaymentsTest -->
+      <class name="com.lima.test.AdjunoLIMAShipmentBookingTest">
+        <methods>
+          <include name="terminateBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipmentBookingTest -->
+      <class name="com.lima.test.AdjunoLIMACustomClearenceTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACustomClearenceTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentReceivedTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentReceivedTest -->
+      <class name="com.lima.test.AdjunoLIMAForwarderReferenceTest">
+        <methods>
+          <include name="test_CloseBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAForwarderReferenceTest -->
+      <class name="com.lima.test.AdjunoLIMAShipAuthorityTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipAuthorityTest -->
+      <class name="com.lima.test.AdjunoLIMAOffDockLocationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAOffDockLocationTest -->
+      <class name="com.lima.test.AdjunoLIMADespatchTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADespatchTest -->
+      <class name="com.lima.test.AdjunoLIMAContainerRestitutionTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAContainerRestitutionTest -->
+      <class name="com.lima.test.AdjunoLIMAManifestTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAManifestTest -->
+      <class name="com.lima.test.AdjunoLIMAPoManagerTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoManagerTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveredYardTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveredYardTest -->
+      <class name="com.lima.test.AdjunoLIMAConfirmArrivalTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAConfirmArrivalTest -->
+    </classes>
+  </test> <!-- Tarriff(failed) -->
+  <test name="Delivery Yard(failed)">
+    <classes>
+      <class name="com.lima.test.AdjunoLIMABookingConfirmationTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMABookingConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveryBookingTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveryBookingTest -->
+      <class name="com.lima.test.AdjunoLIMAVendorBookingTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAVendorBookingTest -->
+      <class name="com.lima.test.AdjunoLIMATariffTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMATariffTest -->
+      <class name="com.lima.test.AdjunoLIMAEstimatedLandedCostTest">
+        <methods>
+          <include name="closeBrwser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAEstimatedLandedCostTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentSentTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentSentTest -->
+      <class name="com.lima.test.AdjunoLIMACargoReceiptTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACargoReceiptTest -->
+      <class name="com.lima.test.AdjunoLIMAPoConfirmationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminateBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMAProductionCheckTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAProductionCheckTest -->
+      <class name="com.lima.test.AdjunoLIMAFreightPaymentsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAFreightPaymentsTest -->
+      <class name="com.lima.test.AdjunoLIMAShipmentBookingTest">
+        <methods>
+          <include name="terminateBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipmentBookingTest -->
+      <class name="com.lima.test.AdjunoLIMACustomClearenceTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACustomClearenceTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentReceivedTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentReceivedTest -->
+      <class name="com.lima.test.AdjunoLIMAForwarderReferenceTest">
+        <methods>
+          <include name="test_CloseBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAForwarderReferenceTest -->
+      <class name="com.lima.test.AdjunoLIMAShipAuthorityTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipAuthorityTest -->
+      <class name="com.lima.test.AdjunoLIMAOffDockLocationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAOffDockLocationTest -->
+      <class name="com.lima.test.AdjunoLIMADespatchTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADespatchTest -->
+      <class name="com.lima.test.AdjunoLIMAContainerRestitutionTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAContainerRestitutionTest -->
+      <class name="com.lima.test.AdjunoLIMAManifestTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAManifestTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveredYardTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+          <include name="test_20_VerifyMandatory"/>
+          <include name="test_18_uploadYardTemplate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveredYardTest -->
+      <class name="com.lima.test.AdjunoLIMAPoManagerTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoManagerTest -->
+      <class name="com.lima.test.AdjunoLIMAConfirmArrivalTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAConfirmArrivalTest -->
+    </classes>
+  </test> <!-- Delivery Yard(failed) -->
+  <test name="Off Dock Location(failed)">
+    <classes>
+      <class name="com.lima.test.AdjunoLIMABookingConfirmationTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMABookingConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveryBookingTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveryBookingTest -->
+      <class name="com.lima.test.AdjunoLIMAVendorBookingTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAVendorBookingTest -->
+      <class name="com.lima.test.AdjunoLIMATariffTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMATariffTest -->
+      <class name="com.lima.test.AdjunoLIMAEstimatedLandedCostTest">
+        <methods>
+          <include name="closeBrwser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAEstimatedLandedCostTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentSentTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentSentTest -->
+      <class name="com.lima.test.AdjunoLIMACargoReceiptTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACargoReceiptTest -->
+      <class name="com.lima.test.AdjunoLIMAPoConfirmationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminateBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMAProductionCheckTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAProductionCheckTest -->
+      <class name="com.lima.test.AdjunoLIMAFreightPaymentsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAFreightPaymentsTest -->
+      <class name="com.lima.test.AdjunoLIMAShipmentBookingTest">
+        <methods>
+          <include name="terminateBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipmentBookingTest -->
+      <class name="com.lima.test.AdjunoLIMACustomClearenceTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACustomClearenceTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentReceivedTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentReceivedTest -->
+      <class name="com.lima.test.AdjunoLIMAForwarderReferenceTest">
+        <methods>
+          <include name="test_CloseBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAForwarderReferenceTest -->
+      <class name="com.lima.test.AdjunoLIMAShipAuthorityTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipAuthorityTest -->
+      <class name="com.lima.test.AdjunoLIMAOffDockLocationTest">
+        <methods>
+          <include name="test_25_VerifyMandatory"/>
+          <include name="test_32_VerifyMandatory"/>
+          <include name="test_36_ClickOnTrackLink"/>
+          <include name="test_52_ClickOnTrackLink"/>
+          <include name="test_48_navigateToOffDockChevron"/>
+          <include name="test_38_clickOffLink"/>
+          <include name="test_44_ClickOnTrackLink"/>
+          <include name="test_54_clickOffLink"/>
+          <include name="test_34_complete"/>
+          <include name="test_23_uploadOffDockTemplate"/>
+          <include name="test_39_accessOffDockLocation"/>
+          <include name="test_40_navigateToOffDockChevron"/>
+          <include name="test_55_accessOffDockLocation"/>
+          <include name="test_30_verifyField"/>
+          <include name="test_47_accessOffDockLocation"/>
+          <include name="test_49_VerifyGridValue"/>
+          <include name="test_50_complete"/>
+          <include name="test_31_VerifyGridValue"/>
+          <include name="test_53_setTrackNumber"/>
+          <include name="test_30_SearchForData"/>
+          <include name="test_45_setTrackNumber"/>
+          <include name="test_55_SearchContainerSearch"/>
+          <include name="test_37_setTrackNumber"/>
+          <include name="test_42_complete"/>
+          <include name="test_47_SearchContainerSearch"/>
+          <include name="test_46_clickOffLink"/>
+          <include name="setup"/>
+          <include name="test_39_SearchContainerSearch"/>
+          <include name="test_41_VerifyGridValue"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAOffDockLocationTest -->
+      <class name="com.lima.test.AdjunoLIMADespatchTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADespatchTest -->
+      <class name="com.lima.test.AdjunoLIMAContainerRestitutionTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAContainerRestitutionTest -->
+      <class name="com.lima.test.AdjunoLIMAManifestTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAManifestTest -->
+      <class name="com.lima.test.AdjunoLIMAPoManagerTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoManagerTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveredYardTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveredYardTest -->
+      <class name="com.lima.test.AdjunoLIMAConfirmArrivalTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAConfirmArrivalTest -->
+    </classes>
+  </test> <!-- Off Dock Location(failed) -->
+  <test name="Container Restitution(failed)">
+    <classes>
+      <class name="com.lima.test.AdjunoLIMABookingConfirmationTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMABookingConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveryBookingTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveryBookingTest -->
+      <class name="com.lima.test.AdjunoLIMAVendorBookingTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAVendorBookingTest -->
+      <class name="com.lima.test.AdjunoLIMATariffTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMATariffTest -->
+      <class name="com.lima.test.AdjunoLIMAEstimatedLandedCostTest">
+        <methods>
+          <include name="closeBrwser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAEstimatedLandedCostTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentSentTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentSentTest -->
+      <class name="com.lima.test.AdjunoLIMACargoReceiptTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACargoReceiptTest -->
+      <class name="com.lima.test.AdjunoLIMAPoConfirmationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminateBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMAProductionCheckTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAProductionCheckTest -->
+      <class name="com.lima.test.AdjunoLIMAFreightPaymentsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAFreightPaymentsTest -->
+      <class name="com.lima.test.AdjunoLIMAShipmentBookingTest">
+        <methods>
+          <include name="terminateBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipmentBookingTest -->
+      <class name="com.lima.test.AdjunoLIMACustomClearenceTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACustomClearenceTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentReceivedTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentReceivedTest -->
+      <class name="com.lima.test.AdjunoLIMAForwarderReferenceTest">
+        <methods>
+          <include name="test_CloseBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAForwarderReferenceTest -->
+      <class name="com.lima.test.AdjunoLIMAShipAuthorityTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipAuthorityTest -->
+      <class name="com.lima.test.AdjunoLIMAOffDockLocationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAOffDockLocationTest -->
+      <class name="com.lima.test.AdjunoLIMADespatchTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADespatchTest -->
+      <class name="com.lima.test.AdjunoLIMAContainerRestitutionTest">
+        <methods>
+          <include name="test_11_verifyDestinationdropdown"/>
+          <include name="test_19_verifyUpdateChevronFields"/>
+          <include name="test_20_uploadContainerRestitutionTemplate"/>
+          <include name="test_54_SearchContainerSearch"/>
+          <include name="test_30_verifyField"/>
+          <include name="test_upload"/>
+          <include name="setup"/>
+          <include name="test_33_complete"/>
+          <include name="test_18_downloadContainerRestitutiontemplate"/>
+          <include name="test_28_ContainerRestitutionLink"/>
+          <include name="terminate"/>
+          <include name="test_21_VerifyUpdateChevronMandatoryFields"/>
+          <include name="test_44_clickRestitutionLink"/>
+          <include name="test_35_setTrackNumber"/>
+          <include name="test_SearchForData"/>
+          <include name="test_32_VerifyGridValue"/>
+          <include name="test_36_clickRestitutionLink"/>
+          <include name="test_22_VerifyGridValue"/>
+          <include name="test_31_VerifyRestitutionChevronMandatoryFields"/>
+          <include name="test_52_clickRestitutionLink"/>
+          <include name="test_23_deleteRow"/>
+          <include name="test_46_SearchContainerSearch"/>
+          <include name="test_26_complete"/>
+          <include name="test_38_SearchContainerSearch"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAContainerRestitutionTest -->
+      <class name="com.lima.test.AdjunoLIMAManifestTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAManifestTest -->
+      <class name="com.lima.test.AdjunoLIMAPoManagerTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoManagerTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveredYardTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveredYardTest -->
+      <class name="com.lima.test.AdjunoLIMAConfirmArrivalTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAConfirmArrivalTest -->
+    </classes>
+  </test> <!-- Container Restitution(failed) -->
+  <test name="Estimated Landed Cost(failed)">
+    <classes>
+      <class name="com.lima.test.AdjunoLIMABookingConfirmationTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMABookingConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveryBookingTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveryBookingTest -->
+      <class name="com.lima.test.AdjunoLIMAVendorBookingTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAVendorBookingTest -->
+      <class name="com.lima.test.AdjunoLIMATariffTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMATariffTest -->
+      <class name="com.lima.test.AdjunoLIMAEstimatedLandedCostTest">
+        <methods>
+          <include name="test_1_CheckforEstimatedLandedCostPage"/>
+          <include name="test_10_SetValidDateinIntendedDeliveryDateField"/>
+          <include name="test_30_VerifyEstimatedLandedCostGridPresent"/>
+          <include name="closeBrwser"/>
+          <include name="test_21_InspectDestinationPortDropdown"/>
+          <include name="test_9_SetInvalidDateinIntendedDeliveryDateField"/>
+          <include name="test_34_ClickonSeafreightTariffVersion"/>
+          <include name="test_16_SelectMultipleValuesUnderAvailableDestinationColumn"/>
+          <include name="test_20_InspectOriginPortDropdown"/>
+          <include name="test_5_InspectDestinationCountryDropdown"/>
+          <include name="test_22_VerifyVendorDropDownValue"/>
+          <include name="test_12_InspectAvailableDestinationColumnValues"/>
+          <include name="test_33_VerifySeafreightTariffVersionPresent"/>
+          <include name="test_24_VerifyLoadingDropDownValue"/>
+          <include name="test_7_SetInvalidDateinEstimatedShipDateField"/>
+          <include name="test_23_VerifyEquipmentDropDownValue"/>
+          <include name="test_43_VerifyProductLandedCostFieldValue"/>
+          <include name="InspectDestinationCountryDropdownValues"/>
+          <include name="test_36_CheckSaveItemsButtonDisable"/>
+          <include name="test_42_VerifyProductCostFieldValue"/>
+          <include name="getCatalogValues"/>
+          <include name="test_31_VerifyEstimatedLandedCostGridnotPresent"/>
+          <include name="test_4_InspectOriginCountryDropdown"/>
+          <include name="test_18_RemoveValuesFromSelectedDestinationColumn"/>
+          <include name="test_32_VerifyTotalCBMFieldwithWLH"/>
+          <include name="test_11_InspectAvailableOriginsColumnValues"/>
+          <include name="test_41_VerifyProductShippingCostFieldValue"/>
+          <include name="test_2_CheckMandatoryfields"/>
+          <include name="test_39_VerifyRankFieldValue"/>
+          <include name="test_17_RemoveSelectedValuesFromAvailableOriginColumn"/>
+          <include name="test_8_SetValidDateinEstimatedShipDateField"/>
+          <include name="test_15_SelectMultipleValuesUnderAvailableOriginColumn"/>
+          <include name="test_44_VerifyEquipmentFieldValue"/>
+          <include name="test_27_CheckCostsPannelMandatoryFields"/>
+          <include name="InspectOriginCountryDropdownValues"/>
+          <include name="test_28_InspectTotalCtnsField"/>
+          <include name="test_14_SelectAvailableDestinationColumnValue"/>
+          <include name="test_40_VerifyMarginFieldValue"/>
+          <include name="test_19_ClickMoreOptionButton"/>
+          <include name="test_26_ClickLessOptionButton"/>
+          <include name="test_29_InspectTotalCBMField"/>
+          <include name="test_13_SelectAvailableOriginColumnValue"/>
+          <include name="test_25_InspectCurrencyDropdown"/>
+          <include name="test_3_InspectModeDropdown"/>
+          <include name="test_6_InspectDestinationDropdown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAEstimatedLandedCostTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentSentTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentSentTest -->
+      <class name="com.lima.test.AdjunoLIMACargoReceiptTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACargoReceiptTest -->
+      <class name="com.lima.test.AdjunoLIMAPoConfirmationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminateBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMAProductionCheckTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAProductionCheckTest -->
+      <class name="com.lima.test.AdjunoLIMAFreightPaymentsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAFreightPaymentsTest -->
+      <class name="com.lima.test.AdjunoLIMAShipmentBookingTest">
+        <methods>
+          <include name="terminateBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipmentBookingTest -->
+      <class name="com.lima.test.AdjunoLIMACustomClearenceTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACustomClearenceTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentReceivedTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentReceivedTest -->
+      <class name="com.lima.test.AdjunoLIMAForwarderReferenceTest">
+        <methods>
+          <include name="test_CloseBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAForwarderReferenceTest -->
+      <class name="com.lima.test.AdjunoLIMAShipAuthorityTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipAuthorityTest -->
+      <class name="com.lima.test.AdjunoLIMAOffDockLocationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAOffDockLocationTest -->
+      <class name="com.lima.test.AdjunoLIMADespatchTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADespatchTest -->
+      <class name="com.lima.test.AdjunoLIMAContainerRestitutionTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAContainerRestitutionTest -->
+      <class name="com.lima.test.AdjunoLIMAManifestTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAManifestTest -->
+      <class name="com.lima.test.AdjunoLIMAPoManagerTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoManagerTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveredYardTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveredYardTest -->
+      <class name="com.lima.test.AdjunoLIMAConfirmArrivalTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAConfirmArrivalTest -->
+    </classes>
+  </test> <!-- Estimated Landed Cost(failed) -->
+  <test name="Document Received(failed)">
+    <classes>
+      <class name="com.lima.test.AdjunoLIMABookingConfirmationTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMABookingConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveryBookingTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveryBookingTest -->
+      <class name="com.lima.test.AdjunoLIMAVendorBookingTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAVendorBookingTest -->
+      <class name="com.lima.test.AdjunoLIMATariffTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMATariffTest -->
+      <class name="com.lima.test.AdjunoLIMAEstimatedLandedCostTest">
+        <methods>
+          <include name="closeBrwser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAEstimatedLandedCostTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentSentTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentSentTest -->
+      <class name="com.lima.test.AdjunoLIMACargoReceiptTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACargoReceiptTest -->
+      <class name="com.lima.test.AdjunoLIMAPoConfirmationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminateBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMAProductionCheckTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAProductionCheckTest -->
+      <class name="com.lima.test.AdjunoLIMAFreightPaymentsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAFreightPaymentsTest -->
+      <class name="com.lima.test.AdjunoLIMAShipmentBookingTest">
+        <methods>
+          <include name="terminateBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipmentBookingTest -->
+      <class name="com.lima.test.AdjunoLIMACustomClearenceTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACustomClearenceTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentReceivedTest">
+        <methods>
+          <include name="Test_close"/>
+          <include name="checkforValidationMsg"/>
+          <include name="clickAddButton"/>
+          <include name="clickHyperlink"/>
+          <include name="setup"/>
+          <include name="checkuploadfile"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentReceivedTest -->
+      <class name="com.lima.test.AdjunoLIMAForwarderReferenceTest">
+        <methods>
+          <include name="test_CloseBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAForwarderReferenceTest -->
+      <class name="com.lima.test.AdjunoLIMAShipAuthorityTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipAuthorityTest -->
+      <class name="com.lima.test.AdjunoLIMAOffDockLocationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAOffDockLocationTest -->
+      <class name="com.lima.test.AdjunoLIMADespatchTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADespatchTest -->
+      <class name="com.lima.test.AdjunoLIMAContainerRestitutionTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAContainerRestitutionTest -->
+      <class name="com.lima.test.AdjunoLIMAManifestTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAManifestTest -->
+      <class name="com.lima.test.AdjunoLIMAPoManagerTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoManagerTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveredYardTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveredYardTest -->
+      <class name="com.lima.test.AdjunoLIMAConfirmArrivalTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAConfirmArrivalTest -->
+    </classes>
+  </test> <!-- Document Received(failed) -->
+  <test name="Document Sent(failed)">
+    <classes>
+      <class name="com.lima.test.AdjunoLIMABookingConfirmationTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMABookingConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveryBookingTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveryBookingTest -->
+      <class name="com.lima.test.AdjunoLIMAVendorBookingTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAVendorBookingTest -->
+      <class name="com.lima.test.AdjunoLIMATariffTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMATariffTest -->
+      <class name="com.lima.test.AdjunoLIMAEstimatedLandedCostTest">
+        <methods>
+          <include name="closeBrwser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAEstimatedLandedCostTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentSentTest">
+        <methods>
+          <include name="Test_13_5_uploadmultiplefile"/>
+          <include name="closeBrowser"/>
+          <include name="Test_close"/>
+          <include name="checkforValidationMsg"/>
+          <include name="Test_clickComplete"/>
+          <include name="Test_14_1_2_3_checkforstatus"/>
+          <include name="setup"/>
+          <include name="Test_14_1_5_7_uploadmultiplefileinupdate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentSentTest -->
+      <class name="com.lima.test.AdjunoLIMACargoReceiptTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACargoReceiptTest -->
+      <class name="com.lima.test.AdjunoLIMAPoConfirmationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminateBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMAProductionCheckTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAProductionCheckTest -->
+      <class name="com.lima.test.AdjunoLIMAFreightPaymentsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAFreightPaymentsTest -->
+      <class name="com.lima.test.AdjunoLIMAShipmentBookingTest">
+        <methods>
+          <include name="terminateBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipmentBookingTest -->
+      <class name="com.lima.test.AdjunoLIMACustomClearenceTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACustomClearenceTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentReceivedTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentReceivedTest -->
+      <class name="com.lima.test.AdjunoLIMAForwarderReferenceTest">
+        <methods>
+          <include name="test_CloseBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAForwarderReferenceTest -->
+      <class name="com.lima.test.AdjunoLIMAShipAuthorityTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipAuthorityTest -->
+      <class name="com.lima.test.AdjunoLIMAOffDockLocationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAOffDockLocationTest -->
+      <class name="com.lima.test.AdjunoLIMADespatchTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADespatchTest -->
+      <class name="com.lima.test.AdjunoLIMAContainerRestitutionTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAContainerRestitutionTest -->
+      <class name="com.lima.test.AdjunoLIMAManifestTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAManifestTest -->
+      <class name="com.lima.test.AdjunoLIMAPoManagerTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoManagerTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveredYardTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveredYardTest -->
+      <class name="com.lima.test.AdjunoLIMAConfirmArrivalTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAConfirmArrivalTest -->
+    </classes>
+  </test> <!-- Document Sent(failed) -->
+  <test name="Vendor Booking(failed)">
+    <classes>
+      <class name="com.lima.test.AdjunoLIMABookingConfirmationTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMABookingConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveryBookingTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveryBookingTest -->
+      <class name="com.lima.test.AdjunoLIMAVendorBookingTest">
+        <methods>
+          <include name="test_10_SelectOneRecordAndVerifyInBookingPage"/>
+          <include name="setup"/>
+          <include name="test_27_ClickYesButtonInChangeModePopUp"/>
+          <include name="closeBrowser"/>
+          <include name="test_9_SelectMultipleRecordsAndVerifyInBookingPage"/>
+          <include name="test_25_ChangeModeFieldInShipmentDetailsPanel"/>
+          <include name="test_26_ClickNoButtonInChangeModePopUp"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAVendorBookingTest -->
+      <class name="com.lima.test.AdjunoLIMATariffTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMATariffTest -->
+      <class name="com.lima.test.AdjunoLIMAEstimatedLandedCostTest">
+        <methods>
+          <include name="closeBrwser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAEstimatedLandedCostTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentSentTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentSentTest -->
+      <class name="com.lima.test.AdjunoLIMACargoReceiptTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACargoReceiptTest -->
+      <class name="com.lima.test.AdjunoLIMAPoConfirmationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminateBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMAProductionCheckTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAProductionCheckTest -->
+      <class name="com.lima.test.AdjunoLIMAFreightPaymentsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAFreightPaymentsTest -->
+      <class name="com.lima.test.AdjunoLIMAShipmentBookingTest">
+        <methods>
+          <include name="terminateBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipmentBookingTest -->
+      <class name="com.lima.test.AdjunoLIMACustomClearenceTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACustomClearenceTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentReceivedTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentReceivedTest -->
+      <class name="com.lima.test.AdjunoLIMAForwarderReferenceTest">
+        <methods>
+          <include name="test_CloseBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAForwarderReferenceTest -->
+      <class name="com.lima.test.AdjunoLIMAShipAuthorityTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipAuthorityTest -->
+      <class name="com.lima.test.AdjunoLIMAOffDockLocationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAOffDockLocationTest -->
+      <class name="com.lima.test.AdjunoLIMADespatchTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADespatchTest -->
+      <class name="com.lima.test.AdjunoLIMAContainerRestitutionTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAContainerRestitutionTest -->
+      <class name="com.lima.test.AdjunoLIMAManifestTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAManifestTest -->
+      <class name="com.lima.test.AdjunoLIMAPoManagerTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoManagerTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveredYardTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveredYardTest -->
+      <class name="com.lima.test.AdjunoLIMAConfirmArrivalTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAConfirmArrivalTest -->
+    </classes>
+  </test> <!-- Vendor Booking(failed) -->
+  <test name="Delivery Booking(failed)">
+    <classes>
+      <class name="com.lima.test.AdjunoLIMABookingConfirmationTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMABookingConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveryBookingTest">
+        <methods>
+          <include name="getCatalogData"/>
+          <include name="test_8_VerifyLoadingDropDownValues"/>
+          <include name="test_5_VerifyDestinationPortDropDownValues"/>
+          <include name="setup"/>
+          <include name="test_6_VerifyDestinationDropDownValues"/>
+          <include name="test_7_VerifyHaulierDropDownValues"/>
+          <include name="test_9_VerifyVesselDropDownValues"/>
+          <include name="test_21_verifyLoadingValue"/>
+          <include name="test_18_verifyDestnationValue"/>
+          <include name="test_20_verifyHaulierValue"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveryBookingTest -->
+      <class name="com.lima.test.AdjunoLIMAVendorBookingTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAVendorBookingTest -->
+      <class name="com.lima.test.AdjunoLIMATariffTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMATariffTest -->
+      <class name="com.lima.test.AdjunoLIMAEstimatedLandedCostTest">
+        <methods>
+          <include name="closeBrwser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAEstimatedLandedCostTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentSentTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentSentTest -->
+      <class name="com.lima.test.AdjunoLIMACargoReceiptTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACargoReceiptTest -->
+      <class name="com.lima.test.AdjunoLIMAPoConfirmationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminateBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoConfirmationTest -->
+      <class name="com.lima.test.AdjunoLIMAProductionCheckTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAProductionCheckTest -->
+      <class name="com.lima.test.AdjunoLIMAFreightPaymentsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAFreightPaymentsTest -->
+      <class name="com.lima.test.AdjunoLIMAShipmentBookingTest">
+        <methods>
+          <include name="terminateBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipmentBookingTest -->
+      <class name="com.lima.test.AdjunoLIMACustomClearenceTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMACustomClearenceTest -->
+      <class name="com.lima.test.AdjunoLIMADocumentReceivedTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADocumentReceivedTest -->
+      <class name="com.lima.test.AdjunoLIMAForwarderReferenceTest">
+        <methods>
+          <include name="test_CloseBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAForwarderReferenceTest -->
+      <class name="com.lima.test.AdjunoLIMAShipAuthorityTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAShipAuthorityTest -->
+      <class name="com.lima.test.AdjunoLIMAOffDockLocationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAOffDockLocationTest -->
+      <class name="com.lima.test.AdjunoLIMADespatchTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADespatchTest -->
+      <class name="com.lima.test.AdjunoLIMAContainerRestitutionTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAContainerRestitutionTest -->
+      <class name="com.lima.test.AdjunoLIMAManifestTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAManifestTest -->
+      <class name="com.lima.test.AdjunoLIMAPoManagerTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAPoManagerTest -->
+      <class name="com.lima.test.AdjunoLIMADeliveredYardTest">
+        <methods>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMADeliveredYardTest -->
+      <class name="com.lima.test.AdjunoLIMAConfirmArrivalTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lima.test.AdjunoLIMAConfirmArrivalTest -->
+    </classes>
+  </test> <!-- Delivery Booking(failed) -->
+</suite> <!-- Failed suite [LIMATestAutomtion] -->

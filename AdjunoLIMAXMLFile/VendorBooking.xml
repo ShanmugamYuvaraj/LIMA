@@ -1,0 +1,61 @@
+<Vendor_Booking>
+	<Search_Params>
+		<Status_Pending>Pending</Status_Pending>
+		<Status_Booked>Booked</Status_Booked>
+		<Status_Shipment_Booked>Shipment Booked</Status_Shipment_Booked>
+		<Status_VendorBooked>Vendor Booked</Status_VendorBooked>
+		<Status_PartBooked>Part Booked</Status_PartBooked>
+		<Invalid_PoNumber>@#8u4</Invalid_PoNumber>
+		<Factory_Details>Factory A</Factory_Details>
+		<Notify_Party_Details>Freight Forwarder 1</Notify_Party_Details>
+		<Contact_Details>Test</Contact_Details>
+		<Bkd_Ctns>2</Bkd_Ctns>
+		<Bkd_Net_Kgs>3</Bkd_Net_Kgs>
+		<Bkd_CBM>10.00</Bkd_CBM>
+		<Pack_Type>Boxed</Pack_Type>
+		<Reason_Code>Carrier Rolled</Reason_Code>
+		<Mode>Sea</Mode>
+		<Origin_Port>Adelaide</Origin_Port>
+		<Loading>CY/CY</Loading>
+	</Search_Params>
+	<Catalog_Data>
+		<Type_Configuration>Configuration (1 item)</Type_Configuration>
+		<Type_LOCODE>LOCODE (202 items)</Type_LOCODE>
+		<Type_Factory>Factory</Type_Factory>
+		<Type_Notify_Party>NotifyParty</Type_Notify_Party>
+	</Catalog_Data>
+	<Product_Details_Grid>
+	<Caption>PO Number</Caption>
+	<Caption>Product</Caption>
+	<Caption>Description</Caption>
+	<Caption>Vendor Ref</Caption>
+	<Caption>PO Ship Date</Caption>
+	<Caption>Customer Ref</Caption>
+	<Caption>PO Qty</Caption>
+	<Caption>PO Ctns</Caption>
+	<Caption>Open Qty</Caption>
+	<Caption>Bkd Qty</Caption>
+	<Caption>Bkd Ctns</Caption>
+	<Caption>Bkd Kgs</Caption>
+	<Caption>Bkd Net Kgs</Caption>
+	<Caption>Pack Type</Caption>
+	<Caption>Additional Requirements</Caption>
+	<Caption>Outer Packaging</Caption>
+	<Caption>Reason Code</Caption>
+	<Caption>HS Code</Caption>
+	<Caption>Destination</Caption>
+	</Product_Details_Grid>
+	<CY_Container_Requirements_Grid>
+		<Caption>Equipment</Caption>
+		<Caption>Quantity</Caption>
+		<Caption>Loading Type</Caption>
+		<Caption>No per Container</Caption>
+		<Caption>Min Fill</Caption>
+		<Caption>Max Fill</Caption>
+	</CY_Container_Requirements_Grid>
+	<Equipment_Selector_Grid>
+		<Caption>Container Type</Caption>
+		<Caption>Quantity</Caption>
+		<Caption>Max Fill</Caption>
+	</Equipment_Selector_Grid>
+</Vendor_Booking>

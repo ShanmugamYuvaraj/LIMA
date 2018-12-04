@@ -1,0 +1,44 @@
+<Cargo_Receipt>
+     <SearchParams>
+		<Origin_Port>Chicago</Origin_Port>
+		<Booked_Vessel>Hyundai Force</Booked_Vessel>
+		<Mode>Air</Mode>
+		<Loading>CFS/CFS</Loading>
+		<Status_Awaiting>Awaiting</Status_Awaiting>
+		<Status_Receipted>Receipted</Status_Receipted>
+		<Vendor>Test Data</Vendor>
+		<Pack_Type>Boxed</Pack_Type>
+		<Vendor_Ref></Vendor_Ref>
+        <Product></Product>
+		<Invalid_PONumber>11111</Invalid_PONumber>		
+     </SearchParams>
+	 <Search>
+		<Status>Bookings Made</Status>
+	</Search>	 
+	<Receipt_Caption>
+		<Caption>Receiving Location</Caption>
+		<Caption>ETHOS Status</Caption>
+		<Caption>ETD</Caption>
+		<Caption>Received Date</Caption>
+		<Caption>Received Time</Caption>
+		<Caption>Receipt Reference</Caption>
+		<Caption>On-Time KPI</Caption>
+	</Receipt_Caption>
+	<Receipt_Details_Caption>
+		<Caption>Vendor</Caption>
+		<Caption>PO Number</Caption>
+		<Caption>Product</Caption>
+		<Caption>SKU</Caption>
+		<Caption>Pack Type</Caption>
+		<Caption>Rec Pcs</Caption>
+		<Caption>Rec Ctns</Caption>
+		<Caption>Rec CBM</Caption>
+		<Caption>Status</Caption>
+	</Receipt_Details_Caption>
+	<Receipt_Details>
+		<Rec_Ctns>21</Rec_Ctns>
+		<Rec_CBM>1</Rec_CBM>
+	</Receipt_Details>	
+</Cargo_Receipt>	 
+	 
+
